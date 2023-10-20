@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+  <title>Leprosy</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../notes.css">
+</head>
+<body>
+  <input type="checkbox" id="main-navigation-toggle" class="btn btn--close" title="Toggle main navigation" />
+  <label for="main-navigation-toggle">
+    <span></span>
+  </label>
+  
+  <a href="../index.html">
+   <div class="home-navigation">
+      mtr<span class="logo-dot">.</span>
+    </div>
+  </a>
+
+
+    <nav id="main-navigation" class="nav-main">
+    <ul class="menu">
+      <li class="menu__item">
+        <a class="menu__link" href="../index.html">Home</a>
+      </li>
+
+      <li class="menu__item">
+        <a class="menu__link" href="../about-temp2.html">About</a>
+      </li>
+    </ul>
+  </nav>
+  
+      <!-- Toggle switch for dark mode -->
+      <div class="dark-mode-toggle">
+        <label class="switch-toggle">
+            <input type="checkbox" id="dark-mode-toggle-checkbox">
+            <span class="toggle-slider"></span>
+        </label>
+      </div>
+      
+  <main class="page-container">
+    <div class="contribute-cta">
+      <p>Help make this better💜</p>
+      <span><a href="../contribute.html">Contribute here</a> </span>
+    </div>
+
+    <h1>Leprosy</h1>
+  
+    <!-- <div class="author-flex">
+      <div class="author-img">
+        <img  src="/contributors/vt1.jpeg" alt="">
+      </div>
+      <div>
+        <h2 class="name">Compiled by Victortayo</h2>
+        <p class="updated">last updated</p>
+      </div>
+    </div> -->
+
+    <article class="notes">
+        <a id='top'></a>
+    <article>
+    <!-- <h2 class='title'>Outline</h2> -->
+
+    <div class="outline2">
+
+      <input type="radio" name="control-2" id="show-2">
+      <label for="show-2">Show Outline</label>
+      <input type="radio" name="control-2" id="hide-2">
+      <label for="hide-2">Hide Outline</label>
+      <div class="contents">
+        <ol>
+          <li><a href="#header-1">Introduction</a></li>
+          <li><a href="#header-2">Brief history</a></li>
+          <li><a href="#header-3">Mode of infection</a></li>
+          <li><a href="#header-4">Classification</a></li>
+          <li><a href="#header-5">Clinical features</a></li>
+          <ul>
+            <li><a href="#heading-5-1">Indeterminate</a></li>
+            <li><a href="#heading-5-2">Tuberculoid</a></li>
+            <li><a href="#heading-5-3">Borderline leprosy</a></li>
+            <li><a href="#heading-5-4">Lepromatous leprosy</a></li>
+            <li><a href="#heading-5-5">Histoid leprosy</a></li>
+        </ul>
+          <li><a href="#header-6">Complications</a></li>
+          <li><a href="#header-7">Definitive diagnosis</a></li>
+          <li><a href="#header-8">Treatment</a></li>
+
+       </ol>
+      </div>
+     <div>
+
+      <br>
+
+      <section id='header-1'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-1'>Introduction</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <p>Leprosy is a clinical condition characterized by a <strong>long variable incubation period, ranging from 3 to 5 years or even 6 ½ years</strong>, and a protracted course with lesions affecting the skin, mucosa of the upper respiratory tract, and peripheral nerves. These manifestations are a result of infections caused by <strong>M. leprae and M. lepromatosis</strong>.</p>
+
+            <p>The causative organisms are <strong>acid and alcohol-fast bacilli</strong> that do not grow in artificial media but do thrive and multiply in the footpad of a mouse.</p>
+
+            <p>Humans and armadillos are the major reservoirs of leprosy bacilli. Armadillos are known to be infected with the disease and are used in research efforts to study leprosy. They have an unusually low body temperature, around <strong>34°C</strong>, which provides a hospitable environment for the growth of <strong>M. leprae</strong>.</p>
+
+            <!-- image here -->
+            <div class="image-container">
+              <img src="../figures/leprosy (1).jpg" alt="" onclick="openModal(this)">
+              <div class="caption">Armadillo</div>
+            </div>
+            
+            <div id="myModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img class="modal-content" id="modalImage">
+              <div id="caption" class="caption">Armadillo</div>
+            </div>
+        </div>
+      </section>
+
+      <section id='header-2'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-2'>Brief History</a>
+          </h2>
+        </header>
+        <div class='body'>
+
+          <p><strong>M. Leprae</strong> was discovered by J.H. Armauer Hansen, a Norwegian physician in <strong>1873</strong>.</p>
+          
+          <p>Leprosy is from a Greek word ‘lepra’ meaning: <strong>disease which makes the skin scaly</strong>.</p>
+          
+          <p>The first mention of leprosy in the Bible was in Leviticus 13:2-5 and thereafter in 2 Kings 5:1-3 (Naaman, captain of the host of the king of Syria).</p>
+          
+          <p>India has the highest prevalence, followed by Brazil and Burma. Regional prevalence rates reveal the following:</p>
+          
+          <ul>
+              <li>Africa – 40,850</li>
+              <li>America – 32,904</li>
+              <li>South East Asia – 133,422</li>
+              <li>West Pacific – 8,646</li>
+          </ul>
+          
+          <h4>Definition</h4>
+          
+          <p><strong>Leprosy</strong> is a chronic granulomatous disease of humans with predilection for skin, peripheral nerves, and nasal mucosa.</p>
+          
+
+        </div>
+      </section>
+
+      <section id='header-3'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-3'>Mode of Infection</a>
+          </h2>
+        </header>
+        <div class='body'>
+          <p>It is a <strong>droplet infection</strong> in which prolonged and intimate contact of a susceptible subject with an index case shedding viable bacilli is required.</p>
+          
+          <p>The major source is the mucoid nasal secretions of lepromatous leprosy patients, although <strong>transcutaneous implantation and ingestion of the bacilli</strong> do occur.</p>
+          
+          <p>The fate of the bacilli depends on the immunological capacity of the individual to mount <strong>cell-mediated immunity</strong>.</p>
+          
+          <p>At one extreme, called <strong>tuberculoid leprosy</strong>, the patient mounts a vigorous response to the pathogen that limits the spread to few lesions.</p>
+          
+          <p>In lepromatous leprosy, <strong>no effective immunity</strong> is generated, resulting in uninhibited growth of the bacilli and systemic infection.</p>
+          
+
+          <h4>Incubation/Infectious Period</h4>
+
+          <p><strong>Incubation</strong> seems to range between <strong>9 months to 20 years</strong>.</p>
+          
+          <p>The <strong>infective period</strong> depends on the type of leprosy, but is doubtful if the <strong>tuberculoid form is infectious at all</strong>.</p>
+          
+        </div>
+      </section>
+
+      <section id='header-4'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-4'>Classification</a>
+          </h2>
+        </header>
+        <div class='body'>
+          <ol>
+            <li>Early or indeterminate leprosy</li>
+            <li>Tuberculoid leprosy</li>
+            <li>Borderline-Tuberculoid leprosy</li>
+            <li>Mid-borderline leprosy</li>
+            <li>Borderline-Lepromatous leprosy</li>
+            <li>Lepromatous leprosy</li>
+            <li>Histoid leprosy</li>
+            <li>Diffuse leprosy of Lucio and Latapi</li>
+          </ol>
+          
+
+        </div>
+      </section>
+
+      <section id='header-5'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-5'>Clinical Features</a>
+          </h2>
+        </header>
+        <div class='body'>
+          <p>It manifests along a spectrum of <strong>2 forms</strong> with the <strong>borderline manifesting features of both polar forms</strong>.</p>
+          
+          <p>An untreated patient with <strong>borderline disease</strong> tends to shift to <strong>Lepromatous</strong> while a treated patient tends towards <strong>tuberculoid</strong>.</p>
+          
+          <p>The immune response to the bacilli varies over a large continuum and is therefore responsible for the heterogeneous clinical picture of leprosy. The recognized clinical types are:</p>
+          
+          <ol>
+            <li>Indeterminate leprosy</li>
+            <li>Tuberculoid leprosy</li>
+            <li>Borderline or dimorphic leprosy</li>
+            <li>Lepromatous leprosy</li>
+            <li>Histoid leprosy</li>
+          </ol>
+
+          <section id='heading-5-1'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-5-1'>Indeterminate</a>
+              </h3>
+            </header>
+            <div class='body'>
+              <p>This is characterized by:</p>
+              
+              <ul>
+                <li>Hypopigmented ill-defined macule that maintains tactile,</li>
+                <li>Sweating, and</li>
+                <li>Hair growth function.</li>
+              </ul>
+              
+              <p>It may regress spontaneously, persist, or progress to the determinate type.</p>
+              
+            </div>
+          </section>
+
+          <section id='heading-5-2'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-5-2'>Tuberculoid</a>
+              </h3>
+            </header>
+            <div class='body'>
+
+              <p>Well-defined asymmetric hypopigmented areas of skin, characterized by:</p>
+              
+              <ul>
+                <li>Diminished sensation, sweating, and hair growth.</li>
+              </ul>
+              
+              <p>The edges are usually raised, hard, and craggy. Tuberculoid lesions may occur in any part of the body but tend to spare the scalp and axilla. Affected nerves are usually enlarged and palpable.</p>
+              
+              <p>The commonly involved nerves include:</p>
+              
+              <ul>
+                <li>Ulnar nerve</li>
+                <li>Posterior tibial nerve</li>
+                <li>Facial nerve</li>
+                <li>Median nerve</li>
+                <li>Radial nerve</li>
+              </ul>
+              
+              <p>The most commonly affected superficial nerves are the posterior auricular and the radial cutaneous nerve. Sensory and motor modalities are affected pari passu.</p>
+              
+              <p>The insensitive tissues are readily injured with the development of neuropathic ulcers. Paresis of the facial nerve may lead to the loss of the protective eyelid reflex, corneal ulceration, and destruction of the eye, resulting in blindness.</p>
+              
+              <p>The loss of sensation leads to serious consequences, including ulcerations, fractures, and bone resorption.</p>
+              
+            </div>
+          </section>
+
+          <section id='heading-5-3'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-5-3'>Borderline leprosy</a>
+              </h3>
+            </header>
+            <div class='body'>
+              <p>The clinical manifestations range from near tuberculoid to near lepromatous, and lepromin reaction may indicate minimal to moderate sensitivity.</p>
+              
+              <p>The individual lesions tend to be more raised in the center than around the edges. Nerve involvement occurs early, even before the skin lesions, with enlargement and tenderness of the nerves.</p>
+              
+              <p>Cutaneous lesions consist of numerous, red, irregularly shaped plaques that are less well defined than those in the tuberculoid type. Their distribution may mimic those of the lepromatous type, but they are more asymmetric.</p>
+              
+              <p>Anesthesia is only moderate, and regional adenopathy may be present. The disease may remain in this stage, improve, or worsen.</p>
+
+                          <!-- image here -->
+            <div class="image-container">
+              <img src="../figures/leprosy (1).png" alt="" onclick="openModal(this)">
+              <div class="caption">Tuberculoid & borderline leprosy</div>
+            </div>
+            
+            <div id="myModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img class="modal-content" id="modalImage">
+              <div id="caption" class="caption">Tuberculoid & borderline leprosy</div>
+            </div>
+              
+            </div>
+          </section>
+
+          <section id='heading-5-4'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-5-4'>Lepromatous leprosy</a>
+              </h3>
+            </header>
+            <div class='body'>
+              <p>This is characterized by extensive and bilaterally symmetrical skin nodules, papules, and macules with diffuse infiltration of the face, hands, and feet. Nasal mucosa and ocular involvement may lead to breathing problems and eye inflammation.</p>
+              
+              <p>The lepromatous macules are characterized by marked pigment loss within flat and ill-defined areas. There is no obvious sensory or thermal loss, but slit-smear usually discloses millions of M. leprae.</p>
+              
+              <p>Nodular types of lepromatous leprosy, which are localized aggregations of lepromatous tissue, appear on the earlobes and face.</p>
+              
+              <p>When there is diffuse infiltration and thickening of the skin, the face becomes corrugated into the leonine facies.</p>
+              
+              <p>The mucous membrane of the nose, mouth, nasopharynx, pharynx, and larynx are commonly involved. The whole mucosa is replaced by irregularly thickened granulomas that may ulcerate. Secondary infection of these lesions causes gross destruction of various tissues (nose, testes).</p>
+              
+                          <!-- image here -->
+            <div class="image-container">
+              <img src="../figures/leprosy (2).png" alt="" onclick="openModal(this)">
+              <div class="caption">Lepromatous Leprosy</div>
+            </div>
+            
+            <div id="myModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img class="modal-content" id="modalImage">
+              <div id="caption" class="caption">Lepromatous Leprosy</div>
+            </div>
+            </div>
+          </section>
+
+          <section id='heading-5-5'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-5-5'>Histoid leprosy</a>
+              </h3>
+            </header>
+            <div class='body'>
+              <p>This is a variant of Lepromatous leprosy that presents with clusters of histiocytes and a grenz zone (an area of collagen separating the lesion from normal tissues).</p>
+              
+            </div>
+          </section>
+          
+        </div>
+      </section>
+
+      <section id='header-6'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-6'>Complications</a>
+          </h2>
+        </header>
+        <div class='body'>
+          <ul>
+              <li>Digital loss</li>
+              <li>Blindness</li>
+              <li>Sterility (testicular dx)</li>
+              <li>Gynecomastia</li>
+              <li>Amyloidosis</li>
+              <li>Erythema nodosum leprosum (ENL)</li>
+              <li>Skin Ulcers</li>
+              <li>Contractures</li>
+              <li>Nerve Damage</li>
+          </ul>
+
+                      <!-- image here -->
+                      <div class="image-container">
+                        <img src="../figures/leprosy (2).jpg" alt="" onclick="openModal(this)">
+                        <div class="caption">Advanced LL with Digital loss</div>
+                      </div>
+                      
+                      <div id="myModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                        <div id="caption" class="caption">Advanced LL with Digital loss</div>
+                      </div>
+
+                                  <!-- image here -->
+            <div class="image-container">
+              <img src="../figures/leprosy (3).jpg" alt="" onclick="openModal(this)">
+              <div class="caption">Patient with facial nerve palsy and contractures of the hand(Courtesy of D. Scott Smith, MD)</div>
+            </div>
+            
+            <div id="myModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img class="modal-content" id="modalImage">
+              <div id="caption" class="caption">Patient with facial nerve palsy and contractures of the hand(Courtesy of D. Scott Smith, MD)</div>
+            </div>
+
+                        <!-- image here -->
+                        <div class="image-container">
+                          <img src="../figures/leprosy (4).jpg" alt="" onclick="openModal(this)">
+                          <div class="caption">Patient with advanced deformities: Keratitis, loss of eyebrow, thickened skin and typical hand impairments</div>
+                        </div>
+                        
+                        <div id="myModal" class="modal">
+                          <span class="close" onclick="closeModal()">&times;</span>
+                          <img class="modal-content" id="modalImage">
+                          <div id="caption" class="caption">Patient with advanced deformities: Keratitis, loss of eyebrow, thickened skin and typical hand impairments</div>
+                        </div>
+          
+        </div>
+      </section>
+
+      <section id='header-7'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-7'> Definitive Diagnosis</a>
+          </h2>
+        </header>
+        <div class='body'>
+          <p>Definitive diagnosis is made in the majority of cases based on history and pathognomic signs of the different types, and it is confirmed by one of the following methods:</p>
+          
+          <ol>
+              <li>Presence of <i>M. leprae</i> in lesions of lepromatous or borderline cases.</li>
+              <li>Histology of the involved tissue in tuberculoid leprosy using Fite-Faraco stain.</li>
+              <li>Rapid molecular assay using polymerase chain reaction to identify and quantify <i>M. leprae</i>/lepromatosis DNA in tissue samples.</li>
+          </ol>
+
+                      <!-- image here -->
+                      <div class="image-container">
+                        <img src="../figures/leprosy (5).jpg" alt="" onclick="openModal(this)">
+                        <div class="caption">Histopathology of LL (numerous Bacilli) using Fite-Faraco Stain </div>
+                      </div>
+                      
+                      <div id="myModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                        <div id="caption" class="caption">Histopathology of LL (numerous Bacilli) using Fite-Faraco Stain </div>
+                      </div>
+
+                                  <!-- image here -->
+            <div class="image-container">
+              <img src="../figures/leprosy (3).png" alt="" onclick="openModal(this)">
+              <div class="caption">Mycobacterium Leprae</div>
+            </div>
+            
+            <div id="myModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img class="modal-content" id="modalImage">
+              <div id="caption" class="caption">Mycobacterium Leprae</div>
+            </div>
+          
+
+
+            <ul>
+                <li>A slit-skin smear is prepared and examined under oil immersion lens for bacterial and/or morphological index (i.e. no per field of vision/ratio of solid & broken rods).</li>
+                <li>Lepromin test (does not aid in diagnosis but assists in classification of the type of leprosy).</li>
+                <li>Lepromin is a material prepared from lepromatous nodule.</li>
+                <li>Intradermal injection of the material is read either 48-72 hours (Fernandez) or 3-4 weeks (Mitsuda reaction) in which there is erythema and edema.</li>
+                <li>In lepromatous leprosy, Mitsuda test is negative but is invariably positive in tuberculoid leprosy.</li>
+            </ul>
+            
+        </div>
+      </section>
+
+      <section id='header-8'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-8'> Treatment</a>
+          </h2>
+        </header>
+        <div class='body'>
+          <ul>
+              <li>Duration: Two years for tuberculoid or at least one year after all signs have gone.</li>
+              <li>Lepromatous cases for four years or two years after all signs have ceased.</li>
+              <li>It is advised to continue treatment at half the total dose for life in cooperative LL and BL patients.</li>
+              <li>Multidrug therapy is preferred to monotherapy because of the emergence of drug-resistant strains.</li>
+              <li>The current therapeutic regimen divides leprosy patients into Pauci-bacillary and Multibacillary groups based on the clinical classification (Ridley and Jopling & WHO).</li>
+          </ul>
+
+                      <!-- image here -->
+                      <div class="image-container">
+                        <img src="../figures/leprosy (4).png" alt="" onclick="openModal(this)">
+                        <div class="caption">Relationship of Bacterial Burden, Immune Response and Clinical Classification of Leprosy</div>
+                      </div>
+                      
+                      <div id="myModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                        <div id="caption" class="caption">Relationship of Bacterial Burden, Immune Response and Clinical Classification of Leprosy</div>
+                      </div>
+
+
+                      <p>The WHO classification scheme is superimposed on the Ridley-Jopling scale to fit the two-drug therapy regimen.</p>
+
+                      <p>The two broad categories are:</p>
+                      <ul>
+                          <li>Paucibacillary (Tuberculoid and Borderline-Tuberculoid)</li>
+                          <li>Multibacillary (Midborderline, Borderline leprosy, and Lepromatous leprosy)</li>
+                      </ul>
+                      
+                      <table class="note-table">
+                        <thead>
+                          <tr>
+                            <th>Paucibacillary</th>
+                            <th>Multibacilliary</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Tuberculoid (TT)</td>
+                            <td>Lepromatons (LL)</td>
+                          </tr>
+                          <tr>
+                            <td>Borderline Tuberculoid (RT)</td>
+                            <td>Borderline leprosis (BL)/td>
+                          </tr>
+                          <tr>
+                            <td>Indeterminate (1)</td>
+                            <td>Mid-borderline (BB)</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+
+
+                                  <!-- image here -->
+            <div class="image-container">
+              <img src="../figures/leprosy (6).jpg" alt="" onclick="openModal(this)">
+              <div class="caption">Paucibacillary Leprosy</div>
+            </div>
+            
+            <div id="myModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img class="modal-content" id="modalImage">
+              <div id="caption" class="caption">Paucibacillary Leprosy</div>
+            </div>
+
+            <p>Despite the above classification, all patients with a bacterial index of >2 at any site are treated as part of the multibacillary group.</p>
+
+            <p>WHO recommends combined therapy for adults, which includes:</p>
+            <ul>
+                <li>Monthly supervised 600mg rifampin with 300mg clofazimine</li>
+                <li>Daily administration of 100mg dapsone with 50mg clofazimine</li>
+            </ul>
+            
+                   
+            <p>For children, the recommended treatment regimen is as follows:</p>
+            <ul>
+                <li>Rifampicin 450mg monthly</li>
+                <li>Clofazimine 150mg monthly</li>
+                <li>Dapsone 50mg daily</li>
+                <li>Clofazimine 50mg daily</li>
+            </ul>
+            
+            <p>The regimen for paucibacillary (PB) in adults consists of monthly rifamycin 600mg and daily dapsone 100mg. For children, the regimen includes rifampin 450mg monthly and dapsone 50mg daily.</p>
+            
+            <p>It is recommended by the World Health Organization (WHO) that slit-skin smears and the bacteriological index be used for the purpose of grouping patients into paucibacillary (PB) and multibacillary (MB) groups.</p>
+
+            <p>Ridley scale of bacteriological index:</p>
+            <ul>
+                <li>0 = 0/100 fields</li>
+                <li>1 = 1-10/100 fields</li>
+                <li>2 = 1-10/10 fields</li>
+                <li>3 = 1-10/HPF</li>
+                <li>4 = 10-100/HPF</li>
+                <li>5 = 100-1000/HPF</li>
+                <li>6 = > 1000/HPF</li>
+            </ul>
+            
+            <p>Morphological index = solid rods (live bacilli) / broken rods (dead)</p>
+
+            <h4>The introduction of the blister calendar pack (BCP) for the PB and MB regimen has greatly improved the delivery and compliance with medications.</h4>
+
+            <p>The real challenge in the management of leprosy is the treatment of reactionary states, and recognized interventions include:</p>
+            
+            <ol>
+              <li>Steroids to relieve inflammation and edema.</li>
+              <li>Clofazimine for its steroid-sparing effect.</li>
+              <li>Thalidomide for the management of erythema nodosum leprosum.</li>
+            </ol>
+            
+
+                        <!-- image here -->
+                        <div class="image-container">
+                          <img src="../figures/leprosy (7).png" alt="" onclick="openModal(this)">
+                          <div class="caption">A type 1 (reversal) reaction to therapy for Hansen's disease (leprosy) appearing as skin lesions</div>
+                        </div>
+                        
+                        <div id="myModal" class="modal">
+                          <span class="close" onclick="closeModal()">&times;</span>
+                          <img class="modal-content" id="modalImage">
+                          <div id="caption" class="caption">A type 1 (reversal) reaction to therapy for Hansen's disease (leprosy) appearing as skin lesions</div>
+                        </div>
+
+                                    <!-- image here -->
+            <div class="image-container">
+              <img src="../figures/leprosy (8).jpg" alt="" onclick="openModal(this)">
+              <div class="caption">Patient with erythema nodosum leprosum type 2 reaction several weeks after initiation of drug therapy.</div>
+            </div>
+            
+            <div id="myModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img class="modal-content" id="modalImage">
+              <div id="caption" class="caption">Patient with erythema nodosum leprosum type 2 reaction several weeks after initiation of drug therapy.</div>
+            </div>
+
+                        <!-- image here -->
+                        <div class="image-container">
+                          <img src="../figures/leprosy (9).jpg" alt="" onclick="openModal(this)">
+                          <div class="caption">ENL reaction characterized by acute peripheral nerve damage and Claw Hand</div>
+                        </div>
+                        
+                        <div id="myModal" class="modal">
+                          <span class="close" onclick="closeModal()">&times;</span>
+                          <img class="modal-content" id="modalImage">
+                          <div id="caption" class="caption">ENL reaction characterized by acute peripheral nerve damage and Claw Hand</div>
+                        </div>
+
+                        <table class="note-table">
+                          <tr>
+                            <th>WHO Classification</th>
+                            <th>NHDP</th>
+                            <th>WHO</th>
+                          </tr>
+                          <tr>
+                            <td>Single lesion paucibacillary</td>
+                            <td>Dapsone 100mg daily and Rifampicin 600mg monthly for 12 months</td>
+                            <td>Rifampicin 600mg, Ofloxacin 400mg and Minocycline 100mg as a single dose</td>
+                          </tr>
+                          <tr>
+                            <td>Paucibacillary</td>
+                            <td>Dapsone 100mg and Rifampicin 600mg for 12 months</td>
+                            <td>Dapsone 100mg daily unsupervised and Rifampicin 600mg monthly supervised for 6 months</td>
+                          </tr>
+                          <tr>
+                            <td>Multibacillary</td>
+                            <td>Dapsone 100mg daily, Rifampicin 600mg daily and Clofazimine 50mg daily for 24 months</td>
+                            <td>Dapsone 100mg daily unsupervised and Rifampicin 600mg monthly and Clofazimine 300mg monthly supervised for 24 months</td>
+                          </tr>
+                        </table>
+                        
+                        <h4>Current Recommended Treatment</h4>
+
+                        <p><strong>Paucibacillary (1-5 skin lesions):</strong></p>
+                        <ul>
+                          <li>Treatment: Rifampicin 600mg monthly (supervised) and Dapsone 100mg daily (unsupervised).</li>
+                          <li>Duration: 6 months</li>
+                        </ul>
+                        
+                        <p><strong>Multi bacillary (greater than 5 skin lesions):</strong></p>
+                        <ul>
+                          <li>Treatment: Rifampicin 600mg (monthly, supervised), Clofazimine 300mg (monthly, supervised), Dapsone 100mg (daily, unsupervised), Clofazimine 50mg (daily, unsupervised).</li>
+                          <li>Duration: 12 months</li>
+                        </ul>
+                        
+                        <p><strong>Treatment for Erythema Nodosum Leprosum (ENL):</strong></p>
+                        <ul>
+                          <li>Thalidomide is the specific treatment for ENL.</li>
+                          <li>Steroids in addition to Dapsone and Clofazimine may also assist in management.</li>
+                          <li>Thalidomide use is limited due to teratogenicity.</li>
+                        </ul>
+                        
+                        <p><strong>Reconstructive Surgery:</strong></p>
+                        <p>Reconstructive surgery also plays a role in the management of deformities.</p>
+                        
+        </div>
+      </section>
+
+
+
+
+      </section>
+
+      <div class="contact">
+        <hr style="margin: 3rem 0;">
+
+      
+                <div class="comment">
+        <p>Send your comments, corrections, explanations/clarifications and requests/suggestions to our <a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1">WhatsApp group</a>.</p>
+        </div>
+      </div>
+    </article>
+   </article>
+   <div style="height: 300px;"></div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+        <div>
+          <p id="popup-trigger">disclaimer</p>
+
+          <!-- The pop-up dive content -->
+          <div id="popup" class="popup">
+            <p>The content on this ‘Website’, including but not limited to text, graphics, images, videos, and other materials, should not be considered as a substitute for formal medical education or clinical training. The creators and operators of this Website make no warranties, express or implied, regarding the accuracy, currency, or completeness of the information provided on the Website. They shall not be held responsible for any errors or omissions, or for any actions taken based on the information provided on this Website.</p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+          </div>     
+          <p><a href="../about-temp2.html">about</a> </p>   
+          <p><a href="../contribute.html">contribute</a> </p>
+          <p><a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1">say hi👋</a> </p>
+        </div>
+
+        <div class="footer-beta">
+          <p>thisisatestversion</p>
+        </div>
+    </div>
+  </footer>
+<!------------  SCROLL UP ----------->
+<a href="#" class="scrollup" id="scroll-up"> 
+  <i class="ri-arrow-up-fill scrollup__icon"></i>
+</a>
+<script src="../main.js"></script>
+<script src="../modal.js"></script>
+</body>
+</html>
+ 
