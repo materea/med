@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../notes.css">
+
 </head>
 <body>
   <input type="checkbox" id="main-navigation-toggle" class="btn btn--close" title="Toggle main navigation" />
@@ -42,59 +43,119 @@
             <span class="toggle-slider"></span>
         </label>
       </div>
+
+      <!-- Progress Bar  -->
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
       
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+  <button id="closeSidebarBtn" class="btn toggle-btn close-btn">Close</button>
+  <ul class="sidebar-menu toggle-menu">
+    <!-- Add the list of topics dynamically using JavaScript -->
+  </ul>
+</div>
+
+<!-- Toggle button to open the sidebar -->
+<button id="toggleSidebarBtn" class="btn toggle-btn">&#9776;</button>
+
+<!-- END OF SIDEBAR -->
+
   <main class="page-container">
     <div class="contribute-cta">
       <p>Help make this better💜</p>
       <span><a href="../contribute.html">Contribute here</a> </span>
     </div>
 
-    <h1></h1>
+
+  <!-- TOPIC AND IMAGE CONTAINER  -->
+
+  <div class="hero-container" style="background: url('../images/heros/'); background-size: cover; background-position: center center;">
+    <div class="hero-content">
+      <h1></h1>
+    </div>
+  </div>
+
+  <!-- END OF TOPIC AND IMAGE CONTAINER  -->
   
-    <!-- <div class="author-flex">
-      <div class="author-img">
-        <img  src="/contributors/vt1.jpeg" alt="">
-      </div>
-      <div>
-        <h2 class="name">Compiled by Victortayo</h2>
-        <p class="updated">last updated</p>
-      </div>
-    </div> -->
+
 
     <article class="notes">
         <a id='top'></a>
     <article>
-    <!-- <h2 class='title'>Outline</h2> -->
 
-    <div class="outline2">
-
-      <input type="radio" name="control-2" id="show-2">
-      <label for="show-2">Show Outline</label>
-      <input type="radio" name="control-2" id="hide-2">
-      <label for="hide-2">Hide Outline</label>
-      <div class="contents">
-        <ol>
-          <li><a href="#header-1"></a></li>
-          <li><a href="#header-2"></a></li>
-          <li><a href="#header-3"></a></li>
-          <li><a href="#header-4"></a></li>
-          <li><a href="#header-5"></a></li>
-          <ul>
-            <li><a href="#heading-5-1"></a></li>
-            <li><a href="#heading-5-2"></a></li>
-            <li><a href="#heading-5-3"></a></li>
-            <li><a href="#heading-5-4"></a></li>
-            <li><a href="#heading-5-5"></a></li>
-            <li><a href="#heading-5-6"></a></li>
-        </ul>
-          <li><a href="#header-6"></a></li>
-          <li><a href="#header-7"></a></li>
-       </ol>
-      </div>
-     <div>
-
-      <br>
-
+          <!-- LEARNING OBJECTIVES CONTAINER  -->
+              <div class="custom-card" id="custom-card-1">
+                <div class="icon"><img src="../images/icons/light-bulb.png" alt="Icon" class="icon"></div>
+                <div class="title"> 
+                  <h2>What You Will Learn</h2>
+                </div>
+                <div class="line">
+                  <p>After reading this note, you should be able to...</p>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li><i>This content is not available yet.</i></li>
+                </ul>
+                </div>
+                <div class="read-more" onclick="toggleContent('custom-card-1')">Read More 🍪</div>
+              </div>
+            
+          <!-- END OF LEARNING OBJECTIVES CONTAINER  -->
+        
+        
+          <!-- SHOW AND HIDE OUTLINE CONTAINER  -->
+            <div class="outline2">
+        
+              <input type="radio" name="control-2" id="show-2">
+              <label for="show-2">🐵&nbsp; &nbsp;Show Outline</label>
+              <input type="radio" name="control-2" id="hide-2">
+              <label for="hide-2">🙈&nbsp; &nbsp; Hide Outline</label>
+              <div class="contents">
+                <div class="icon-box">
+                  <!-- Replace 'path/to/your/icon.png' with the actual path to your PNG icon -->
+                  <img src="../images/icons/book.png" alt="Icon" class="icon">
+                </div>
+                <div id="tableOfContents">
+                    <ol id="tocList"></ol>
+                </div>
+              </div>
+             <div>
+        
+        <!-- END OF SHOW AND HIDE OUTLINE CONTAINER  -->
+        
+        
+        <!-- READ SUMMARY CONTAINER -->
+        
+              <!-- Summary Overlay -->
+              <div class="summary-overlay" id="summaryOverlay"></div>
+        
+        
+              <div class="summary-card" id="summaryCard">
+                
+                <div class="summary-header">
+                  <h3>Note Summary</h3>
+                  <div class="icon-box">
+                    <!-- Replace 'path/to/your/icon.png' with the actual path to your PNG icon -->
+                    <img src="../images/icons/summary.png" alt="Icon" class="icon">
+                  </div>
+                </div>
+                <div class="summary-content">
+                  <!-- Summary content goes here -->
+                  <p><i>This content is not available yet.</i></p>
+        
+                  <span class="close-btn" id="closeBtn">close</span>
+                </div>
+              </div>
+        
+              <div class="summary-trigger" id="summaryTrigger">
+                <p>Click here to read a summary</p>
+            </div>
+        <!-- END OF READ SUMMARY CONTAINER -->
+        
+            <!-- BEGINNING OF NOTE -->
+        
       <section id='header-1'>
         <header>
           <h2>
@@ -125,6 +186,7 @@
             <div class='body'>
                <p></p>
                <p></p>
+
             </div>
           </section>
 
@@ -192,32 +254,87 @@
 
 
 
+      <hr style="margin: 3rem 0;">
 
+      <!-- PRACTICE QUESTIONS CONTAINER -->
 
-      <section id='heading-1-2-1'>
-        <header>
-          <h4>
-
-            <a aria-hidden href='#heading-1-2-1'></a>
-          </h4>
-        </header>
-        <div class='body'>
-            <p></p>
-            <p></p>
-
+      <div class="custom-card" id="custom-card-2">
+        <div class="icon"><img src="../images/icons/practice-questions.png" alt="Icon" class="icon"></div>
+        <div class="title"> 
+          <h2>Practice Questions</h2>
         </div>
-      </section>
+        <div class="line">
+          <p>Check how well you grasp the concepts by answering the following questions...</p>
+        </div>
+        <div class="content">
+          <ol>
+            <li><i>This content is not available yet.</i></li>
+          </ol>
+        </div>
+        <div class="read-more" onclick="toggleContent('custom-card-2')">Read More 🍪</div>
+      </div>
 
-      </section>
+      <!-- END OF PRACTICE QUESTIONS CONTAINER -->
 
+
+      <!-- CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
       <div class="contact">
-        <hr style="margin: 3rem 0;">
+        <div class="comment-container">
+          <div class="comment-icon">
+            <!-- Add your icon image here -->
+            <img src="../images/icons/comment.png" alt="Comment Icon">
+          </div>
+          <div class="comment-text">
+            <!-- Add your text here -->
+            <p>Send your comments, corrections, explanations/clarifications and requests/suggestions </p>
+          </div>
+          <a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1" class="comment-button">
+            here
+            <img src="../images/icons/whatsapp.png" alt="Image Icon">
+          </a>
+        </div>
 
-      
-                <div class="comment">
-        <p>Send your comments, corrections, explanations/clarifications and requests/suggestions to our <a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1">WhatsApp group</a>.</p>
+        <div class="contributors-container">
+
+          <h2 class="contributors-header">Contributors</h2>
+  
+        <br>
+            <div class="contributor-box">
+                <img class="contributor-avatar" src="../images/icons/woman.png" alt="Contributor 1 Avatar">
+                <div class="contributor-info">
+                    <h3 class="contributor-name">Jane Smith</h3>
+                    <p class="contributor-description">She is not a real contributor.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-icon">
+                            <img src="../images/icons/whatsapp.png" alt="Social Icon 1">
+                        </a>
+                        <a href="#" target="_blank" class="social-icon">
+                            <img src="../images/icons/twitter.png" alt="Social Icon 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="contributor-box">
+                <img class="contributor-avatar" src="../images/icons/man.png" alt="Contributor 2 Avatar">
+                <div class="contributor-info">
+                    <h3 class="contributor-name">John Doe</h3>
+                    <p class="contributor-description">He is not a real contributor.</p>
+                    <div class="social-links">
+                      <a href="#" target="_blank" class="social-icon">
+                        <img src="../images/icons/whatsapp.png" alt="Social Icon 1">
+                    </a>
+                    <a href="#" target="_blank" class="social-icon">
+                        <img src="../images/icons/linkedin.png" alt="Social Icon 2">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        
         </div>
       </div>
+
+            <!-- END OF CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
     </article>
    </article>
    <div style="height: 300px;"></div>
@@ -232,7 +349,7 @@
           <div id="popup" class="popup">
             <p>The contents on this ‘website’ are for educational purposes only. The creators and operators of this website make no warranties, express or implied, regarding the accuracy, currency, or completeness of the information provided on the website. They shall not be held responsible for any errors or omissions, or for any actions taken based on the information provided on this website.</p>
             <button class="popup-close" onclick="closePopup()">Close</button>
-          </div>     
+          </div>    
           <p><a href="../about-temp2.html">about</a> </p>   
           <p><a href="../contribute.html">contribute</a> </p>
           <p><a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1">say hi👋</a> </p>
@@ -249,6 +366,7 @@
 </a>
 <script src="../main.js"></script>
 <script src="../modal.js"></script>
+<script src="../notes-sidebar.js"></script>
 </body>
 </html>
  
