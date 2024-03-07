@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var topics = [
       "Acute Kidney Injury",
       "Alcoholic Liver Disease",
+      "Disorders of the Adrenal Gland",
       "Spirochaetal Infections",
       "Nosocomial Infections and Septicemia",
       "Structure and Function of the Skin",
@@ -15,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
       "Dermatological Manifestation of HIV",
       "Non-Dermatological Manifestations of HIV",
       "Management of HIV and AIDS",
-      "",
       "",
       "",
       "",
