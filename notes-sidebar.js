@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "Disorders of the Adrenal Gland",
       "Liver Neoplasms",
       "Liver Cirrhosis",
+      "Liver Function Tests",
       "Spirochaetal Infections",
       "Nosocomial Infections and Septicemia",
       "Structure and Function of the Skin",
@@ -18,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
       "Dermatological Manifestation of HIV",
       "Non-Dermatological Manifestations of HIV",
       "Management of HIV and AIDS",
-      "",
       "",
       "",
       // Add more topics as needed
