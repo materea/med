@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "Liver Neoplasms",
       "Liver Cirrhosis",
       "Liver Function Tests",
+      "Jaundice and Signs of Liver Disease",
       "Spirochaetal Infections",
       "Nosocomial Infections and Septicemia",
       "Structure and Function of the Skin",
