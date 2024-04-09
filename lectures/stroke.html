@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+  <title>Stroke</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../notes.css">
+
+</head>
+<body>
+  <input type="checkbox" id="main-navigation-toggle" class="btn btn--close" title="Toggle main navigation" />
+  <label for="main-navigation-toggle">
+    <span></span>
+  </label>
+  
+  <a href="../index.html">
+   <div class="home-navigation">
+      mtr<span class="logo-dot">.</span>
+    </div>
+  </a>
+
+
+    <nav id="main-navigation" class="nav-main">
+    <ul class="menu">
+      <li class="menu__item">
+        <a class="menu__link" href="../index.html">Home</a>
+      </li>
+
+      <li class="menu__item">
+        <a class="menu__link" href="../about-temp2.html">About</a>
+      </li>
+    </ul>
+  </nav>
+  
+      <!-- Toggle switch for dark mode -->
+      <div class="dark-mode-toggle">
+        <label class="switch-toggle">
+            <input type="checkbox" id="dark-mode-toggle-checkbox">
+            <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <!-- Progress Bar  -->
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+      
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+  <button id="closeSidebarBtn" class="btn toggle-btn close-btn">Close</button>
+  <ul class="sidebar-menu toggle-menu">
+    <!-- Add the list of topics dynamically using JavaScript -->
+  </ul>
+</div>
+
+<!-- Toggle button to open the sidebar -->
+<button id="toggleSidebarBtn" class="btn toggle-btn">&#9776;</button>
+
+<!-- END OF SIDEBAR -->
+
+  <main class="page-container">
+    <div class="contribute-cta">
+      <p>Help make this better💜</p>
+      <span><a href="../contribute.html">Contribute here</a> </span>
+    </div>
+
+
+  <!-- TOPIC AND IMAGE CONTAINER  -->
+
+
+      <h1>Stroke</h1>
+
+
+  <!-- END OF TOPIC AND IMAGE CONTAINER  -->
+  
+
+
+    <article class="notes">
+        <a id='top'></a>
+    <article>
+
+          <!-- LEARNING OBJECTIVES CONTAINER  -->
+              <!-- <div class="custom-card" id="custom-card-1">
+                <div class="icon"><img src="../images/icons/light-bulb.png" alt="Icon" class="icon"></div>
+                <div class="title"> 
+                  <h2>What You Will Learn</h2>
+                </div>
+                <div class="line">
+                  <p>After reading this note, you should be able to...</p>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li><i>This content is not available yet.</i></li>
+                </ul>
+                </div>
+                <div class="read-more" onclick="toggleContent('custom-card-1')">Read More 🍪</div>
+              </div> -->
+            
+          <!-- END OF LEARNING OBJECTIVES CONTAINER  -->
+        
+        
+          <!-- SHOW AND HIDE OUTLINE CONTAINER  -->
+            <div class="outline2">
+        
+              <input type="radio" name="control-2" id="show-2">
+              <label for="show-2">🐵&nbsp; &nbsp;Show Outline</label>
+              <input type="radio" name="control-2" id="hide-2">
+              <label for="hide-2">🙈&nbsp; &nbsp; Hide Outline</label>
+              <div class="contents">
+                <div class="icon-box">
+                  <!-- Replace 'path/to/your/icon.png' with the actual path to your PNG icon -->
+                  <img src="../images/icons/book.png" alt="Icon" class="icon">
+                </div>
+                <div id="tableOfContents">
+                    <ol id="tocList"></ol>
+                </div>
+              </div>
+             <div>
+        
+        <!-- END OF SHOW AND HIDE OUTLINE CONTAINER  -->
+        
+        
+<br>
+        
+            <!-- BEGINNING OF NOTE -->
+        
+      <section id='header-1'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-1'>Introduction</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>Case Vignette</h4>
+            <p>A <strong>68-year-old woman</strong> presents with weakness on the <strong>right side</strong> of the body.</p>
+            
+            <h4>Questions:</h4>
+            <ul>
+              <li><strong>Take a history</strong> to unravel the cause.</li>
+              <li>What are the <strong>important aspects</strong> of neurological examination you would be interested in?</li>
+              <li>What are your <strong>differential diagnoses</strong>?</li>
+            </ul>
+            
+            
+            <h4>Investigation</h4>
+
+                        <!-- image here -->
+                        <div class="image-container">
+                            <img src="../figures/" alt="" onclick="openModal(this)">
+                            <div class="caption">Investigation</div>
+                          </div>
+                          
+                          <div id="myModal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="modalImage">
+                            <div id="caption" class="caption">Investigation</div>
+                          </div>
+            <ul>
+              <li>What type of investigation is this?</li>
+              <li>What are the <strong>abnormalities</strong>?</li>
+              <li>What is the <strong>pathologic diagnosis</strong>?</li>
+            </ul>
+            
+            <p>Suppose she develops <strong>progressive depreciation</strong> in level of consciousness soon after admission, what are <strong>2 possible causes</strong>?</p>
+            <ul>
+              <li>How will you manage the <strong>reduced level of consciousness</strong>?</li>
+            </ul>
+            
+            <h4>Definitions</h4>
+            <ul>
+              <li><strong>"Sudden onset focal or global neurological deficit of no apparent cause other than vascular lasting more than 24 hours or resulting in death."</strong> - WHO 1975</li>
+              <li><strong>NB:</strong> Included in this definition are: <strong>CI</strong>, <strong>ICH</strong>, <strong>SAH</strong></li>
+              <li><strong>TIA:</strong> Neurologic deficit resolves within 24 hrs.</li>
+            </ul>
+            
+            <h4>Change in Definition:Rationales for Change in Definition</h4>
+              <p><strong>&gt;24 hrs time-based definition:</strong></p>
+              <ul>
+                <li>Confusing and misleading</li>
+                <li>Does not suggest medical emergency (<strong>Brain attack</strong>).</li>
+                <li>Does not corroborate the mantra "<strong>time's neurone</strong>".</li>
+                <li>Does not take into cognizance the use of thrombolytics within <strong>180 mins</strong>.</li>
+              </ul>
+              <p><strong>&gt;TIA not benign</strong></p>
+              <ul>
+                <li>Most (90%) TIAs last <strong>10-30 mins</strong>.</li>
+                <li>Up to <strong>50%</strong> develop stroke within <strong>24-48 hrs</strong>.</li>
+                <li><strong>10-20%</strong> develop stroke within <strong>90 days</strong>.</li>
+              </ul>
+
+              <h4>CURRENT CONCEPTS</h4>
+              <ul>
+                <li><strong>Sudden focal or global neurological deficit</strong> resulting from spontaneous haemorrhage or infarction of the central nervous system with <strong>objective evidence of infarction</strong> irrespective of duration of clinical symptoms. Note: <strong>CT/MRI</strong> provides the objective evidence of stroke diagnosis.</li>
+              </ul>
+              
+              <h4>TIA:</h4>
+              <ul>
+                <li><strong>Transient episode</strong> of neurologic dysfunction caused by focal brain, spinal cord, or retinal ischemia, without evidence of acute infarction.</li>
+                <li>No <strong>objective evidence</strong> of acute infarction in the affected region of brain or retina.</li>
+                <li><strong>CITS:</strong> Cerebral Infarction with Transient Symptoms</li>
+                <li><strong>CIND:</strong> Cerebral Infarction No Deficit (Silent stroke)</li>
+              </ul>
+              
+              <h4>Definition of Stroke</h4>
+              <p>The term "<strong>stroke</strong>" should be broadly used to include all of the following:</p>
+              <p><strong>Definition of CNS infarction:</strong> CNS infarction is brain, spinal cord, or retinal cell death attributable to ischemia, based on:</p>
+              <ol>
+                <li>Pathological, imaging, or other <strong>objective evidence</strong> of cerebral, spinal cord, or retinal focal ischemic injury in a defined vascular distribution; or</li>
+                <li>Clinical evidence of cerebral, spinal cord, or retinal focal ischemic injury based on symptoms persisting <strong>≥24 hours</strong> or until death, and other etiologies excluded. (Note: CNS infarction includes hemorrhagic infarctions, types I and II; see "Hemorrhagic Infarction.")</li>
+              </ol>
+              
+              <p><strong>Definition of ischemic stroke:</strong> An episode of neurological dysfunction caused by focal cerebral, spinal, or retinal infarction. (Note: Evidence of CNS infarction is defined above.)</p>
+              
+              <p><strong>Definition of silent CNS infarction:</strong> Imaging or neuropathological evidence of CNS infarction, without a history of acute neurological dysfunction attributable to the lesion.</p>
+              
+
+              <p><strong>Definition of intracerebral hemorrhage:</strong> A focal collection of blood within the brain parenchyma or ventricular system that is not caused by trauma. (Note: Intracerebral hemorrhage includes parenchymal hemorrhages after CNS infarction, types I and II-see "Hemorrhagic Infarction.")</p>
+              
+              <p><strong>Definition of stroke caused by intracerebral hemorrhage:</strong> Rapidly developing clinical signs of neurological dysfunction attributable to a focal collection of blood within the brain parenchyma or ventricular system that is not caused by trauma.</p>
+              
+              <p><strong>Definition of silent cerebral hemorrhage:</strong> A focal collection of chronic blood products within the brain parenchyma, subarachnoid space, or ventricular system on neuroimaging or neuropathological examination that is not caused by trauma and without a history of acute neurological dysfunction attributable to the lesion.</p>
+              
+              <p><strong>Definition of subarachnoid hemorrhage:</strong> Bleeding into the subarachnoid space (the space between the arachnoid membrane and the pia mater of the brain or spinal cord).</p>
+              
+        </div>
+      </section>
+
+      <section id='header-2'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-2'>Types</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>Pathologic types of stroke</h4>
+
+                        <!-- image here -->
+                        <div class="image-container">
+                            <img src="../figures/" alt="" onclick="openModal(this)">
+                            <div class="caption">Pathologic types of stroke</div>
+                          </div>
+                          
+                          <div id="myModal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="modalImage">
+                            <div id="caption" class="caption">Pathologic types of stroke</div>
+                          </div>
+
+        </div>
+      </section>
+
+      <section id='header-3'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-3'>Epidemiology</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>The Epidemic is here!</h4>
+            <p>Over a period of two decades between <strong>1990 and 2010</strong>, the global burden of stroke significantly increased, with most of the burden in <strong>LMICs</strong> which were responsible for:</p>
+            <ul>
+              <li><strong>68.6%</strong> of global incident strokes</li>
+              <li><strong>>52.2%</strong> of prevalent strokes</li>
+              <li><strong>70.9%</strong> of stroke mortality</li>
+              <li><strong>>77.7%</strong> of disability adjusted life years (DALYs)</li>
+            </ul>
+            
+            <p><strong>Stroke incidence</strong> decreased by <strong>42%</strong> in high-income countries in the last four and half decades, but incidence of the disease increased by <strong>>100%</strong> in the LMICS during the same period.</p>
+            
+            <p><strong>1 in 4</strong> people worldwide will have a stroke in their lifetime!</p>
+            <ul>
+              <li><strong>EVERY 6 SECONDS</strong> stroke kills someone.</li>
+              <li><strong>EVERY OTHER SECOND</strong> stroke attacks a person regardless of age or gender.</li>
+            </ul>
+            
+            <p><strong>17 MILLION PEOPLE</strong> experience a stroke each year; <strong>6 million</strong> of them do not survive.</p>
+            
+
+            <h4>Stroke Epidemiology in AFRICA</h4>
+            <ul>
+              <li><strong>Prevalence:</strong> 58-316/100,000</li>
+              <li>Prevalence increases with age</li>
+              <li><strong>Incidence:</strong> 26-319/100,000</li>
+            </ul>
+            
+            <p><strong>Hospital data:</strong></p>
+            <ul>
+              <li>0.9 - 4.9% of hospital admissions</li>
+              <li>6.5 - 68% of neurological admissions</li>
+              <li>2.8-8.4% of hospital deaths</li>
+            </ul>
+            
+            <ul>
+              <li><strong>Case fatality rate</strong> averages <strong>35%</strong>, ranges from <strong>14.9%</strong> to <strong>77%</strong> (ICH)</li>
+            </ul>
+            
+
+
+        </div>
+      </section>
+
+      <section id='header-4'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-4'>Risk Factors</a>
+          </h2>
+        </header>
+        <div class='body'>
+
+            <ul>
+                <li>Non-modifiable Risk Factors</li>
+                <li>Modifiable Risk Factors</li>
+            </ul>
+            <p><strong>Non-modifiable Risk Factors</strong></p>
+            <ul>
+              <li>Age</li>
+              <li>Sex</li>
+              <li>Genetic</li>
+              <li>Race</li>
+            </ul>
+
+            <h4>Dominant Modifiable Risk Factors for Stroke among Africans in the SIREN Study</h4>
+            <ul>
+              <li>Hypertension</li>
+              <li>Dyslipidaemia</li>
+              <li>Diabetes Mellitus</li>
+              <li>Cigarette smoking</li>
+              <li>Stress</li>
+              <li>Cardiac diseases</li>
+              <li>Raised Waist-Hip ratio</li>
+              <li>High meat consumption</li>
+              <li>Monthly income > $100</li>
+              <li>Regular physical activity</li>
+              <li>Regular vegetable intake</li>
+              <li>Alcohol consumption</li>
+              <li>Family history of CVD</li>
+            </ul>
+            
+            
+        </div>
+      </section>
+
+      <section id='header-5'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-5'>Etiology</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>Etiology Of Ischemic Stroke</h4>
+
+            <p><strong>LARGE VESSEL EMBOLIC:</strong></p>
+            <ul>
+              <li><strong>The Heart</strong></li>
+              <ul>
+                <li>Valve diseases</li>
+                <li>Atrial Fibrillation</li>
+                <li>Dilated cardiomyopathy</li>
+                <li>Myxoma</li>
+              </ul>
+              <li><strong>Arterial Circulation (artery to artery emboli)</strong></li>
+              <ul>
+                <li>Atherosclerosis of carotids</li>
+                <li>Arterial dissection</li>
+                <li>Vasculitis</li>
+              </ul>
+              <li><strong>The Venous Circulation</strong></li>
+              <ul>
+                <li>PFO with R to L shunt</li>
+                <li>Emboli</li>
+              </ul>
+            </ul>
+            
+            <p><strong>SMALL VESSEL [Lacunes (<1.5cm)]</strong></p>
+            <p><strong>Risk Factors</strong></p>
+            <ul>
+              <li>HTN</li>
+              <li>Dyslipidaemia</li>
+              <li>DM</li>
+              <li>Tobacco Use</li>
+              <li>Sleep apnea</li>
+            </ul>
+            
+
+            <h4>Etiology of ICH</h4>
+            <ul>
+              <li><strong>Traumatic</strong></li>
+              <li><strong>Spontaneous</strong></li>
+              <ul>
+                <li>Hypertensive</li>
+                <li>Amyloid angiopathy</li>
+                <li>Aneurysmal rupture</li>
+                <li>Arteriovenous malformation rupture</li>
+                <li>Bleeding into tumor</li>
+                <li>Cocaine and amphetamine use</li>
+              </ul>
+            </ul>
+            
+                        <!-- image here -->
+                        <div class="image-container">
+                            <img src="../figures/" alt="" onclick="openModal(this)">
+                            <div class="caption">Causes of ICH</div>
+                          </div>
+                          
+                          <div id="myModal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="modalImage">
+                            <div id="caption" class="caption">Causes of ICH</div>
+                          </div>
+
+                          
+                          
+        </div>
+      </section>
+
+      <section id='header-6'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-6'>Pathophysiology</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>Pathophysiology of Ischaemic Stroke</h4>
+            <ul>
+              <li>Vessel occlusion</li>
+              <li>Failure of energy production</li>
+              <ul>
+                <li>Anaerobic glycolysis and lactic acidosis</li>
+              </ul>
+              <li>Failure of the ion pumps</li>
+              <ul>
+                <li>Neuronal depolarization and intracellular calcium overload.</li>
+                <li>Release of neurotoxic substances such as:</li>
+                <ul>
+                  <li>Excitatory neurotransmitters (chiefly glutamate)</li>
+                  <li>Inflammatory mediators (eg. prostaglandins, leukotrienes)</li>
+                  <li>Free radicals (eg. nitric oxide)</li>
+                  <li>Activated lytic enzymes (lipases, proteases)</li>
+                </ul>
+              </ul>
+              <li>Neuronal death</li>
+            </ul>
+            
+
+                        <!-- image here -->
+                        <div class="image-container">
+                            <img src="../figures/" alt="" onclick="openModal(this)">
+                            <div class="caption">The Ischaemic Cascade </div>
+                          </div>
+                          
+                          <div id="myModal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="modalImage">
+                            <div id="caption" class="caption">The Ischaemic Cascade </div>
+                          </div>
+
+                          <ul>
+                            <li>Ischaemic damage depends on the degree and the duration of ischaemia.</li>
+                            <li>Following complete occlusion of a vessel, a central core of densely ischaemic tissue is irreversibly damaged (infarction) within minutes.</li>
+                          </ul>
+
+                                      <!-- image here -->
+            <div class="image-container">
+                <img src="../figures/" alt="" onclick="openModal(this)">
+                <div class="caption">Ischemic Penumbra</div>
+              </div>
+              
+              <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption" class="caption">Ischemic Penumbra</div>
+              </div>
+
+                                                    <!-- image here -->
+            <div class="image-container">
+                <img src="../figures/" alt="" onclick="openModal(this)">
+                <div class="caption">Ischemic Penumbra</div>
+              </div>
+              
+              <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption" class="caption">Ischemic Penumbra</div>
+              </div>
+                          
+        </div>
+      </section>
+
+      <section id='header-7'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-7'>Symptoms of Stroke </a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>Major Stroke Syndromes</h4>
+            <ul>
+              <li>All Occur Suddenly</li>
+              <li>Left (dominant) cerebral hemisphere</li>
+              <li>Right (nondominant) cerebral hemisphere</li>
+              <li>Brainstem</li>
+              <li>Cerebellum</li>
+            </ul>
+            <p><strong>Note:</strong> The dominant cerebral hemisphere is the side that controls language function.</p>
+            
+
+            <h4>Left (Dominant) Cerebral Hemisphere</h4>
+            <ul>
+              <li>Aphasia</li>
+              <li>L gaze preference</li>
+              <li>R visual field deficit</li>
+              <li>R hemiparesis</li>
+              <li>R hemisensory loss</li>
+            </ul>
+            
+            <h4>Right (Nondominant) Cerebral Hemisphere</h4>
+            <ul>
+              <li>0</li>
+              <li>Neglect (= L hemi-inattention)</li>
+              <li>R gaze preference</li>
+              <li>L visual field deficit</li>
+              <li>L hemiparesis</li>
+              <li>L hemisensory loss</li>
+            </ul>
+            
+
+            <h4>Brainstem</h4>
+            <ul>
+              <li>Hemi- or quadriparesis</li>
+              <li>Sensory loss in hemibody or all 4 limbs</li>
+              <li>Crossed signs (face 1 side, body other side)</li>
+              <li>Diplopia, dysconjugate gaze</li>
+              <li>Vertigo, tinnitus</li>
+              <li>Nausea, vomiting</li>
+              <li>Hiccups, abnormal respirations</li>
+              <li>Decreased consciousness</li>
+            </ul>
+            
+            <h4>Cerebellum</h4>
+            <ul>
+              <li>Truncal ataxia</li>
+              <li>Gait ataxia</li>
+              <li>Limb ataxia</li>
+            </ul>
+            
+
+            <h4>Hypertensive ICH</h4>
+            <p>Spontaneous rupture of a small artery deep in the brain</p>
+            <p><strong>Typical sites:</strong></p>
+            <ul>
+              <li>Posterior limb of the internal capsule</li>
+              <li>Basal Ganglia (Putamen)</li>
+              <li>Pons</li>
+              <li>Thalamus</li>
+              <li>Cerebellum</li>
+            </ul>
+            <p><strong>Typical clinical presentation:</strong></p>
+            <ul>
+              <li>Patient is typically awake and often stressed, then abrupt onset of symptoms with acute decompensation</li>
+            </ul>
+            
+            <h4>Ganglionic Bleed</h4>
+            <ul>
+              <li>Contralateral hemiparesis</li>
+              <li>Hemisensory loss</li>
+              <li>Homonymous hemianopia</li>
+              <li>Conjugate deviation of eyes toward the side of the bleed or downward</li>
+              <li>Altered mental status (stupor, coma)</li>
+            </ul>
+            
+                        <!-- image here -->
+<div class="image-container">
+  <img src="../figures/" alt="" onclick="openModal(this)">
+  <div class="caption">Intracranial Hemorrhage</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div id="caption" class="caption">Intracranial Hemorrhage</div>
+</div>
+
+
+
+<h4>Cerebellar Hemorrhage</h4>
+<ul>
+<li>Vomiting</li>
+<li>Ataxia</li>
+<li>Eye deviation toward the opposite side of the bleed</li>
+<li>Small sluggish pupils</li>
+<li>Altered mental status</li>
+</ul>
+
+          <!-- image here -->
+          <div class="image-container">
+              <img src="../figures/" alt="" onclick="openModal(this)">
+              <div class="caption">Cerebellar Hemorrhage</div>
+            </div>
+            
+            <div id="myModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img class="modal-content" id="modalImage">
+              <div id="caption" class="caption">Cerebellar Hemorrhage</div>
+            </div>
+
+            <h4>Pontine Hemorrhage</h4>
+            <ul>
+              <li>Pin-point but reactive pupils</li>
+              <li>Abrupt onset of coma</li>
+              <li>Decerebrate posturing or flaccidity</li>
+              <li>Ataxic breathing pattern</li>
+            </ul>
+            
+
+                        <!-- image here -->
+<div class="image-container">
+  <img src="../figures/" alt="" onclick="openModal(this)">
+  <div class="caption">Pontine Hemorrhage</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div id="caption" class="caption">Pontine Hemorrhage</div>
+</div>
+
+
+<h4>Subarachnoid Hemorrhage</h4>
+<ul>
+  <li>"Worst headache of my life"</li>
+  <li>Altered mental status</li>
+  <li>Photophobia</li>
+  <li>Nuchal rigidity</li>
+  <li>Seizures</li>
+  <li>Nausea and vomiting</li>
+</ul>
+
+            <!-- image here -->
+            <div class="image-container">
+                <img src="../figures/" alt="" onclick="openModal(this)">
+                <div class="caption">Subarachnoid Hemorrhage</div>
+              </div>
+              
+              <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption" class="caption">Subarachnoid Hemorrhage</div>
+              </div>
+
+        </div>
+      </section>
+
+      <section id='header-8'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-8'>Differential Diagnosis of Stroke </a>
+          </h2>
+        </header>
+        <div class='body'>
+            <ul>
+              <li>Space occupying lesion (tumor, infection/abscess, Epidural, Subdural Hematomas)</li>
+              <li>Seizures</li>
+              <li>Hypoglycemia</li>
+              <li>Migraine</li>
+              <li>Syncope</li>
+              <li>Labyrinthine disorders</li>
+            </ul>
+            
+                        <!-- image here -->
+                        <div class="image-container">
+                            <img src="../figures/" alt="" onclick="openModal(this)">
+                            <div class="caption">FAST</div>
+                          </div>
+                          
+                          <div id="myModal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="modalImage">
+                            <div id="caption" class="caption">FAST</div>
+                          </div>
+
+
+
+        </div>
+      </section>
+
+      <section id='header-9'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-9'> Investigations</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>Diagnostic Workup for Stroke</h4>
+            <ul>
+              <li>CT scan/MRI</li>
+              <li>Routine laboratory tests</li>
+              <ul>
+                <li>RBS, FBS, FLP, FBC, E&amp;U+Cr</li>
+              </ul>
+              <li>ECG</li>
+              <li>Doppler ultrasonography (Extra- and transcranial)</li>
+              <li>Chest X-ray</li>
+              <li>Coagulation status</li>
+              <li>Others as may be necessary</li>
+            </ul>
+            
+        </div>
+      </section>
+
+      <section id='header-10'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-10'>Treatment </a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>General Management of Acute Stroke Patient</h4>
+            <ul>
+              <li>Support of vital functions and prevention of general complications</li>
+              <ul>
+                <li>Airway support and ventilation</li>
+                <li>Cardiac monitoring and care</li>
+                <li>Prevention of water and electrolyte abnormalities</li>
+                <li>Maintenance of adequate nutritional status</li>
+                <li>Control of blood glucose</li>
+                <li>Blood pressure monitoring</li>
+                <li>Use of antiplatelets (AIS)</li>
+                <li>Use of statins (AIS vs ICH)</li>
+              </ul>
+              <li>Frequent position changes to prevent bed sores and muscle contractures</li>
+              <li>Early physical therapy and rehabilitation</li>
+              <li>Urinary care</li>
+              <li>Control of fever and early diagnosis and treatment of infections</li>
+              <li>Use of sedation</li>
+            </ul>
+           
+            <h4>Treatment of Acute Neurological Complications</h4>
+            <ul>
+              <li>Cerebral edema and increased intracranial pressure</li>
+              <li>Seizures</li>
+              <li>Hydrocephalus</li>
+            </ul>
+            
+
+            <h4>Management of Ischaemic Stroke</h4>
+            <ul>
+              <li>Thrombolysis with recombinant tissue plasminogen activator (rt-PA) is the only approved and causal therapy for acute ischemic stroke.</li>
+              <li>Benefit is extremely time sensitive.</li>
+              <li>Before rt-PA can be administered, a complex diagnostic workup, including neurological examination, imaging studies, and laboratory tests, is necessary to exclude hemorrhage or other contraindications to rt-PA therapy.</li>
+            </ul>
+
+            <h4>tPA Fast Facts</h4>
+            <ul>
+              <li>Tissue plasminogen activator</li>
+              <li>"Clot buster"</li>
+              <li>IV tPA window 3 hours</li>
+              <li>IA tPA window 4.5 hours</li>
+              <li>Disability risk decreases by 30% despite ~5% symptomatic ICH risk</li>
+              <li><strong>Contraindications:</strong></li>
+              <ul>
+                <li>Hemorrhage</li>
+                <ul>
+                  <li>SBP > 185 or DBP > 110</li>
+                  <li>Recent surgery, trauma, or stroke</li>
+                </ul>
+                <li>Coagulopathy</li>
+                <li>Seizure at onset of symptoms</li>
+                <li>NIHSS > 21</li>
+                <li>Glucose < 50 mg/dl</li>
+              </ul>
+            </ul>
+            
+
+            <h4>Blood Pressure Management</h4>
+            <ul>
+              <li>BP Management</li>
+              <li>The goal is to maintain cerebral perfusion!!</li>
+              <li>CPP = MAP - ICP (needs to be at least 70 mmHg)</li>
+              <li>Higher BP goals with Ischemic stroke</li>
+              <li>Lower BP goals with Hemorrhagic stroke (avoid hemorrhagic expansion, especially in AVMs and aneurysms)</li>
+            </ul>
+            
+            <p><strong>BP-AIS Relationship</strong></p>
+            <ul>
+              <li>BP increase is due to arterial occlusion (i.e., an effort to perfuse penumbra)</li>
+              <li>Failure to recanalize (with or without thrombolytic therapy) results in high BP and poor neurological outcomes</li>
+              <li>Lowering BP starves penumbra, worsens outcomes</li>
+            </ul>
+            
+
+            <h4>Supportive Therapy</h4>
+            <ul>
+              <li>Glucose Management</li>
+              <ul>
+                <li>Infarction size and edema increase with acute and chronic hyperglycemia</li>
+                <li>Hyperglycemia is an independent risk factor for hemorrhage when stroke is treated with t-PA</li>
+              </ul>
+              <li>Antiepileptic Drugs</li>
+              <ul>
+                <li>Seizures are common after hemorrhagic CVAs</li>
+                <li>ICH-related seizures are generally non-convulsive and are associated with higher NIHSS scores, a midline shift, and tend to predict poorer outcomes</li>
+              </ul>
+            </ul>
+            
+            <h4>Management of Haemorrhagic Stroke</h4>
+            <ul>
+              <li>No specific evidence-based treatment</li>
+              <li>Management largely supportive</li>
+              <li>Active management of BP to reduce hematoma expansion and worse outcome (INTERACT study)</li>
+            </ul>
+            
+            <p><strong>Blood Pressure in Haemorrhagic Stroke</strong></p>
+            <p>For ICH patients presenting with SBP between 150 and 220 mm Hg and without contraindication to acute BP treatment, acute lowering of SBP to 140 mm Hg is safe (Class I; Level of Evidence A) and can be effective for improving functional outcome (Class IIa; Level of Evidence B).</p>
+            
+            <h4>Concept of Stroke Teams & Stroke Units</h4>
+            <ul>
+              <li>"Time is brain"</li>
+              <li>Stroke awareness</li>
+              <li>Common mistakes may lead to fatal consequences</li>
+              <li>"Boutique stroke neurology": Patients will receive the best care; length of stay shortened</li>
+            </ul>
+            
+            <h4>Stroke Prevention</h4>
+            <ul>
+              <li>Take care of identified modifiable or potentially modifiable risk factors</li>
+            </ul>
+            
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+      <hr style="margin: 3rem 0;">
+
+      <!-- PRACTICE QUESTIONS CONTAINER -->
+
+      <!-- <div class="custom-card" id="custom-card-2">
+        <div class="icon"><img src="../images/icons/practice-questions.png" alt="Icon" class="icon"></div>
+        <div class="title"> 
+          <h2>Practice Questions</h2>
+        </div>
+        <div class="line">
+          <p>Check how well you grasp the concepts by answering the following questions...</p>
+        </div>
+        <div class="content">
+          <ol>
+            <li><i>This content is not available yet.</i></li>
+          </ol>
+        </div>
+        <div class="read-more" onclick="toggleContent('custom-card-2')">Read More 🍪</div>
+      </div> -->
+
+      <!-- END OF PRACTICE QUESTIONS CONTAINER -->
+
+
+      <!-- CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
+      <div class="contact">
+        <div class="comment-container">
+          <div class="comment-icon">
+            <!-- Add your icon image here -->
+            <img src="../images/icons/comment.png" alt="Comment Icon">
+          </div>
+          <div class="comment-text">
+            <!-- Add your text here -->
+            <p>Send your comments, corrections, explanations/clarifications and requests/suggestions </p>
+          </div>
+          <a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1" class="comment-button">
+            here
+            <img src="../images/icons/whatsapp.png" alt="Image Icon">
+          </a>
+        </div>
+
+        <div class="contributors-container">
+
+          <!-- <h2 class="contributors-header">Contributors</h2>
+  
+        <br>
+            <div class="contributor-box">
+                <img class="contributor-avatar" src="../images/icons/woman.png" alt="Contributor 1 Avatar">
+                <div class="contributor-info">
+                    <h3 class="contributor-name">Jane Smith</h3>
+                    <p class="contributor-description">She is not a real contributor.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-icon">
+                            <img src="../images/icons/whatsapp.png" alt="Social Icon 1">
+                        </a>
+                        <a href="#" target="_blank" class="social-icon">
+                            <img src="../images/icons/twitter.png" alt="Social Icon 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="contributor-box">
+                <img class="contributor-avatar" src="../images/icons/man.png" alt="Contributor 2 Avatar">
+                <div class="contributor-info">
+                    <h3 class="contributor-name">John Doe</h3>
+                    <p class="contributor-description">He is not a real contributor.</p>
+                    <div class="social-links">
+                      <a href="#" target="_blank" class="social-icon">
+                        <img src="../images/icons/whatsapp.png" alt="Social Icon 1">
+                    </a>
+                    <a href="#" target="_blank" class="social-icon">
+                        <img src="../images/icons/linkedin.png" alt="Social Icon 2">
+                    </a>
+                    </div>
+                </div>
+            </div> -->
+        
+        </div>
+      </div>
+
+            <!-- END OF CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
+    </article>
+   </article>
+   <div style="height: 300px;"></div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+        <div>
+          <p id="popup-trigger">disclaimer</p>
+
+          <!-- The pop-up dive content -->
+          <div id="popup" class="popup">
+            <p>The contents on this ‘website’ are for educational purposes only. The creators and operators of this website make no warranties, express or implied, regarding the accuracy, currency, or completeness of the information provided on the website. They shall not be held responsible for any errors or omissions, or for any actions taken based on the information provided on this website.</p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+          </div>    
+          <p><a href="../about-temp2.html">about</a> </p>   
+          <p><a href="../contribute.html">contribute</a> </p>
+          <p><a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1">say hi👋</a> </p>
+        </div>
+
+        <div class="footer-beta">
+          <p>thisisatestversion</p>
+        </div>
+    </div>
+  </footer>
+<!------------  SCROLL UP ----------->
+<a href="#" class="scrollup" id="scroll-up"> 
+  <i class="ri-arrow-up-fill scrollup__icon"></i>
+</a>
+<script src="../main.js"></script>
+<script src="../modal.js"></script>
+<script src="../notes-sidebar.js"></script>
+</body>
+</html>
+ 
