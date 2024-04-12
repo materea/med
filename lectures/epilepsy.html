@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+  <title>Epilepsy</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../notes.css">
+
+</head>
+<body>
+  <input type="checkbox" id="main-navigation-toggle" class="btn btn--close" title="Toggle main navigation" />
+  <label for="main-navigation-toggle">
+    <span></span>
+  </label>
+  
+  <a href="../index.html">
+   <div class="home-navigation">
+      mtr<span class="logo-dot">.</span>
+    </div>
+  </a>
+
+
+    <nav id="main-navigation" class="nav-main">
+    <ul class="menu">
+      <li class="menu__item">
+        <a class="menu__link" href="../index.html">Home</a>
+      </li>
+
+      <li class="menu__item">
+        <a class="menu__link" href="../about-temp2.html">About</a>
+      </li>
+    </ul>
+  </nav>
+  
+      <!-- Toggle switch for dark mode -->
+      <div class="dark-mode-toggle">
+        <label class="switch-toggle">
+            <input type="checkbox" id="dark-mode-toggle-checkbox">
+            <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <!-- Progress Bar  -->
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+      
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+  <button id="closeSidebarBtn" class="btn toggle-btn close-btn">Close</button>
+  <ul class="sidebar-menu toggle-menu">
+    <!-- Add the list of topics dynamically using JavaScript -->
+  </ul>
+</div>
+
+<!-- Toggle button to open the sidebar -->
+<button id="toggleSidebarBtn" class="btn toggle-btn">&#9776;</button>
+
+<!-- END OF SIDEBAR -->
+
+  <main class="page-container">
+    <div class="contribute-cta">
+      <p>Help make this better💜</p>
+      <span><a href="../contribute.html">Contribute here</a> </span>
+    </div>
+
+
+  <!-- TOPIC AND IMAGE CONTAINER  -->
+
+      <h1>Epilepsy</h1>
+
+
+  <!-- END OF TOPIC AND IMAGE CONTAINER  -->
+  
+
+
+    <article class="notes">
+        <a id='top'></a>
+    <article>
+
+          <!-- LEARNING OBJECTIVES CONTAINER  -->
+              <!-- <div class="custom-card" id="custom-card-1">
+                <div class="icon"><img src="../images/icons/light-bulb.png" alt="Icon" class="icon"></div>
+                <div class="title"> 
+                  <h2>What You Will Learn</h2>
+                </div>
+                <div class="line">
+                  <p>After reading this note, you should be able to...</p>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li><i>This content is not available yet.</i></li>
+                </ul>
+                </div>
+                <div class="read-more" onclick="toggleContent('custom-card-1')">Read More 🍪</div>
+              </div> -->
+            
+          <!-- END OF LEARNING OBJECTIVES CONTAINER  -->
+        
+        
+          <!-- SHOW AND HIDE OUTLINE CONTAINER  -->
+            <div class="outline2">
+        
+              <input type="radio" name="control-2" id="show-2">
+              <label for="show-2">🐵&nbsp; &nbsp;Show Outline</label>
+              <input type="radio" name="control-2" id="hide-2">
+              <label for="hide-2">🙈&nbsp; &nbsp; Hide Outline</label>
+              <div class="contents">
+                <div class="icon-box">
+                  <!-- Replace 'path/to/your/icon.png' with the actual path to your PNG icon -->
+                  <img src="../images/icons/book.png" alt="Icon" class="icon">
+                </div>
+                <div id="tableOfContents">
+                    <ol id="tocList"></ol>
+                </div>
+              </div>
+             <div>
+        
+        <!-- END OF SHOW AND HIDE OUTLINE CONTAINER  -->
+        
+        
+<br>
+        
+            <!-- BEGINNING OF NOTE -->
+        
+      <section id='header-1'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-1'>Defintions</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>What is epilepsy?</h4>
+            <p>A disorder of the brain characterized by an ongoing liability to recurrent seizures.</p>
+            <p><strong>NB:</strong> This excludes patients with single <strong>Szs</strong>, provoked <strong>Szs</strong>, and febrile <strong>Szs</strong>.</p>
+            
+            <h4>What is an epileptic Sz (epileptic fit)?</h4>
+            <p>A transient occurrence of signs and/or symptoms due to abnormal, excessive, or synchronous neuronal activity in the brain.</p>
+            
+            <h4>Provoked seizure (acute symptomatic Sz)</h4>
+            <p>This is a <strong>Sz</strong> resulting from an obvious and immediate preceding cause (e.g., acute systemic or metabolic disturbance) or a recent acute cerebral damage (e.g., infection, trauma).</p>
+            
+            <h4>Febrile Seizure</h4>
+            <p>An epileptic event occurring in the context of an acute rise in body temperature, usually in children between 6 months and 6 years of age in whom there is no evidence of intracranial infection.</p>
+            
+
+            <h4>Status epilepticus</h4>
+            <p>This is a single epileptic seizure lasting more than <strong>five minutes</strong> or two or more seizures within a <strong>five-minute</strong> period without the person returning to normal between them.</p>
+            <p><strong>NB:</strong> Previous definitions used a <strong>30-minute</strong> time limit.</p>
+            
+
+            <h4>New ILAE Definition of Epilepsy (April, 2014)</h4>
+
+            <p>Epilepsy is a disease of the brain defined by any of the following conditions:</p>
+            
+            <ol>
+              <li>At least two unprovoked (or reflex) seizures occurring <strong>&gt;24 hrs</strong> apart</li>
+              <li>One unprovoked (or reflex) seizure and a probability of further seizures similar to the general recurrence risk (at least <strong>60%</strong>) after two unprovoked seizures, occurring over the next <strong>10 years</strong></li>
+              <li>Diagnosis of an epilepsy syndrome</li>
+            </ol>
+            
+        </div>
+      </section>
+
+      <section id='header-2'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-2'>Epidemiology</a>
+          </h2>
+        </header>
+        <div class='body'>
+
+            <p>It is the commonest neurological disorder affecting people of all ages, races, and social strata.</p>
+            <p>There is an estimated <strong>50 million</strong> people with epilepsy in the world with ≈<strong>75%</strong> of these in resource poor countries.</p>
+            
+            <p><strong>Incidence:</strong></p>
+            <ul>
+              <li><strong>50-80</strong> cases per <strong>100,000</strong> persons per year in most studies</li>
+              <li><strong>40-70</strong> per <strong>100,000</strong> per year in developed countries</li>
+              <li><strong>100-190</strong> per <strong>100,000</strong> per year in developing countries</li>
+            </ul>
+            
+
+            <p>Incidence is highest in the first year of life, remains high in childhood, and then falls to low levels in early adult life but rises again in late life.</p>
+            <p><strong>Point prevalence:</strong> <strong>4-10</strong> cases per <strong>1,000</strong> persons.</p>
+            <p>More common in underdeveloped countries possibly as a result of:</p>
+            <ul>
+              <li>Poor perinatal care</li>
+              <li>CNS infections</li>
+              <li>Increased risk of brain injury</li>
+            </ul>
+            
+            
+        </div>
+      </section>
+
+      <section id='header-3'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-3'>Mechanisms of Epileptogenesis</a>
+          </h2>
+        </header>
+        <div class='body'>
+
+            <p>Normally, there is a restriction of spread of electrical activity between cortical <strong>neurons</strong>.</p>
+            <p>During a <strong>sz</strong>, there is a repetitive and hypersynchronous activation of a large group of <strong>neurons</strong>.</p>
+            <p>There is also a loss of the normal inhibitory synaptic contact between <strong>neurons</strong>.</p>
+            
+            <h4>What Makes an Area of the Brain Epileptogenic?</h4>
+
+            <p>An area of the brain is epileptogenic because of a predisposition to <strong>hyperexcitability</strong>.</p>
+            <p>This predisposition could be from <strong>abnormal development</strong> and migration pattern in utero or it could be <strong>acquired</strong>.</p>
+            
+        </div>
+      </section>
+
+      <section id='header-4'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-4'>Classification</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>Classification of the Epilepsies</h4>
+
+            <p><strong>1st Level:</strong> Classification of the seizure type</p>
+            <p><strong>2nd Level:</strong> Classification of epilepsy type (with an assumption of a diagnosis of epilepsy based on <strong>2014 definition</strong>).</p>
+            <p><strong>3rd Level:</strong> Diagnosis of Epilepsy syndrome: In many cases, a specific epilepsy syndrome diagnosis can be made.</p>
+            
+            <p>Efforts to identify the <strong>aetiology</strong> of the patient’s epilepsy should be made at each step in the diagnostic pathway.</p>
+            <p>Classification of seizure type and epilepsy type both take into account the results of investigations such as <strong>EEG</strong> and <strong>neuroimaging studies</strong> together with other studies exploring the underlying <strong>aetiology</strong> of the epilepsy.</p>
+            
+
+            <h4>Classification of Seizure Type</h4>
+
+            <p><strong>Focal-onset seizures</strong> are defined as “originating within networks limited to one hemisphere. They may be discretely localized or more widely distributed. Focal seizures may originate in subcortical structures.”</p>
+            
+            <p><strong>Generalized from onset seizures</strong> are defined as “originating at some point within, and rapidly engaging, bilaterally distributed brain networks.” There is always impairment of awareness.</p>
+            
+            <p><strong>Unknown onset seizures</strong> may still show evidence of certain defining motor (e.g., tonic–clonic) or nonmotor (e.g., behaviour arrest) characteristics.</p>
+            
+
+                        <!-- image here -->
+                        <div class="image-container">
+                            <img src="../figures/epilepsy (1).jpg" alt="" onclick="openModal(this)">
+                            <div class="caption">ILAE 2017 classification of seizure</div>
+                          </div>
+                          
+                          <div id="myModal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="modalImage">
+                            <div id="caption" class="caption">ILAE 2017 classification of seizure</div>
+                          </div>
+
+                                      <!-- image here -->
+            <div class="image-container">
+                <img src="../figures/epilepsy (2).jpg" alt="" onclick="openModal(this)">
+                <div class="caption">Expanded ILAE 2017 classification of seizure</div>
+              </div>
+              
+              <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption" class="caption">Expanded ILAE 2017 classification of seizure</div>
+              </div>
+
+              <h4>Classification of Epilepsy Type</h4>
+
+              <p><strong>Focal Epilepsy:</strong> Includes unifocal and multifocal disorders as well as seizures involving one hemisphere. The interictal EEG typically shows focal epileptiform discharges, but the diagnosis is made on clinical grounds, supported by EEG findings.</p>
+              
+              <p><strong>Generalized Epilepsy:</strong> The diagnosis of generalized epilepsy is made on clinical grounds, supported by the finding of typical interictal EEG discharges. The patient would typically show generalized spike-wave activity on EEG.</p>
+              
+              <p><strong>Combined Generalized and Focal Epilepsy:</strong> The diagnosis is made on clinical grounds, supported by EEG findings. The interictal EEG may show both generalized spike-wave and focal epileptiform discharges, but epileptiform activity is not required for the diagnosis. Common examples in which both types of seizures occur are Dravet syndrome and Lennox-Gastaut syndrome.</p>
+              
+              <p><strong>Unknown:</strong> The patient has epilepsy but the clinician is unable to determine if the epilepsy type is focal or generalized because there is insufficient information available.</p>
+              
+
+                          <!-- image here -->
+            <div class="image-container">
+                <img src="../figures/epilepsy (3).jpg" alt="" onclick="openModal(this)">
+                <div class="caption">ILAE 2017 framework for classification of the epilepsies</div>
+              </div>
+              
+              <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption" class="caption">ILAE 2017 framework for classification of the epilepsies</div>
+              </div>
+        </div>
+      </section>
+
+      <section id='header-5'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-5'>Seizure Semiology</a>
+          </h2>
+        </header>
+        <div class='body'>
+
+            <section id='heading-5-1'>
+                <header>
+                  <h3>
+                    <a aria-hidden href='#heading-5-1'>Focal Seizures</a>
+                  </h3>
+                </header>
+                <div class='body'>
+
+                    <section id='heading-5-1-1'>
+                        <header>
+                          <h4>
+                
+                            <a aria-hidden href='#heading-5-1-1'>Focal Aware (Simple Partial) Seizure</a>
+                          </h4>
+                        </header>
+                        <div class='body'>
+
+                            <ul>
+                              <li>Consciousness is intact</li>
+                              <li>Most cases last only a few seconds</li>
+                              <li>Due to focal cerebral <strong>disorder</strong></li>
+                              <li>Common sites include frontal and temporal lobes and the location determines the clinical manifestation</li>
+                            </ul>
+                
+                            <h4>Manifestations of Focal Aware (Simple Partial) Seizure</h4>
+
+                            <p><strong>Motor:</strong></p>
+                            <ul>
+                              <li>Jerking, spasms, posturing, version, dysarthria, respiratory arrest.</li>
+                            </ul>
+                            
+                            <p><strong>Somatosensory or Special Sensory:</strong></p>
+                            <ul>
+                              <li>Tingling sensation, burning or pain (epilepsy involving central or parietal regions), flashing lights or colours (calcarine cortex), rising epigastric sensation (mesial temporal lobe).</li>
+                            </ul>
+                            
+                            <p><strong>Autonomic:</strong></p>
+                            <ul>
+                              <li>Changes in skin colour, BP, HR, pupil size.</li>
+                            </ul>
+                            
+                            <p><strong>Psychic:</strong></p>
+                            <ul>
+                              <li>Occurs particularly in epilepsy arising from a temporal focus.</li>
+                              <li>It could be in the form of dysphasic symptoms, dysmnestic symptoms e.g. déjà vu, jamais vu, panoramic experiences (recollection of previous experiences, former life or childhood), cognitive symptoms e.g. a feeling of unreality or depersonalization, affective symptoms e.g. fear, depression, anger; illusion of size (micropsia, macropsia); structured hallucinations of visual, auditory, gustatory or olfactory forms.</li>
+                            </ul>
+                            
+                        </div>
+                      </section>
+
+                      <section id='heading-5-1-2'>
+                        <header>
+                          <h4>
+                
+                            <a aria-hidden href='#heading-5-1-2'>Focal with Impaired Awareness (Complex Partial) Seizure</a>
+                          </h4>
+                        </header>
+                        <div class='body'>
+
+                            <p><strong>These arise from:</strong></p>
+                            <ul>
+                              <li>Temporal lobe (60%)</li>
+                              <li>Frontal lobe (30%) and</li>
+                              <li>Other cortical areas (10%)</li>
+                            </ul>
+                            
+                            <p><strong>Usually characterized by 3 components viz:</strong></p>
+                            <ul>
+                              <li>Aura, altered consciousness and automatisms</li>
+                            </ul>
+                            
+                            <h4>Automatisms</h4>
+
+                            <p>Most common in temporal and frontal lobe seizures and include:</p>
+                            <ul>
+                              <li>Oroalimentary e.g. lip smacking, chewing, swallowing, etc</li>
+                              <li>Gestural and Motor automatisms e.g. tapping, patting, ordering, and tidying movements.</li>
+                              <li>Ambulatory automatisms: e.g. walking, cycling, running. These are often seen in seizures of frontal lobe origin.</li>
+                              <li>Verbal automatisms: meaningless sounds, humming, whistling, etc</li>
+                              <li>Responsive automatism: a quasi-purposeful behavior which is seemingly responsive to environmental stimuli.</li>
+                            </ul>
+                            
+                        </div>
+                      </section>
+
+                    
+    
+                </div>
+              </section>
+
+              <section id='heading-5-2'>
+                <header>
+                  <h3>
+                    <a aria-hidden href='#heading-5-2'>Generalized Seizures</a>
+                  </h3>
+                </header>
+                <div class='body'>
+                    <h4>Features of Generalized Seizure</h4>
+
+                    <ul>
+                      <li>Consciousness is impaired from onset of the attack</li>
+                      <li>Motor changes are bilateral and more or less symmetric</li>
+                      <li>EEG changes are bilateral, grossly synchronous, and symmetrical over both hemispheres.</li>
+                    </ul>
+                    
+                    <h4>Typical Absence Seizure</h4>
+
+                    <p>Characterized by a sudden loss of consciousness (the absence) and cessation of all motor activities</p>
+                    <ul>
+                      <li>Tone usually preserved, hence there is no fall</li>
+                      <li>The attack ends as abruptly as it started and previous activity is resumed as if nothing had happened</li>
+                      <li>There is no confusion but the patient is often unaware that an attack had happened</li>
+                      <li>Most attacks last less than 10 seconds</li>
+                      <li>There may be several attacks in a day and attacks tend to cluster especially when the patient is fatigued or drifting off to sleep</li>
+                      <li>Precipitants include fatigue, drowsiness, hyperventilation, photic stimulation.</li>
+                      <li>Typical absence seizures develop in childhood or adolescence.</li>
+                    </ul>
+                    
+
+                    <h4>Myoclonic Seizure</h4>
+
+                    <p>This is a brief contraction of a muscle, muscle group, or several muscle groups due to a cortical discharge</p>
+                    <p>Recovery is immediate and the patient often maintains that consciousness was not lost</p>
+                    
+
+                    <h4>Tonic-Clonic Seizure</h4>
+
+                    <ul>
+                      <li>This is the classic form of epileptic convulsion</li>
+                      <li>Can occur at any age</li>
+                      <li>Seizure is initiated by loss of consciousness and sometimes the epileptic cry</li>
+                      <li>Tonic stage lasts 10-30 seconds and is followed by the clonic phase during which convulsive movements of all limbs, jaw, and facial muscles occur.</li>
+                      <li>Saliva (sometimes blood-stained due to tongue biting) may froth from the mouth</li>
+                      <li>Clonic phase lasts 30-60 seconds and is followed by a further brief tonic contraction of all muscles, sometimes with incontinence.</li>
+                    </ul>
+                    
+                </div>
+              </section>
+
+        </div>
+      </section>
+
+      <section id='header-6'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-6'>Aetiology of Seizures & Epilepsy</a>
+          </h2>
+        </header>
+        <div class='body'>
+
+            <ul>
+              <li>Structural e.g. post-traumatic</li>
+              <li>Genetic</li>
+              <li>Infectious e.g. neurocysticercosis, toxoplasmosis, HIV</li>
+              <li>Metabolic e.g. porphyria, uraemia</li>
+              <li>Immune e.g. immune-mediated encephalitis</li>
+              <li>Unknown</li>
+            </ul>
+            
+            <h4>CAUSES ACCORDING TO AGE GROUPS</h4>
+
+            <h4>Neonates</h4>
+            <ul>
+              <li>Perinatal hypoxia and ischemia</li>
+              <li>Intracranial hemorrhage and trauma</li>
+              <li>Acute CNS infection</li>
+              <li>Metabolic disturbances (hypoglycemia, hypocalcemia, hypomagnesemia, pyridoxine deficiency)</li>
+              <li>Drug withdrawal</li>
+              <li>Developmental disorders</li>
+              <li>Genetic disorders</li>
+            </ul>
+            
+            <h4>Infants and Children (>1 Month to < 12 yrs) </h4>
+            <ul>
+              <li>Febrile seizures</li>
+              <li>Genetic disorders (metabolic, degenerative, primary epilepsy syndromes)</li>
+              <li>CNS infection</li>
+              <li>Developmental disorders</li>
+              <li>Trauma</li>
+              <li>Cryptogenic</li>
+            </ul>
+            
+            <h4>Adolescents (12-18 yrs)</h4>
+            <ul>
+              <li>Trauma</li>
+              <li>Genetic disorders</li>
+              <li>Infection</li>
+              <li>Brain tumor</li>
+              <li>Illicit drug use</li>
+              <li>Cryptogenic</li>
+            </ul>
+            
+            <h4>Young adults (18-35 yrs)</h4>
+            <ul>
+              <li>Trauma</li>
+              <li>Alcohol withdrawal</li>
+              <li>Illicit drug use</li>
+              <li>Brain tumor</li>
+              <li>Cryptogenic</li>
+            </ul>
+            
+            <h4>Older adults (>35 yrs)</h4>
+            <ul>
+              <li>Cerebrovascular disease</li>
+              <li>Brain tumor</li>
+              <li>Alcohol withdrawal</li>
+              <li>Alzheimer's disease and other degenerative CNS diseases</li>
+              <li>Cryptogenic</li>
+            </ul>
+            
+        </div>
+      </section>
+
+      <section id='header-7'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-7'>Evaluation of the adult patient with a Seizure </a>
+          </h2>
+        </header>
+        <div class='body'>
+            <section id='heading-7-1'>
+                <header>
+                  <h3>
+                    <a aria-hidden href='#heading-7-1'>History and Examination</a>
+                  </h3>
+                </header>
+                <div class='body'>
+                    <ul>
+                      <li>Determine whether the event was truly a Sz - this requires a detailed history because in many cases the diagnosis of sz is based solely on clinical grounds (the physical examination and investigations are often normal)</li>
+                      <li>Hx of what occurred <strong>before</strong>, <strong>during</strong>, and <strong>after</strong> the event should be obtained.</li>
+                      <li>An eye witness account is very important</li>
+                      <li>Focus on unraveling the <strong>predisposing</strong> and <strong>risk factors</strong></li>
+                      <li>Detailed general and neurological examination.</li>
+                    </ul>
+                    
+    
+                </div>
+              </section>
+
+              <section id='heading-7-2'>
+                <header>
+                  <h3>
+                    <a aria-hidden href='#heading-7-2'>Investigations</a>
+                  </h3>
+                </header>
+                <div class='body'>
+                    <p>Laboratory studies: Depends on what is suspected;</p>
+                    <ul>
+                      <li><strong>FBC</strong></li>
+                      <li><strong>E&U + Cr</strong></li>
+                      <li><strong>Serum glucose</strong></li>
+                      <li><strong>LP</strong> if meningitis or encephalitis is suspected. Mandatory in HIV even in the absence of other symptoms.</li>
+                    </ul>
+                    
+                    <h4>Electrophysiologic Studies</h4>
+                    <p>EEG</p>
+                    <ul>
+                      <li><strong>Absence Sz:</strong> 3 Hz spike and slow wave discharge that is accentuated by hyperventilation</li>
+                      <li><strong>GTCSz:</strong> Generalized spike and slow wave discharges</li>
+                      <li><strong>Focal Sz:</strong> Focal EEG abnormalities e.g. spikes, sharp waves, focal slowing.</li>
+                    </ul>
+                    
+
+                                <!-- image here -->
+            <div class="image-container">
+                <img src="../figures/epilepsy (4).jpg" alt="" onclick="openModal(this)">
+                <div class="caption">EEG: Typical absence Sz</div>
+              </div>
+              
+              <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption" class="caption">EEG: Typical absence Sz</div>
+              </div>
+                          <!-- image here -->
+            <div class="image-container">
+                <img src="../figures/epilepsy (5).jpg" alt="" onclick="openModal(this)">
+                <div class="caption">EEG: GTCSz</div>
+              </div>
+              
+              <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption" class="caption">EEG: GTCSz</div>
+              </div>
+
+              <h4>Neuroradiological Investigations</h4>
+              <p>CT scan</p>
+              <p>MRI</p>
+              <p>fMRI</p>
+              <p>These are useful if mass lesions are suspected or in preparation for surgery.</p>
+              
+                          <!-- image here -->
+            <div class="image-container">
+                <img src="../figures/epilepsy (6).jpg" alt="" onclick="openModal(this)">
+                <div class="caption">Hypocampal sclerosis</div>
+              </div>
+              
+              <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption" class="caption">Hypocampal sclerosis</div>
+              </div>
+
+                </div>
+              </section>
+
+              <section id='heading-7-3'>
+                <header>
+                  <h3>
+                    <a aria-hidden href='#heading-7-3'>Differential Diagnosis</a>
+                  </h3>
+                </header>
+                <div class='body'>
+                    <p>Syncope</p>
+                    <ul>
+                      <li>Vasovagal syncope</li>
+                      <li>Cardiac arrhythmia</li>
+                      <li>Orthostatic hypotension</li>
+                    </ul>
+                    <p>Metabolic disturbances</p>
+                    <ul>
+                      <li>Alcoholic blackouts</li>
+                      <li>Hypoglycemia</li>
+                      <li>Hypoxia</li>
+                      <li>Psychoactive drugs (e.g., hallucinogens)</li>
+                    </ul>
+                    <p>Sleep disorders</p>
+                    <ul>
+                      <li>Narcolepsy/cataplexy</li>
+                      <li>Benign sleep myoclonus</li>
+                    </ul>
+                    <p>Psychological disorders</p>
+                    <ul>
+                      <li>Psychogenic seizure</li>
+                      <li>Hyperventilation</li>
+                      <li>Panic attack</li>
+                    </ul>
+                    
+    
+                </div>
+              </section>
+        </div>
+      </section>
+
+      <section id='header-8'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-8'> Management</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <ul>
+              <li>Treatment of underlying condition</li>
+              <li>Education on avoidance of precipitating factors</li>
+              <li>Use of antiepileptic drug</li>
+              <li>Surgical treatment</li>
+            </ul>
+            
+
+
+  
+            <br>
+
+            <table class="note-table">
+                <tr>
+                  <th colspan="2">CHOICE OF ANTIEPILEPTIC DRUG</th>
+                </tr>
+                <tr>
+                  <th colspan="2">All Seizure Types</h4></th>
+                </tr>
+                <tr>
+                  <td>Traditional AEDs</td>
+                  <td>New AEDs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>Valproic acid</li>
+                      <li>Benzodiazepines: (clonazepam, clobazam, diazepam)</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Felbamate</li>
+                      <li>Lamotrigine</li>
+                      <li>Levetiracetam</li>
+                      <li>Topiramate</li>
+                      <li>Zonisamide</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th colspan="2">Partial and Generalised TC Sz</th>
+                </tr>
+                <tr>
+                  <td>Traditional AEDs</td>
+                  <td>New AEDs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>Carbamazepine</li>
+                      <li>Phenytoin</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Gabapentin</li>
+                      <li>Oxcarbazepine</li>
+                      <li>Pregabalin</li>
+                      <li>Tiagabine</li>
+                      <li>Vigabatrin</li>
+                      <li>Retigabine</li>
+                      <li>Rufinamide</li>
+                    </ul>
+                  </td>
+                </tr>
+
+                <tr>
+                    <th>All seizure types except absences:</th>
+                    <th>Absence seizures:</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li>Phenobarbital</li>
+                        <li>Primidone</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>Ethosuximide</li>
+                      </ul>
+                    </td>
+                  </tr>
+              </table>
+              
+              <br>
+
+            <h4>Surgical Treatment of Refractory Epilepsy</h4>
+            <p>20-30% of cases are resistant to medical therapy and may require surgery.</p>
+            <p>In some symptomatic epilepsies, surgery is the main treatment in order to take care of the underlying problem.</p>
+            <p>Vagus nerve stimulation for some who are poor surgical candidates.</p>
+            
+        </div>
+      </section>
+
+
+
+
+
+
+      <hr style="margin: 3rem 0;">
+
+      <!-- PRACTICE QUESTIONS CONTAINER -->
+
+      <!-- <div class="custom-card" id="custom-card-2">
+        <div class="icon"><img src="../images/icons/practice-questions.png" alt="Icon" class="icon"></div>
+        <div class="title"> 
+          <h2>Practice Questions</h2>
+        </div>
+        <div class="line">
+          <p>Check how well you grasp the concepts by answering the following questions...</p>
+        </div>
+        <div class="content">
+          <ol>
+            <li><i>This content is not available yet.</i></li>
+          </ol>
+        </div>
+        <div class="read-more" onclick="toggleContent('custom-card-2')">Read More 🍪</div>
+      </div> -->
+
+      <!-- END OF PRACTICE QUESTIONS CONTAINER -->
+
+
+      <!-- CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
+      <div class="contact">
+        <div class="comment-container">
+          <div class="comment-icon">
+            <!-- Add your icon image here -->
+            <img src="../images/icons/comment.png" alt="Comment Icon">
+          </div>
+          <div class="comment-text">
+            <!-- Add your text here -->
+            <p>Send your comments, corrections, explanations/clarifications and requests/suggestions </p>
+          </div>
+          <a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1" class="comment-button">
+            here
+            <img src="../images/icons/whatsapp.png" alt="Image Icon">
+          </a>
+        </div>
+
+        <div class="contributors-container">
+
+          <!-- <h2 class="contributors-header">Contributors</h2>
+  
+        <br>
+            <div class="contributor-box">
+                <img class="contributor-avatar" src="../images/icons/woman.png" alt="Contributor 1 Avatar">
+                <div class="contributor-info">
+                    <h3 class="contributor-name">Jane Smith</h3>
+                    <p class="contributor-description">She is not a real contributor.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-icon">
+                            <img src="../images/icons/whatsapp.png" alt="Social Icon 1">
+                        </a>
+                        <a href="#" target="_blank" class="social-icon">
+                            <img src="../images/icons/twitter.png" alt="Social Icon 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="contributor-box">
+                <img class="contributor-avatar" src="../images/icons/man.png" alt="Contributor 2 Avatar">
+                <div class="contributor-info">
+                    <h3 class="contributor-name">John Doe</h3>
+                    <p class="contributor-description">He is not a real contributor.</p>
+                    <div class="social-links">
+                      <a href="#" target="_blank" class="social-icon">
+                        <img src="../images/icons/whatsapp.png" alt="Social Icon 1">
+                    </a>
+                    <a href="#" target="_blank" class="social-icon">
+                        <img src="../images/icons/linkedin.png" alt="Social Icon 2">
+                    </a>
+                    </div>
+                </div>
+            </div> -->
+        
+        </div>
+      </div>
+
+            <!-- END OF CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
+    </article>
+   </article>
+   <div style="height: 300px;"></div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+        <div>
+          <p id="popup-trigger">disclaimer</p>
+
+          <!-- The pop-up dive content -->
+          <div id="popup" class="popup">
+            <p>The contents on this ‘website’ are for educational purposes only. The creators and operators of this website make no warranties, express or implied, regarding the accuracy, currency, or completeness of the information provided on the website. They shall not be held responsible for any errors or omissions, or for any actions taken based on the information provided on this website.</p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+          </div>    
+          <p><a href="../about-temp2.html">about</a> </p>   
+          <p><a href="../contribute.html">contribute</a> </p>
+          <p><a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1">say hi👋</a> </p>
+        </div>
+
+        <div class="footer-beta">
+          <p>thisisatestversion</p>
+        </div>
+    </div>
+  </footer>
+<!------------  SCROLL UP ----------->
+<a href="#" class="scrollup" id="scroll-up"> 
+  <i class="ri-arrow-up-fill scrollup__icon"></i>
+</a>
+<script src="../main.js"></script>
+<script src="../modal.js"></script>
+<script src="../notes-sidebar.js"></script>
+</body>
+</html>
+ 
