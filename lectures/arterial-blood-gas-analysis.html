@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+  <title>Arterial Blood Gas Analysis</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../notes.css">
+
+</head>
+<body>
+  <input type="checkbox" id="main-navigation-toggle" class="btn btn--close" title="Toggle main navigation" />
+  <label for="main-navigation-toggle">
+    <span></span>
+  </label>
+  
+  <a href="../index.html">
+   <div class="home-navigation">
+      mtr<span class="logo-dot">.</span>
+    </div>
+  </a>
+
+
+    <nav id="main-navigation" class="nav-main">
+    <ul class="menu">
+      <li class="menu__item">
+        <a class="menu__link" href="../index.html">Home</a>
+      </li>
+
+      <li class="menu__item">
+        <a class="menu__link" href="../about-temp2.html">About</a>
+      </li>
+    </ul>
+  </nav>
+  
+      <!-- Toggle switch for dark mode -->
+      <div class="dark-mode-toggle">
+        <label class="switch-toggle">
+            <input type="checkbox" id="dark-mode-toggle-checkbox">
+            <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <!-- Progress Bar  -->
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+      
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+  <button id="closeSidebarBtn" class="btn toggle-btn close-btn">Close</button>
+  <ul class="sidebar-menu toggle-menu">
+    <!-- Add the list of topics dynamically using JavaScript -->
+  </ul>
+</div>
+
+<!-- Toggle button to open the sidebar -->
+<button id="toggleSidebarBtn" class="btn toggle-btn">&#9776;</button>
+
+<!-- END OF SIDEBAR -->
+
+  <main class="page-container">
+    <div class="contribute-cta">
+      <p>Help make this better💜</p>
+      <span><a href="../contribute.html">Contribute here</a> </span>
+    </div>
+
+
+  <!-- TOPIC AND IMAGE CONTAINER  -->
+
+
+      <h1>Arterial Blood Gas Analysis</h1>
+
+
+  <!-- END OF TOPIC AND IMAGE CONTAINER  -->
+  
+
+
+    <article class="notes">
+        <a id='top'></a>
+    <article>
+
+          <!-- LEARNING OBJECTIVES CONTAINER  -->
+              <!-- <div class="custom-card" id="custom-card-1">
+                <div class="icon"><img src="../images/icons/light-bulb.png" alt="Icon" class="icon"></div>
+                <div class="title"> 
+                  <h2>What You Will Learn</h2>
+                </div>
+                <div class="line">
+                  <p>After reading this note, you should be able to...</p>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li><i>This content is not available yet.</i></li>
+                </ul>
+                </div>
+                <div class="read-more" onclick="toggleContent('custom-card-1')">Read More 🍪</div>
+              </div> -->
+            
+          <!-- END OF LEARNING OBJECTIVES CONTAINER  -->
+        
+        
+          <!-- SHOW AND HIDE OUTLINE CONTAINER  -->
+            <div class="outline2">
+        
+              <input type="radio" name="control-2" id="show-2">
+              <label for="show-2">🐵&nbsp; &nbsp;Show Outline</label>
+              <input type="radio" name="control-2" id="hide-2">
+              <label for="hide-2">🙈&nbsp; &nbsp; Hide Outline</label>
+              <div class="contents">
+                <div class="icon-box">
+                  <!-- Replace 'path/to/your/icon.png' with the actual path to your PNG icon -->
+                  <img src="../images/icons/book.png" alt="Icon" class="icon">
+                </div>
+                <div id="tableOfContents">
+                    <ol id="tocList"></ol>
+                </div>
+              </div>
+             <div>
+        
+        <!-- END OF SHOW AND HIDE OUTLINE CONTAINER  -->
+        
+        
+<br>
+        
+            <!-- BEGINNING OF NOTE -->
+        
+      <section id='header-1'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-1'>Introduction</a>
+          </h2>
+        </header>
+        <div class='body'>
+          <ul>
+              <li>The <strong>pH</strong> is a measurement of the <strong>acidity</strong> or <strong>alkalinity</strong> of the blood.</li>
+              <li>It is <strong>inversely proportional</strong> to the number of <strong>hydrogen ions</strong> (<strong>H+</strong>) in the blood.</li>
+              <li>The more <strong>H+</strong> present, the lower the <strong>pH</strong> will be.</li>
+              <li>Likewise, the fewer <strong>H+</strong> present, the higher the <strong>pH</strong> will be.</li>
+              <li>The <strong>pH</strong> of a solution is measured on a scale of <strong>1</strong> (very acidic) to <strong>14</strong> (very alkalotic).</li>
+              <li>A liquid with a <strong>pH</strong> of <strong>7</strong>, such as water, is <strong>neutral</strong> (neither acidic nor alkalotic).</li>
+          </ul>
+          
+
+          
+        </div>
+      </section>
+
+      <section id='header-2'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-2'>Blood Acidity and Alkalinity</a>
+          </h2>
+        </header>
+        <div class='body'>
+          <h4>Blood Acidity</h4>
+          <ul>
+              <li>The normal blood <strong>pH range</strong> is <strong>7.35</strong> to <strong>7.45</strong>.</li>
+              <li>In order for normal <strong>metabolism</strong> to take place, the body must maintain this narrow range at all times.</li>
+              <li>When the <strong>pH</strong> is below <strong>7.35</strong>, the blood is said to be <strong>acidic</strong>.</li>
+              <li>Changes in body system functions that occur in an acidic state include a decrease in the force of <strong>cardiac contractions</strong>, a decrease in the <strong>vascular response</strong> to <strong>catecholamines</strong>, and a diminished response to the effects and actions of certain <strong>medications</strong>.</li>
+          </ul>
+          
+          <h4>Blood Alkalinity</h4>
+          <ul>
+              <li>When the <strong>pH</strong> is above <strong>7.45</strong>, the blood is said to be <strong>alkalotic</strong>.</li>
+              <li>An alkalotic state interferes with <strong>tissue oxygenation</strong> and normal <strong>neurological</strong> and <strong>muscular functions</strong>.</li>
+              <li>Significant changes in the blood <strong>pH</strong> above <strong>7.8</strong> or below <strong>6.8</strong> will interfere with <strong>cellular functioning</strong>, and if uncorrected, will lead to <strong>death</strong>.</li>
+              <li>So how is the body able to self-regulate <strong>acid-base balance</strong> in order to maintain <strong>pH</strong> within the normal range?</li>
+              <li>It is accomplished using <strong>buffer mechanisms</strong> between the <strong>respiratory</strong> and <strong>renal systems</strong>.</li>
+              <li>Let’s examine each system separately.</li>
+          </ul>
+          
+
+        </div>
+      </section>
+
+      <section id='header-3'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-3'>Buffer Response</a>
+          </h2>
+        </header>
+        <div class='body'>
+          <h4>The Respiratory Buffer Response</h4>
+          <ul>
+              <li>A normal by-product of cellular metabolism is <strong>carbon dioxide (CO2)</strong>.</li>
+              <li><strong>CO2</strong> is carried in the blood to the lungs, where excess <strong>CO2</strong> combines with water (<strong>H2O</strong>) to form <strong>carbonic acid (H2CO3)</strong>.</li>
+              <li>The blood <strong>pH</strong> will change according to the level of <strong>carbonic acid</strong> present.</li>
+              <li>This triggers the lungs to either increase or decrease the rate and depth of ventilation until the appropriate amount of <strong>CO2</strong> has been re-established.</li>
+              <li>Activation of the lungs to compensate for an imbalance starts to occur within <strong>1 to 3 minutes</strong>.</li>
+          </ul>
+          
+          <h4>The Renal Buffer Response</h4>
+          <ul>
+              <li>In an effort to maintain the <strong>pH</strong> of the blood within its normal range, the kidneys excrete or retain <strong>bicarbonate (HCO3-)</strong>.</li>
+              <li>As the blood <strong>pH</strong> decreases, the kidneys will compensate by retaining <strong>HCO3-</strong> and as the <strong>pH</strong> rises, the kidneys excrete <strong>HCO3-</strong> through the urine.</li>
+              <li>Although the kidneys provide an excellent means of regulating <strong>acid-base balance</strong>, the system may take <strong>hours to days</strong> to correct the imbalance.</li>
+          </ul>
+          
+
+          
+        </div>
+      </section>
+
+      <section id='header-4'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-4'>Acid-Base Disorders</a>
+          </h2>
+        </header>
+        <div class='body'>
+
+          <section id='heading-4-1'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-4-1'>Respiratory Acidosis</a>
+              </h3>
+            </header>
+            <div class='body'>
+              <p>Respiratory acidosis is defined as a <strong>pH</strong> less than <strong>7.35</strong> with a <strong>PaCO2</strong> greater than <strong>45 mm Hg</strong>.</p>
+              <p>Acidosis is caused by an accumulation of <strong>CO2</strong> which combines with water in the body to produce <strong>carbonic acid</strong>, thus, lowering the <strong>pH</strong> of the blood. Any condition that results in <strong>hypoventilation</strong> can cause respiratory acidosis.</p>
+              <p>These conditions include:</p>
+              <ul>
+                  <li>CNS depression related to head injury, medications such as narcotics, sedatives, or anesthesia</li>
+                  <li>Impaired respiratory muscle function related to spinal cord injury, neuromuscular diseases, or neuromuscular blocking drugs</li>
+                  <li>Pulmonary disorders such as atelectasis, pneumonia, pneumothorax, pulmonary edema, or bronchial obstruction</li>
+                  <li>Massive pulmonary embolus</li>
+                  <li>Hypoventilation due to pain, chest wall injury/deformity, or abdominal distension.</li>
+              </ul>
+              <p>The signs and symptoms of respiratory acidosis are centered within the pulmonary, nervous, and cardiovascular systems.</p>
+              <ul>
+                  <li>Pulmonary symptoms include: dyspnea, respiratory distress, and shallow respirations.</li>
+                  <li>Nervous system manifestations include: headache, restlessness, and confusion.</li>
+                  <li>If <strong>CO2</strong> levels become very high, drowsiness and unresponsiveness may occur.</li>
+                  <li>Cardiovascular symptoms include palpation and arrhythmias. Increasing ventilation will correct respiratory acidosis.</li>
+              </ul>
+
+            </div>
+          </section>
+
+          <section id='heading-4-2'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-4-2'>Respiratory Alkalosis</a>
+              </h3>
+            </header>
+            <div class='body'>
+              <p>Respiratory alkalosis is defined as a <strong>pH</strong> greater than <strong>7.45</strong> with a <strong>PaCO2</strong> less than <strong>35 mm Hg</strong>.</p>
+              <p>Any condition that causes <strong>hyperventilation</strong> can result in respiratory alkalosis.</p>
+              <p>These conditions include:</p>
+              <ul>
+                  <li>Psychological responses, such as anxiety or fear, Pain.</li>
+                  <li>Increased metabolic demands, such as fever, sepsis, pregnancy, or thyrotoxicosis.</li>
+                  <li>Medications, such as respiratory stimulants.</li>
+                  <li>Central nervous system lesions.</li>
+              </ul>
+              <p>Signs and symptoms of respiratory alkalosis are largely associated with the nervous and cardiovascular systems. Nervous system alterations include light-headedness, numbness and tingling, confusion, inability to concentrate, and blurred vision.</p>
+              <ul>
+                  <li>Cardiac symptoms include arrhythmias and palpitations. Additionally, the patient may experience dry mouth, diaphoresis, and tetanic spasms of the arms and legs.</li>
+                  <li>Patients presenting with respiratory alkalosis have increased work of breathing and must be monitored for respiratory muscle fatigue.</li>
+                  <li>When respiratory muscles become exhausted, acute respiratory failure may ensue.</li>
+              </ul>
+              
+
+            </div>
+          </section>
+
+          <section id='heading-4-3'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-4-3'>Metabolic Acidosis</a>
+              </h3>
+            </header>
+            <div class='body'>
+              <p>Metabolic acidosis is defined as a <strong>bicarbonate level</strong> of less than <strong>22 mEq/L</strong> with a <strong>pH</strong> less than <strong>7.35</strong>.</p>
+              <p>Metabolic acidosis is caused by either a deficit of base in the bloodstream or an excess of acids, other than <strong>CO2</strong>.</p>
+              <p>Diarrhea and intestinal fistulas may cause decreased levels of base.</p>
+              <p>Causes of increased acids include:</p>
+              <ul>
+                  <li>Renal failure</li>
+                  <li>Diabetic ketoacidosis</li>
+                  <li>Anaerobic metabolism</li>
+                  <li>Starvation</li>
+                  <li>Salicylate intoxication</li>
+              </ul>
+              <p>Symptoms of metabolic acidosis center around the CNS, CVS, pulmonary, and GI systems.</p>
+              <ul>
+                  <li>CNS features include headache, confusion, and restlessness progressing to lethargy, then stupor or coma.</li>
+                  <li>Cardiac arrhythmias are common &amp; <strong>Kussmaul breathing</strong> occur in an effort to compensate for the low pH by blowing off more CO2.</li>
+                  <li>Warm, flushed skin, as well as nausea and vomiting are commonly noted.</li>
+              </ul>
+              <p>As with most acid-base imbalances, the treatment of metabolic acidosis is dependent upon the cause. The presence of metabolic acidosis should spur a search for hypoxic tissue somewhere in the body.</p>
+              <p>Hypoxemia can lead to anaerobic metabolism system-wide, but hypoxia of any tissue bed will produce metabolic acids as a result of anaerobic metabolism even if the PaO2 is normal.</p>
+              <p>The only appropriate way to treat this source of acidosis is to restore tissue perfusion to the hypoxic tissues.</p>
+              
+              <h4>Warning:</h4>
+              <ul>
+                  <li>Current research has shown that the use of <strong>sodium bicarbonate</strong> is indicated only for known bicarbonate-responsive acidosis, such as that seen with renal failure.</li>
+                  <li>Routine use of <strong>sodium bicarbonate</strong> to treat metabolic acidosis results in subsequent metabolic alkalosis with hypernatremia and should be avoided.</li>
+              </ul>
+              
+            </div>
+          </section>
+
+          <section id='heading-4-4'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-4-4'>Metabolic Alkalosis</a>
+              </h3>
+            </header>
+            <div class='body'>
+              <p>Metabolic alkalosis is defined as a <strong>bicarbonate level</strong> greater than <strong>26 mEq/liter</strong> with a <strong>pH</strong> greater than <strong>7.45</strong>.</p>
+              <p>Either an excess of base or a loss of acid within the body can cause metabolic alkalosis.</p>
+              <p>Excess base occurs from ingestion of antacids, excess use of bicarbonate, or use of lactate in dialysis.</p>
+              <p>Loss of acids can occur secondary to protracted vomiting, gastric suction, hypochloremia, excess administration of diuretics, or high levels of aldosterone.</p>
+              <p>Symptoms of metabolic alkalosis are mainly neurological and musculoskeletal.</p>
+              <ul>
+                  <li>Neurologic symptoms include dizziness, lethargy, disorientation, seizures, and coma.</li>
+                  <li>Musculoskeletal symptoms include weakness, muscle twitching, muscle cramps, and tetany.</li>
+                  <li>Patients may also experience nausea, vomiting, and respiratory depression.</li>
+              </ul>
+              <p>Metabolic alkalosis is one of the most difficult acid-base imbalances to treat.</p>
+              <p>Bicarbonate excretion through the kidneys can be stimulated with drugs such as acetazolamide, but resolution of the imbalance will be slow. In severe cases, IV administration of acids may be used.</p>
+              
+
+            </div>
+          </section>
+
+        </div>
+      </section>
+
+      <section id='header-5'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-5'>Arterial Blood Gases</a>
+          </h2>
+        </header>
+        <div class='body'>
+          <ul>
+              <li>Arterial blood gas measurement is a blood test that is performed to determine the concentration of <strong>oxygen</strong>, <strong>carbon dioxide</strong>, and <strong>bicarbonate</strong>, as well as the <strong>pH</strong>, in the blood.</li>
+              <li>Its main use is in <strong>pulmonology</strong>, as many lung diseases feature poor gas exchange, but it is also used in <strong>nephrology</strong> & <strong>Acute Medicine</strong>.</li>
+              <li>As its name implies, the sample is taken from an <strong>artery</strong>, not from venipuncture.</li>
+          </ul>
+          
+
+          <section id='heading-5-1'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-5-1'>Obtaining and Processing the Sample</a>
+              </h3>
+            </header>
+            <div class='body'>
+              <ul>
+                  <li>Arterial blood is taken from any easily accessible artery (typically radial, brachial, or femoral) or out of an arterial line. The syringe is prepacked and contains a small amount of <strong>heparin</strong> to prevent coagulation.</li>
+                  <li>Once the sample is obtained, care should be taken to eliminate visible gas bubbles, as these bubbles can dissolve into the sample and cause inaccurate results. The sealed syringe is taken to a blood gas analyzer.</li>
+                  <li>If the sample cannot be immediately analyzed, it should be chilled in an ice bath to slow metabolic processes that may also cause inaccuracy.</li>
+                  <li>The machine aspirates this blood from the syringe and measures the <strong>pH</strong> and the partial pressures of <strong>oxygen</strong> and <strong>carbon dioxide</strong>.</li>
+                  <li>The <strong>bicarbonate concentration</strong> is calculated. Some blood gas analyzers can also measure <strong>glucose</strong>, <strong>lactate</strong>, <strong>hemoglobins</strong>, <strong>dys-hemoglobins</strong>, <strong>oxygen saturation</strong>, <strong>bilirubin</strong>, and <strong>electrolytes</strong> (sodium, potassium, calcium, and chloride).</li>
+                  <li>The results are usually available for interpretation within <strong>five minutes</strong>.</li>
+              </ul>
+              
+
+            </div>
+          </section>
+
+          <section id='heading-5-2'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-5-2'>Components of the ABG</a>
+              </h3>
+            </header>
+            <div class='body'>
+              <ul>
+                  <li><strong>pH:</strong> Measurement of acidity or alkalinity, based on the hydrogen (<strong>H+</strong>) ions present. The normal range is <strong>7.35</strong> to <strong>7.45</strong>.</li>
+                  <li><strong>PaO2:</strong> The partial pressure of oxygen that is dissolved in arterial blood. The normal range is <strong>80</strong> to <strong>100 mm Hg</strong>.</li>
+                  <li><strong>SaO2:</strong> The arterial oxygen saturation. The normal range is <strong>95%</strong> to <strong>100%</strong>.</li>
+                  <li><strong>PaCO2:</strong> The amount of carbon dioxide dissolved in arterial blood. The normal range is <strong>35</strong> to <strong>45 mm Hg</strong>.</li>
+                  <li><strong>HCO3:</strong> The calculated value of the amount of bicarbonate in the bloodstream. The normal range is <strong>22</strong> to <strong>26 mEq/liter</strong>.</li>
+                  <li><strong>B.E.:</strong> The base excess indicates the amount of excess or insufficient level of bicarbonate in the system. The normal range is <strong>-2</strong> to <strong>+2 mEq/liter</strong>. (A negative base excess indicates a base deficit in the blood.)</li>
+              </ul>
+              
+
+            </div>
+          </section>
+
+          <section id='heading-5-3'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-5-3'>Steps to an Arterial Blood Gas Interpretation</a>
+              </h3>
+            </header>
+            <div class='body'>
+              <ul>
+                  <li>The arterial blood gas is used to evaluate both <strong>acid-base balance</strong> and <strong>tissue oxygenation</strong>, each representing separate conditions.</li>
+                  <li>Acid-base evaluation requires a focus on three of the reported components: <strong>pH</strong>, <strong>PaCO2</strong>, and <strong>HCO3</strong>.</li>
+                  <li>This process involves three steps.</li>
+              </ul>
+              
+              <h4>Step One</h4>
+              <ul>
+                  <li>Assess the <strong>pH</strong> to determine if the blood is within normal range, alkalotic, or acidotic.</li>
+                  <li>If it is above <strong>7.45</strong>, the blood is alkalotic. If it is below <strong>7.35</strong>, the blood is acidotic.</li>
+              </ul>
+              
+              <h4>Step Two</h4>
+              <ul>
+                  <li>If the blood is alkalotic or acidotic, we now need to determine if it is caused primarily by a respiratory or metabolic problem.</li>
+                  <li>To do this, assess the <strong>PaCO2</strong> level.</li>
+                  <li>Remember that with a respiratory problem, as the pH decreases below <strong>7.35</strong>, the <strong>PaCO2</strong> should rise. If the pH rises above <strong>7.45</strong>, the <strong>PaCO2</strong> should fall. Compare the <strong>pH</strong> and the <strong>PaCO2</strong> values. If <strong>pH</strong> and <strong>PaCO2</strong> are indeed moving in opposite directions, then the problem is primarily respiratory in nature.</li>
+              </ul>
+              
+              <h4>Step Three</h4>
+              <ul>
+                  <li>Finally, assess the <strong>HCO3</strong> value.</li>
+                  <li>Recall that with a metabolic problem, normally as the pH increases, the <strong>HCO3</strong> should also increase.</li>
+                  <li>Likewise, as the pH decreases, so should the <strong>HCO3</strong>.</li>
+                  <li>Compare the two values. If they are moving in the same direction, then the problem is primarily metabolic in nature.</li>
+              </ul>
+              
+              <p>The following chart summarizes the relationships between pH, PaCO2, and HCO3:</p>
+              
+              <p>The following chart summarizes the relationships between pH, PaCO2, and HCO3:</p>
+              <br>
+
+              <table class="note-table">
+                  <tr>
+                      <th></th>
+                      <th>pH</th>
+                      <th>PaCO2</th>
+                      <th>HCO3</th>
+                  </tr>
+                  <tr>
+                      <th>Respiratory Acidosis</th>
+                      <td>↓</td>
+                      <td>↑</td>
+                      <td>normal</td>
+                  </tr>
+                  <tr>
+                      <th>Respiratory Alkalosis</th>
+                      <td>↑</td>
+                      <td>↓</td>
+                      <td>normal</td>
+                  </tr>
+                  <tr>
+                      <th>Metabolic Acidosis</th>
+                      <td>↓</td>
+                      <td>normal</td>
+                      <td>↓</td>
+                  </tr>
+                  <tr>
+                      <th>Metabolic Alkalosis</th>
+                      <td>↑</td>
+                      <td>normal</td>
+                      <td>↑</td>
+                  </tr>
+              </table>
+              
+            </div>
+          </section>
+
+          <section id='heading-5-4'>
+            <header>
+              <h3>
+                <a aria-hidden href='#heading-5-4'>Examples</a>
+              </h3>
+            </header>
+            <div class='body'>
+              <section id='heading-5-4-1'>
+                <header>
+                  <h4>
+        
+                    <a aria-hidden href='#heading-5-4-1'>Example 1</a>
+                  </h4>
+                </header>
+                <div class='body'>
+                  <p>John Josphen (JJ) is a 45-year-old female admitted to the ER with a severe asthma attack. She has been experiencing increasing shortness of breath since admission three hours ago. Her arterial blood gas result is as follows:</p>
+                  <p><strong>Clinical Laboratory</strong></p>
+                  <ul>
+                      <li><strong>PATIENT:</strong> John, Josphen</li>
+                      <li><strong>DATE:</strong> 6/4/08 10:43am</li>
+                      <li><strong>pH:</strong> 7.22</li>
+                      <li><strong>PaCO2:</strong> 55</li>
+                      <li><strong>HCO3-:</strong> 25</li>
+                  </ul>
+                  
+                  <h4>Follow the Steps:</h4>
+                  <ol>
+                      <li>Assess the pH. It is low (normal 7.35-7.45); therefore, we have acidosis.</li>
+                      <li>Assess the PaCO2. It is high (normal 35-45) and in the opposite direction of the pH.</li>
+                      <li>Assess the HCO3. It has remained within the normal range (22-26).</li>
+                  </ol>
+                  
+                  <p>The following chart summarizes the relationships between pH, PaCO2, and HCO3:</p>
+                  <table class="note-table">
+                      <tr>
+                          <th></th>
+                          <th>pH</th>
+                          <th>PaCO2</th>
+                          <th>HCO3</th>
+                      </tr>
+                      <tr>
+                          <th>Respiratory Acidosis</th>
+                          <td>↓</td>
+                          <td>↑</td>
+                          <td>Normal</td>
+                      </tr>
+                  </table>
+                  
+                  <p>Refer to the chart. Acidosis is present (decreased pH) with the PaCO2 being increased, reflecting a primary respiratory problem. For this patient, we need to improve the ventilation status by providing oxygen therapy, mechanical ventilation, pulmonary toilet, or by administering bronchodilators.</p>
+                  
+                </div>
+              </section>
+
+              <section id='heading-5-4-2'>
+                <header>
+                  <h4>
+        
+                    <a aria-hidden href='#heading-5-4-2'>Example 2</a>
+                  </h4>
+                </header>
+                <div class='body'>
+                  <p>John Doe is a 55-year-old male admitted to the ER with a recurring bowel obstruction. He has been experiencing intractable vomiting for the last several hours despite the use of anti-emetics. Here is his arterial blood gas result:</p>
+                  <p><strong>PATIENT:</strong> DOE, JOHN</p>
+                  <p><strong>DATE:</strong> 3/6/08 08:30</p>
+                  <ul>
+                      <li><strong>pH:</strong> 7.50</li>
+                      <li><strong>PaCO2:</strong> 42</li>
+                      <li><strong>HCO3-:</strong> 33</li>
+                  </ul>
+                  
+                  <h4>Example 2</h4>
+                  <p>John Doe is a 55-year-old male admitted to the ER with a recurring bowel obstruction. He has been experiencing intractable vomiting for the last several hours despite the use of anti-emetics. Here is his arterial blood gas result:</p>
+                  <p><strong>PATIENT:</strong> DOE, JOHN</p>
+                  <p><strong>DATE:</strong> 3/6/08 08:30</p>
+                  <ul>
+                      <li><strong>pH:</strong> 7.50</li>
+                      <li><strong>PaCO2:</strong> 42</li>
+                      <li><strong>HCO3-:</strong> 33</li>
+                  </ul>
+                  
+
+                  <h4>Follow the Three Steps Again:</h4>
+                  <ol>
+                      <li>Assess the pH. It is high (normal 7.35-7.45), therefore, indicating alkalosis.</li>
+                      <li>Assess the PaCO2. It is within the normal range (normal 35-45).</li>
+                      <li>Assess the HCO3. It is high (normal 22-26) and moving in the same direction as the pH.</li>
+                  </ol>
+                  
+                  <p>The following chart summarizes the relationships between pH, PaCO2, and HCO3:</p>
+                  <table class="note-table">
+                      <tr>
+                          <th></th>
+                          <th>pH</th>
+                          <th>PaCO2</th>
+                          <th>HCO3</th>
+                      </tr>
+                      <tr>
+                          <th>Metabolic Alkalosis</th>
+                          <td>↑</td>
+                          <td>Normal</td>
+                          <td>↑</td>
+                      </tr>
+                  </table>
+                  
+                  <p>Again, look at the chart. Alkalosis is present (increased pH) with the HCO3 increased, reflecting a primary metabolic problem. Treatment of this patient might include the administration of I.V. fluids and measures to reduce the excess base.</p>
+                  
+
+                  <h4>COMPENSATION</h4>
+                  <ul>
+                    <li>Thus far, we have looked at simple ABG values without any evidence of compensation occurring.</li>
+                    <li>Now, see what happens when an acid-base imbalance exists over a period of time. When a patient develops an acid-base imbalance, the body attempts to compensate.</li>
+                    <li>Remember that the lungs and the kidneys are the primary buffer response systems in the body.</li>
+                    <li>The body tries to overcome either a respiratory or metabolic dysfunction in an attempt to return the pH into the normal range.</li>
+                    <li>A patient’s ABG can be uncompensated, partially compensated, or fully compensated.</li>
+                    <li>When an acid-base disorder is either uncompensated or partially compensated, the pH remains outside the normal range.</li>
+                    <li>In fully compensated states, the pH has returned to within the normal range, although the other values may still be abnormal.</li>
+                    <li>Be aware that neither system has the ability to overcompensate.</li>
+                    <li>In our first two examples, the patients were uncompensated. In both cases, the pH was outside of the normal range, the primary source of the acid-base imbalance was readily identified, but the compensatory buffering system values remained in the normal range.</li>
+                    <li>Now let’s look at arterial blood gas results when there is evidence of partial compensation.</li>
+                </ul>
+                
+                <h4>In order to look for evidence of partial compensation, review the following three steps:</h4>
+                <ol>
+                    <li>Assess the pH. This step remains the same and allows us to determine if an acidotic or alkalotic state exists.</li>
+                    <li>Assess the PaCO2. In an uncompensated state, we have already seen that the pH and PaCO2 move in opposite directions when indicating that the primary problem is respiratory.</li>
+                    <li>But what if the pH and PaCO2 are moving in the same direction? That is not what we would expect to see happen.
+                        <ul>
+                            <li>We would then conclude that the primary problem was metabolic. In this case, the decreasing PaCO2 indicates that the lungs, acting as a buffer response, are attempting to correct the pH back into its normal range by decreasing the PaCO2 ("blowing off the excess CO2").</li>
+                            <li>If evidence of compensation is present, but the pH has not yet been corrected to within its normal range, this would be described as a metabolic disorder with a partial respiratory compensation.</li>
+                        </ul>
+                    </li>
+                    <li>Assess the HCO3.
+                        <ul>
+                            <li>In our earlier uncompensated examples, the pH and HCO3 move in the same direction, indicating that the primary problem was metabolic.</li>
+                            <li>But what if our results show the pH and HCO3 moving in opposite directions? That is not what we would expect to see.</li>
+                            <li>We would conclude that the primary acid-base disorder is respiratory, and that the kidneys, again acting as a buffer response system, are compensating by retaining HCO3, ultimately attempting to return the pH back towards the normal range.</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <br>
+                <p>The following tables demonstrate the relationships between the pH, PaCO2, and HCO3 in partially and fully compensated states.</p>
+      
+                <table class="note-table">
+                  <tr>
+                    <th colspan="4">Fully Compensated States</th>
+                  </tr>
+                    <tr>
+                        <th></th>
+                        <th>pH</th>
+                        <th>PaCO2</th>
+                        <th>HCO3-</th>
+                    </tr>
+                    <tr>
+                        <th>Respiratory Acidosis</th>
+                        <td>normal, but &lt;7.40</td>
+                        <td>↑</td>
+                        <td>↑</td>
+                    </tr>
+                    <tr>
+                        <th>Respiratory Alkalosis</th>
+                        <td>normal, but &gt;7.40</td>
+                        <td>↓</td>
+                        <td>↓</td>
+                    </tr>
+                    <tr>
+                        <th>Metabolic Acidosis</th>
+                        <td>normal, but &lt;7.40</td>
+                        <td>↓</td>
+                        <td>↓</td>
+                    </tr>
+                    <tr>
+                        <th>Metabolic Alkalosis</th>
+                        <td>normal, but &gt;7.40</td>
+                        <td>↑</td>
+                        <td>↑</td>
+                    </tr>
+                </table>
+                
+      <br>
+                <table class="note-table">
+                  <th colspan="4">Partially Compensated States</th>
+      
+                    <tr>
+                        <th></th>
+                        <th>pH</th>
+                        <th>PaCO2</th>
+                        <th>HCO3-</th>
+                    </tr>
+                    <tr>
+                        <th>Respiratory Acidosis</th>
+                        <td>↓</td>
+                        <td>↑</td>
+                        <td>↑</td>
+                    </tr>
+                    <tr>
+                        <th>Respiratory Alkalosis</th>
+                        <td>↑</td>
+                        <td>↓</td>
+                        <td>↓</td>
+                    </tr>
+                    <tr>
+                        <th>Metabolic Acidosis</th>
+                        <td>↓</td>
+                        <td>↓</td>
+                        <td>↓</td>
+                    </tr>
+                    <tr>
+                        <th>Metabolic Alkalosis</th>
+                        <td>↑</td>
+                        <td>↑</td>
+                        <td>↑</td>
+                    </tr>
+                </table>
+                
+                <br>
+      
+                <p>Notice that the only difference between partially and fully compensated states is whether or not the pH has returned to within the normal range. In compensated acid-base disorders, the pH will frequently fall either on the low or high side of neutral (7.40).</p>
+                <p>Making note of where the pH falls within the normal range is helpful in determining if the original acid-base disorder was acidosis or alkalosis.</p>
+                </div>
+              </section>
+
+              <section id='heading-5-4-3'>
+                <header>
+                  <h4>
+        
+                    <a aria-hidden href='#heading-5-4-3'>Example 3</a>
+                  </h4>
+                </header>
+                <div class='body'>
+                  <p>John Doe is admitted to the hospital. He is a kidney dialysis patient who has missed his last two appointments at the dialysis center. His arterial blood gas values are reported as follows:</p>
+                  <ul>
+                      <li><strong>PATIENT:</strong> John Doe</li>
+                      <li><strong>DATE:</strong> 7/11/07 22:20</li>
+                      <li><strong>pH:</strong> 7.32</li>
+                      <li><strong>PaCO2:</strong> 32</li>
+                      <li><strong>HCO3-:</strong> 18</li>
+                  </ul>
+                  
+                  <h4>Follow the Three Steps:</h4>
+                  <ol>
+                      <li>Assess the pH. It is low (normal 7.35-7.45); therefore, we have acidosis.</li>
+                      <li>Assess the PaCO2. It is low. Normally, we would expect the pH and PaCO2 to move in opposite directions, but this is not the case. Because the pH and PaCO2 are moving in the same direction, it indicates that the acid-base disorder is primarily metabolic. In this case, the lungs, acting as the primary acid-base buffer, are now attempting to compensate by “blowing off excessive CO2”, and therefore increasing the pH.</li>
+                      <li>Assess the HCO3-. It is low (normal 22-26). We would expect the pH and the HCO3- to move in the same direction, confirming that the primary problem is metabolic.</li>
+                  </ol>
+                  
+                  <p>What is your interpretation? Because there is evidence of compensation (pH and PaCO2 moving in the same direction) and because the pH remains below the normal range, we would interpret this ABG result as a partially compensated metabolic acidosis.</p>
+                  
+                  <table class="note-table">
+                      <tr>
+                          <th></th>
+                          <th>pH</th>
+                          <th>PaCO2</th>
+                          <th>HCO3-</th>
+                      </tr>
+                      <tr>
+                          <th>Metabolic Acidosis</th>
+                          <td>↓</td>
+                          <td>↓</td>
+                          <td>↓</td>
+                      </tr>
+                  </table>
+    
+                  
+                  
+                </div>
+              </section>
+
+              <section id='heading-5-4-4'>
+                <header>
+                  <h4>
+        
+                    <a aria-hidden href='#heading-5-4-4'>Example 4</a>
+                  </h4>
+                </header>
+                <div class='body'>
+                  <p>Jane Doe is a patient with chronic COPD being admitted for surgery. Her admission lab work reveals an ABG with the following values:</p>
+                  <ul>
+                      <li><strong>Clinical Laboratory</strong></li>
+                      <li><strong>PATIENT:</strong> DOE, JANE</li>
+                      <li><strong>DATE:</strong> 2/16/08 17:30</li>
+                      <li><strong>pH:</strong> 7.35</li>
+                      <li><strong>PaCO2:</strong> 48</li>
+                      <li><strong>HCO3-:</strong> 28</li>
+                  </ul>
+                  
+                  <h4>Follow the Three Steps:</h4>
+                  <ol>
+                      <li>Assess the pH. It is within the normal range, but on the low side of neutral (&lt;7.40).</li>
+                      <li>Assess the PaCO2. It is high (normal 35-45). We would expect the pH and PaCO2 to move in opposite directions if the primary problem is respiratory.</li>
+                      <li>Assess the HCO3-. It is also high (22-26). Normally, the pH and HCO3- should move in the same direction. Because they are moving in opposite directions, it confirms that the primary acid-base disorder is respiratory and that the kidneys are attempting to compensate by retaining HCO3.</li>
+                  </ol>
+                  
+                  <p>Because the pH has returned into the low normal range, we would interpret this ABG as a fully compensated respiratory acidosis.</p>
+                  
+                  <table class="note-table">
+                      <tr>
+                          <th></th>
+                          <th>pH</th>
+                          <th>PaCO2</th>
+                          <th>HCO3-</th>
+                      </tr>
+                      <tr>
+                          <th>Respiratory Acidosis</th>
+                          <td>normal, but &lt;7.40</td>
+                          <td>↑</td>
+                          <td>↑</td>
+                      </tr>
+                  </table>
+                  
+                </div>
+              </section>
+
+              <section id='heading-5-4-5'>
+                <header>
+                  <h4>
+        
+                    <a aria-hidden href='#heading-5-4-5'>Example 5</a>
+                  </h4>
+                </header>
+                <div class='body'>
+                  <p>Johnson Stone is a trauma patient with an altered mental status. His initial ABG result is as follows:</p>
+                  <ul>
+                      <li><strong>PATIENT:</strong> JOHNSON STONE</li>
+                      <li><strong>DATE:</strong> 7/12/02 07:30</li>
+                      <li><strong>pH:</strong> 7.33</li>
+                      <li><strong>PaCO2:</strong> 62</li>
+                      <li><strong>HCO3:</strong> 35</li>
+                  </ul>
+                  
+                  <h4>Follow the Three Steps:</h4>
+                  <ol>
+                      <li>Assess the pH. It is low (normal <strong>7.35-7.45</strong>). This indicates that an <strong>acidosis</strong> exists.</li>
+                      <li>Assess the PaCO2. It is high (normal <strong>35-45</strong>). The pH and PaCO2 are moving in opposite directions, as we would expect if the problem were primarily respiratory in nature.</li>
+                      <li>Assess the HCO3. It is high (normal <strong>22-26</strong>). Normally, the pH and HCO3 should move in the same direction. Because they are moving in opposite directions, it also confirms that the primary acid-base disorder is respiratory in nature. In this case, the kidneys are attempting to compensate by retaining HCO3 in the blood in an order to return the pH back towards its normal range. Because there is evidence of compensation occurring (pH and HCO3 moving in opposite directions), and seeing that the pH has not yet been restored to its normal range, we would interpret this ABG result as a <strong>partially compensated respiratory acidosis</strong>.</li>
+                  </ol>
+                  
+                  
+                </div>
+              </section>
+
+              <section id='heading-5-4-6'>
+                <header>
+                  <h4>
+        
+                    <a aria-hidden href='#heading-5-4-6'>Example 6</a>
+                  </h4>
+                </header>
+                <div class='body'>
+                  <p>Jane MAC is a 54-year-old female admitted for an ileus. She had been experiencing nausea and vomiting. An NG tube has been in place for the last 24 hours. Here are the last ABG results:</p>
+                  <ul>
+                      <li><strong>PATIENT:</strong> JANEMAC</li>
+                      <li><strong>DATE:</strong> 3/19/02 07:30</li>
+                      <li><strong>pH:</strong> 7.43</li>
+                      <li><strong>PaCO2:</strong> 48</li>
+                      <li><strong>HCO3:</strong> 36</li>
+                  </ul>
+                  
+                  <h4>Follow the Three Steps:</h4>
+                  <ol>
+                      <li>Assess the pH. It is normal, but on the high side of neutral (>7.40).</li>
+                      <li>Assess the PaCO2. It is high (normal 35-45). Normally, we would expect the pH and PaCO2 to move in opposite directions. In this case, they are moving in the same direction indicating that the primary acid-base disorder is metabolic in nature. In this case, the lungs, acting as the primary acid-base buffer system, are retaining CO2 (hypoventilation) in order to help lower the pH back towards its normal range.</li>
+                      <li>Assess the HCO3. It is high (normal 22-26). Because it is moving in the same direction, as we would expect, it confirms the primary acid-base disorder is metabolic in nature.</li>
+                  </ol>
+                  <br>
+                  <table class="note-table">
+                    <tr>
+                      <th>pH</th>
+                      <th>PaCO2</th>
+                      <th>HCO3-</th>
+                    </tr>
+                    <tr>
+                      <th><strong>Metabolic Alkalosis</strong></th>
+                      <td>Normal, but &gt;7.40</td>
+                      <td><strong>↑</strong></td>
+                      <td><strong>↑</strong></td>
+                    </tr>
+                  </table>
+                  
+
+                  <p>What is your interpretation? Because there is evidence of compensation occurring (pH and PaCO2 moving in the same direction) and because the pH has effectively been returned to within its normal range, we would call this fully compensated metabolic alkalosis.</p>
+                  
+                </div>
+              </section>
+
+
+            </div>
+          </section>
+
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <hr style="margin: 3rem 0;">
+
+      <!-- PRACTICE QUESTIONS CONTAINER -->
+
+      <!-- <div class="custom-card" id="custom-card-2">
+        <div class="icon"><img src="../images/icons/practice-questions.png" alt="Icon" class="icon"></div>
+        <div class="title"> 
+          <h2>Practice Questions</h2>
+        </div>
+        <div class="line">
+          <p>Check how well you grasp the concepts by answering the following questions...</p>
+        </div>
+        <div class="content">
+          <ol>
+            <li><i>This content is not available yet.</i></li>
+          </ol>
+        </div>
+        <div class="read-more" onclick="toggleContent('custom-card-2')">Read More 🍪</div>
+      </div> -->
+
+      <!-- END OF PRACTICE QUESTIONS CONTAINER -->
+
+
+      <!-- CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
+      <div class="contact">
+        <div class="comment-container">
+          <div class="comment-icon">
+            <!-- Add your icon image here -->
+            <img src="../images/icons/comment.png" alt="Comment Icon">
+          </div>
+          <div class="comment-text">
+            <!-- Add your text here -->
+            <p>Send your comments, corrections, explanations/clarifications and requests/suggestions </p>
+          </div>
+          <a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1" class="comment-button">
+            here
+            <img src="../images/icons/whatsapp.png" alt="Image Icon">
+          </a>
+        </div>
+
+        <div class="contributors-container">
+
+          <!-- <h2 class="contributors-header">Contributors</h2>
+  
+        <br>
+            <div class="contributor-box">
+                <img class="contributor-avatar" src="../images/icons/woman.png" alt="Contributor 1 Avatar">
+                <div class="contributor-info">
+                    <h3 class="contributor-name">Jane Smith</h3>
+                    <p class="contributor-description">She is not a real contributor.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-icon">
+                            <img src="../images/icons/whatsapp.png" alt="Social Icon 1">
+                        </a>
+                        <a href="#" target="_blank" class="social-icon">
+                            <img src="../images/icons/twitter.png" alt="Social Icon 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="contributor-box">
+                <img class="contributor-avatar" src="../images/icons/man.png" alt="Contributor 2 Avatar">
+                <div class="contributor-info">
+                    <h3 class="contributor-name">John Doe</h3>
+                    <p class="contributor-description">He is not a real contributor.</p>
+                    <div class="social-links">
+                      <a href="#" target="_blank" class="social-icon">
+                        <img src="../images/icons/whatsapp.png" alt="Social Icon 1">
+                    </a>
+                    <a href="#" target="_blank" class="social-icon">
+                        <img src="../images/icons/linkedin.png" alt="Social Icon 2">
+                    </a>
+                    </div>
+                </div>
+            </div> -->
+        
+        </div>
+      </div>
+
+            <!-- END OF CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
+    </article>
+   </article>
+   <div style="height: 300px;"></div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+        <div>
+          <p id="popup-trigger">disclaimer</p>
+
+          <!-- The pop-up dive content -->
+          <div id="popup" class="popup">
+            <p>The contents on this ‘website’ are for educational purposes only. The creators and operators of this website make no warranties, express or implied, regarding the accuracy, currency, or completeness of the information provided on the website. They shall not be held responsible for any errors or omissions, or for any actions taken based on the information provided on this website.</p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+          </div>    
+          <p><a href="../about-temp2.html">about</a> </p>   
+          <p><a href="../contribute.html">contribute</a> </p>
+          <p><a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1">say hi👋</a> </p>
+        </div>
+
+        <div class="footer-beta">
+          <p>thisisatestversion</p>
+        </div>
+    </div>
+  </footer>
+<!------------  SCROLL UP ----------->
+<a href="#" class="scrollup" id="scroll-up"> 
+  <i class="ri-arrow-up-fill scrollup__icon"></i>
+</a>
+<script src="../main.js"></script>
+<script src="../modal.js"></script>
+<script src="../notes-sidebar.js"></script>
+</body>
+</html>
+ 
