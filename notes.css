@@ -333,7 +333,9 @@ figure img {
 /* tables */
 
 
-
+.table-container {
+  overflow-x: auto;
+}
 
 .note-table {
   border-collapse: collapse;
