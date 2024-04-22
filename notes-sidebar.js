@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
       "Heart Muscle Disease",
       "Arterial Blood Gas Analysis",
       "Bronchial Asthma",
+      "Diagnosis and Treatment of Tuberculosis",
       "Headaches",
+      "Tetanus",
       "Peripheral and Lower Motor Neuron Lesions",
       "Stroke",
       "Extra-Pyramidal Disorders",
@@ -35,8 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
       "Dermatological Manifestation of HIV",
       "Non-Dermatological Manifestations of HIV",
       "Management of HIV and AIDS",
-      "",
-      "",
       "",
       "",
       // Add more topics as needed
