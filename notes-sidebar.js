@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Array of topics - you can dynamically generate this from your existing content
     var topics = [
       "Acute Kidney Injury",
+      "Chronic Kidney Disease",
       "Alcoholic Liver Disease",
       "Disorders of the Adrenal Gland",
       "Liver Neoplasms",
@@ -37,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
       "Dermatological Manifestation of HIV",
       "Non-Dermatological Manifestations of HIV",
       "Management of HIV and AIDS",
+      "",
+      "",
       "",
       "",
       // Add more topics as needed
