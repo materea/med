@@ -339,6 +339,77 @@
 <script src="../main.js"></script>
 <script src="../modal.js"></script>
 <script src="../notes-sidebar.js"></script>
+
+<!-- Floating TOC Button -->
+<div id="toc-button" class="floating-toc-button">
+  Table of Contents
+</div>
+
+<!-- Expandable TOC Panel -->
+<div id="toc-panel" class="toc-panel">
+  <div id="toc-panel-content">
+      <h4>Table of Contents</h4>
+      <ol id="dynamic-toc"></ol>
+  </div>
+</div>
+
+
+
+<script>
+// Dynamically generate TOC from <h2> headings within <section> elements
+  const tocList = document.getElementById('dynamic-toc');
+const sections = document.querySelectorAll('section');
+const tocButton = document.getElementById('toc-button');
+const tocPanel = document.getElementById('toc-panel');
+
+// Generate Table of Contents
+sections.forEach(section => {
+    const headings = section.querySelectorAll('h2');
+    headings.forEach(heading => {
+        const headingAnchor = heading.querySelector('a');
+        if (headingAnchor && headingAnchor.getAttribute('href')) {
+            const tocItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.textContent = headingAnchor.textContent || 'Untitled Section';
+            link.href = headingAnchor.getAttribute('href');
+            tocItem.appendChild(link);
+            tocList.appendChild(tocItem);
+        }
+    });
+});
+
+// Hide TOC button initially
+tocButton.style.display = 'none';
+
+// Show/hide TOC button on scroll
+window.addEventListener('scroll', () => {
+    // Show button after scrolling down 200 pixels
+    if (window.scrollY > 200) {
+        tocButton.style.display = 'block';
+    } else {
+        tocButton.style.display = 'none';
+        tocPanel.classList.remove('expanded');
+    }
+});
+
+// Toggle TOC panel
+tocButton.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent immediate closure
+    tocPanel.classList.toggle('expanded');
+});
+
+// Close TOC panel when clicking outside
+document.addEventListener('click', (event) => {
+    if (tocPanel.classList.contains('expanded') && 
+        !tocPanel.contains(event.target) && 
+        event.target !== tocButton) {
+        tocPanel.classList.remove('expanded');
+    }
+});
+
+
+</script>
+
 </body>
 </html>
  

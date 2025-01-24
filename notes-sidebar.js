@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "Non-Dermatological Manifestations of HIV",
       "Management of HIV and AIDS",
       "Rheumatic Heart Disease",
-      "",
+      "Infective Endocarditis",
       "",
       "",
       "",
