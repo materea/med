@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+  <title>Ischaemic Heart Disease (IHD) </title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../notes.css">
+
+</head>
+<body>
+  <input type="checkbox" id="main-navigation-toggle" class="btn btn--close" title="Toggle main navigation" />
+  <label for="main-navigation-toggle">
+    <span></span>
+  </label>
+  
+  <a href="../index.html">
+   <div class="home-navigation">
+      mtr<span class="logo-dot">.</span>
+    </div>
+  </a>
+
+
+    <nav id="main-navigation" class="nav-main">
+    <ul class="menu">
+      <li class="menu__item">
+        <a class="menu__link" href="../index.html">Home</a>
+      </li>
+
+      <li class="menu__item">
+        <a class="menu__link" href="../about-temp2.html">About</a>
+      </li>
+    </ul>
+  </nav>
+  
+      <!-- Toggle switch for dark mode -->
+      <div class="dark-mode-toggle">
+        <label class="switch-toggle">
+            <input type="checkbox" id="dark-mode-toggle-checkbox">
+            <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <!-- Progress Bar  -->
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+      
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+  <button id="closeSidebarBtn" class="btn toggle-btn close-btn">Close</button>
+  <ul class="sidebar-menu toggle-menu">
+    <!-- Add the list of topics dynamically using JavaScript -->
+  </ul>
+</div>
+
+<!-- Toggle button to open the sidebar -->
+<button id="toggleSidebarBtn" class="btn toggle-btn">&#9776;</button>
+
+<!-- END OF SIDEBAR -->
+
+  <main class="page-container">
+    <div class="contribute-cta">
+      <p>Help make this better💜</p>
+      <span><a href="../contribute.html">Contribute here</a> </span>
+    </div>
+
+
+  <!-- TOPIC AND IMAGE CONTAINER  -->
+
+
+      <h1>Ischaemic Heart Disease (IHD)</h1>
+
+
+  <!-- END OF TOPIC AND IMAGE CONTAINER  -->
+  
+
+
+    <article class="notes">
+        <a id='top'></a>
+    <article>
+
+          <!-- LEARNING OBJECTIVES CONTAINER  -->
+              <!-- <div class="custom-card" id="custom-card-1">
+                <div class="icon"><img src="../images/icons/light-bulb.png" alt="Icon" class="icon"></div>
+                <div class="title"> 
+                  <h2>What You Will Learn</h2>
+                </div>
+                <div class="line">
+                  <p>After reading this note, you should be able to...</p>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li><i>This content is not available yet.</i></li>
+                </ul>
+                </div>
+                <div class="read-more" onclick="toggleContent('custom-card-1')">Read More 🍪</div>
+              </div> -->
+            
+          <!-- END OF LEARNING OBJECTIVES CONTAINER  -->
+        
+        
+          <!-- SHOW AND HIDE OUTLINE CONTAINER  -->
+            <div class="outline2">
+        
+              <input type="radio" name="control-2" id="show-2">
+              <label for="show-2">🐵&nbsp; &nbsp;Show Outline</label>
+              <input type="radio" name="control-2" id="hide-2">
+              <label for="hide-2">🙈&nbsp; &nbsp; Hide Outline</label>
+              <div class="contents">
+                <div class="icon-box">
+                  <!-- Replace 'path/to/your/icon.png' with the actual path to your PNG icon -->
+                  <img src="../images/icons/book.png" alt="Icon" class="icon">
+                </div>
+                <div id="tableOfContents">
+                    <ol id="tocList"></ol>
+                </div>
+              </div>
+             <div>
+        
+        <!-- END OF SHOW AND HIDE OUTLINE CONTAINER  -->
+        
+        <!-- READ SUMMARY CONTAINER -->
+        
+              <!-- Summary Overlay -->
+              <div class="summary-overlay" id="summaryOverlay"></div>
+        
+        
+              <div class="summary-card" id="summaryCard">
+                
+                <div class="summary-header">
+                  <h3>Note Summary</h3>
+                  <div class="icon-box">
+                    <!-- Replace 'path/to/your/icon.png' with the actual path to your PNG icon -->
+                    <img src="../images/icons/summary.png" alt="Icon" class="icon">
+                  </div>
+                </div>
+                <div class="summary-content">
+                  <!-- Summary content goes here -->
+                  <h4>1. Definition and Pathophysiology</h4>
+                  <p>IHD is caused by an imbalance between myocardial oxygen demand and supply, leading to ischemia.</p>
+                  <p><strong>Atherosclerosis</strong> is the primary underlying mechanism, characterized by plaque formation, rupture, and thrombosis.</p>
+                  
+                  <h4>2. Classification of IHD</h4>
+                  <ul>
+                    <li><strong>Chronic Coronary Syndromes (CCS)</strong>: Stable angina, variant angina, refractory angina, cardiac syndrome X.</li>
+                    <li><strong>Acute Coronary Syndromes (ACS)</strong>: Unstable angina, NSTEMI, STEMI.</li>
+                  </ul>
+                  
+                  <h4>3. Risk Factors</h4>
+                  <ul>
+                    <li><strong>Non-modifiable</strong>: Age, gender, family history, personal history of IHD.</li>
+                    <li><strong>Modifiable</strong>: Smoking, hypertension, diabetes, hyperlipidemia, obesity, sedentary lifestyle.</li>
+                  </ul>
+                  
+                  <h4>4. Clinical Presentation</h4>
+                  <ul>
+                    <li><strong>Stable Angina</strong>: Predictable chest pain triggered by exertion, relieved by rest or nitrates.</li>
+                    <li><strong>ACS</strong>:
+                      <ul>
+                        <li>Unstable angina: New-onset or worsening angina, no biomarker elevation.</li>
+                        <li>NSTEMI: Biomarker elevation, no ST elevation on ECG.</li>
+                        <li>STEMI: ST elevation on ECG, biomarker elevation.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Atypical Presentations</strong>: 
+                      <ul>
+                        <li>Silent ischemia (common in diabetics, women, and the elderly).</li>
+                        <li>Equivalent symptoms: Dyspnoea, fatigue, epigastric discomfort.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <h4>5. Investigations</h4>
+                  <ul>
+                    <li><strong>ECG</strong>: ST elevation = STEMI; ST depression/T-wave inversion = NSTEMI/unstable angina.</li>
+                    <li><strong>Cardiac Biomarkers</strong>: Troponins: Highly sensitive and specific for myocardial injury.</li>
+                    <li><strong>Imaging</strong>: 
+                      <ul>
+                        <li>Coronary angiography: Gold standard for diagnosing CAD.</li>
+                        <li>Echocardiography: Assesses LV function and complications.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <h4>6. Management</h4>
+                  <ul>
+                    <li><strong>Stable Angina</strong>: ABCDE approach: Antiplatelets, beta-blockers, cholesterol control, diet, exercise.</li>
+                    <li>First-line agents: Nitrates, beta-blockers, ACE-I/ARBs, CCBs.</li>
+                    <li><strong>ACS</strong>:
+                      <ul>
+                        <li>Acute phase: Oxygen, nitrates, antiplatelets, anticoagulants, reperfusion (PCI or thrombolysis).</li>
+                        <li>Long-term: Secondary prevention with statins, beta-blockers, ACE-I/ARBs.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <h4>7. Complications</h4>
+                  <ul>
+                    <li><strong>Acute</strong>: 
+                      <ul>
+                        <li>Arrhythmias (e.g., VF, AF), cardiogenic shock, acute heart failure, mechanical complications (e.g., VSR, papillary muscle rupture).</li>
+                      </ul>
+                    </li>
+                    <li><strong>Chronic</strong>: 
+                      <ul>
+                        <li>Heart failure, LV aneurysm, post-MI pericarditis, thromboembolism.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <h4>8. Prognosis</h4>
+                  <ul>
+                    <li><strong>Poor Prognostic Factors</strong>: Reduced LVEF (<40%), ST-segment depression >2 mm, persistent ischemia.</li>
+                    <li><strong>Strategies to Improve Outcomes</strong>: Optimal medical therapy, lifestyle modifications, revascularization.</li>
+                  </ul>
+                  
+                  <h4>9. Clinical Pearls</h4>
+                  <ul>
+                    <li><strong>Silent Ischemia</strong>: More common in diabetics, women, and the elderly.</li>
+                    <li><strong>Levine’s Sign</strong>: Patient clenches fist over the sternum when describing chest pain (suggestive of angina).</li>
+                    <li><strong>Statin Therapy</strong>: Stabilizes plaques and reduces inflammation.</li>
+                  </ul>
+                  
+        
+                  <span class="close-btn" id="closeBtn">close</span>
+                </div>
+              </div>
+        
+              <div class="summary-trigger" id="summaryTrigger">
+                <p>Click here to read a summary</p>
+            </div>
+        <!-- END OF READ SUMMARY CONTAINER -->
+        
+<br>
+        
+            <!-- BEGINNING OF NOTE -->
+        
+      <section id='header-1'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-1'>Introduction</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>Definition</h4>
+            <p><strong>Ischaemic Heart Disease (IHD)</strong>, also known as <strong>Coronary Artery Disease (CAD)</strong>, is a group of conditions characterized by an imbalance between myocardial oxygen demand and supply. This imbalance leads to <strong>myocardial ischemia</strong>, which can manifest as a spectrum of clinical syndromes, ranging from <strong>stable angina</strong> to <strong>acute coronary syndromes (ACS)</strong>, including <strong>myocardial infarction (MI)</strong>.</p>
+            
+            <h4>Pathophysiological Basis</h4>
+            <p><strong>Myocardial Oxygen Demand vs. Supply:</strong></p>
+            <ul>
+              <li>The heart requires a continuous supply of oxygen to meet its metabolic demands, especially during increased activity (e.g., <strong>exercise</strong>, <strong>stress</strong>).</li>
+              <li>Oxygen delivery depends on <strong>coronary blood flow</strong>, which is primarily determined by the patency of the coronary arteries.</li>
+              <li>In IHD, <strong>atherosclerosis</strong> (narrowing of coronary arteries) or other mechanisms (e.g., <strong>vasospasm</strong>, <strong>thrombosis</strong>) reduce blood flow, leading to ischemia.</li>
+            </ul>
+            <p><strong>Consequences of Ischemia:</strong></p>
+            <ul>
+              <li><strong>Reversible Ischemia:</strong> Results in <strong>angina pectoris</strong> (chest pain) due to temporary oxygen deficiency.</li>
+              <li><strong>Irreversible Ischemia:</strong> Leads to <strong>myocardial infarction</strong> (cell death) if blood flow is not restored promptly.</li>
+            </ul>
+            
+            <h4>Spectrum of IHD</h4>
+            <p>IHD encompasses a wide range of clinical presentations, including:</p>
+            <p><strong>Chronic Coronary Syndromes (CCS):</strong></p>
+            <ul>
+              <li><strong>Stable angina.</strong></li>
+              <li><strong>Variant (Prinzmetal’s) angina.</strong></li>
+              <li><strong>Refractory angina.</strong></li>
+              <li><strong>Cardiac syndrome X.</strong></li>
+            </ul>
+            <p><strong>Acute Coronary Syndromes (ACS):</strong></p>
+            <ul>
+              <li><strong>Unstable angina.</strong></li>
+              <li><strong>Non-ST Elevation Myocardial Infarction (NSTEMI).</strong></li>
+              <li><strong>ST Elevation Myocardial Infarction (STEMI).</strong></li>
+            </ul>
+            
+            <h4>Epidemiology</h4>
+            <p>IHD is the <strong>leading cause of death globally</strong>, accounting for a significant proportion of cardiovascular morbidity and mortality.</p>
+            <p>Risk factors such as <strong>smoking</strong>, <strong>hypertension</strong>, <strong>diabetes</strong>, and <strong>hyperlipidemia</strong> contribute to its high prevalence.</p>
+            <p>Men are generally at higher risk than premenopausal women, but the risk equalizes after <strong>menopause</strong>.</p>
+            
+            <h4>Clinical Significance</h4>
+            <p>IHD is a major public health challenge due to its <strong>high prevalence</strong>, associated complications (e.g., <strong>heart failure</strong>, <strong>arrhythmias</strong>), and <strong>economic burden</strong>.</p>
+            <p>Early diagnosis and management are critical to improving outcomes and reducing mortality.</p>
+            
+            <h4>Key Concepts</h4>
+            <p><strong>Ischemia vs. Infarction:</strong></p>
+            <ul>
+              <li><strong>Ischemia:</strong> Temporary reduction in blood flow causing reversible damage (e.g., <strong>angina</strong>).</li>
+              <li><strong>Infarction:</strong> Prolonged ischemia leading to irreversible myocardial cell death (e.g., <strong>myocardial infarction</strong>).</li>
+            </ul>
+            <p><strong>Stable vs. Unstable Plaques:</strong></p>
+            <ul>
+              <li><strong>Stable plaques:</strong> Cause chronic, predictable ischemia (e.g., <strong>stable angina</strong>).</li>
+              <li><strong>Unstable plaques:</strong> Prone to rupture, leading to acute thrombosis and ACS (e.g., <strong>unstable angina</strong>, <strong>STEMI</strong>, <strong>NSTEMI</strong>).</li>
+            </ul>
+            <p><strong>Silent Ischemia:</strong></p>
+            <ul>
+              <li>Myocardial ischemia without typical symptoms (e.g., chest pain).</li>
+              <li>More common in <strong>diabetics</strong>, <strong>women</strong>, and the <strong>elderly</strong>.</li>
+            </ul>
+            <p><strong>Role of Collateral Circulation:</strong></p>
+            <ul>
+              <li>In chronic ischemia, <strong>collateral vessels</strong> may develop to bypass blocked arteries, providing some protection against infarction.</li>
+            </ul>
+        </div>
+      </section>
+
+      <section id='header-2'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-2'>Relevant Anatomy</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>Coronary Arteries</h4>
+            <p>The heart is supplied by two main coronary arteries: the <strong>left coronary artery (LCA)</strong> and the <strong>right coronary artery (RCA)</strong>.</p>
+            <p><strong>Left Coronary Artery (LCA):</strong></p>
+            <ul>
+              <li>Divides into two major branches:</li>
+              <ul>
+                <li><strong>Left Anterior Descending (LAD) Artery:</strong></li>
+                <ul>
+                  <li>Supplies the <strong>anterior wall</strong> of the left ventricle and the <strong>interventricular septum</strong>.</li>
+                  <li>Often referred to as the <strong>"widow-maker"</strong> due to its critical role in supplying a large portion of the heart.</li>
+                </ul>
+                <li><strong>Left Circumflex (LCx) Artery:</strong></li>
+                <ul>
+                  <li>Supplies the <strong>lateral wall</strong> of the left ventricle.</li>
+                </ul>
+              </ul>
+            </ul>
+            <p><strong>Right Coronary Artery (RCA):</strong></p>
+            <ul>
+              <li>Supplies the <strong>right ventricle</strong>, <strong>inferior wall</strong> of the left ventricle, and the <strong>posterior interventricular septum</strong>.</li>
+              <li>Also supplies the <strong>sinoatrial (SA) node</strong> (in <strong>60%</strong> of people) and the <strong>atrioventricular (AV) node</strong> (in <strong>90%</strong> of people).</li>
+            </ul>
+            
+            <h4>Cardiac Veins</h4>
+            <p>The <strong>coronary sinus</strong> is the main venous drainage system of the heart, collecting blood from:</p>
+            <ul>
+              <li><strong>Great cardiac vein:</strong> Drains the <strong>anterior heart</strong>.</li>
+              <li><strong>Middle cardiac vein:</strong> Drains the <strong>inferior heart</strong>.</li>
+              <li><strong>Small cardiac vein:</strong> Drains the <strong>right atrium</strong> and <strong>ventricle</strong>.</li>
+            </ul>
+            
+            <h4>Myocardial Blood Supply</h4>
+            <p><strong>Endocardial vs. Epicardial Blood Flow:</strong></p>
+            <ul>
+              <li>The <strong>endocardium</strong> (inner layer of the heart) is more vulnerable to ischemia because it receives blood flow <strong>last</strong> and is under higher pressure during systole.</li>
+              <li>The <strong>epicardium</strong> (outer layer) receives blood flow <strong>first</strong> and is less prone to ischemia.</li>
+            </ul>
+            <p><strong>Collateral Circulation:</strong></p>
+            <ul>
+              <li>In chronic ischemia, small <strong>collateral vessels</strong> may develop to bypass blocked arteries, providing alternative pathways for blood flow.</li>
+            </ul>
+
+        </div>
+      </section>
+
+      <section id='header-3'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-3'>Pathophysiology of IHD</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>Atherosclerosis</h4>
+            <p><strong>Definition:</strong> A chronic inflammatory disease of the arterial wall characterized by the accumulation of <strong>lipids</strong>, <strong>cholesterol</strong>, and <strong>inflammatory cells</strong>, leading to plaque formation.</p>
+            <p><strong>Stages of Atherosclerosis:</strong></p>
+            <ul>
+              <li><strong>Endothelial Dysfunction:</strong></li>
+              <ul>
+                <li>Injury to the endothelium (e.g., due to <strong>hypertension</strong>, <strong>smoking</strong>, or <strong>hyperlipidemia</strong>) triggers inflammation.</li>
+              </ul>
+              <li><strong>Fatty Streak Formation:</strong></li>
+              <ul>
+                <li><strong>LDL cholesterol</strong> accumulates in the intima, forming fatty streaks.</li>
+              </ul>
+              <li><strong>Fibrous Plaque Development:</strong></li>
+              <ul>
+                <li><strong>Smooth muscle cells</strong> and <strong>collagen</strong> form a fibrous cap over the lipid core, creating a stable plaque.</li>
+              </ul>
+              <li><strong>Complicated Plaque:</strong></li>
+              <ul>
+                <li>Plaque rupture or erosion exposes the lipid core, leading to <strong>thrombosis</strong> and <strong>acute ischemia</strong>.</li>
+              </ul>
+            </ul>
+            
+            <h4>Ischemia and Infarction</h4>
+            <p><strong>Mechanisms of Ischemia:</strong></p>
+            <ul>
+              <li>Reduced blood flow due to <strong>fixed stenosis</strong> (e.g., atherosclerosis) or <strong>dynamic obstruction</strong> (e.g., vasospasm).</li>
+              <li>Increased oxygen demand (e.g., during <strong>exercise</strong>) without a corresponding increase in supply.</li>
+            </ul>
+            <p><strong>Consequences of Ischemia:</strong></p>
+            <ul>
+              <li><strong>Reversible Ischemia:</strong> Causes <strong>angina</strong> (chest pain) due to temporary oxygen deficiency.</li>
+              <li><strong>Irreversible Ischemia:</strong> Leads to <strong>myocardial infarction</strong> (cell death) if blood flow is not restored.</li>
+            </ul>
+            
+            <h4>Plaque Rupture and Thrombosis</h4>
+            <p><strong>Vulnerable Plaques:</strong></p>
+            <ul>
+              <li><strong>Thin fibrous cap</strong>, <strong>large lipid core</strong>, and <strong>high inflammatory activity</strong>.</li>
+              <li>Prone to rupture, exposing the lipid core to the bloodstream.</li>
+            </ul>
+            <p><strong>Thrombus Formation:</strong></p>
+            <ul>
+              <li><strong>Platelets</strong> adhere to the exposed lipid core, activating the coagulation cascade and forming a thrombus.</li>
+              <li>This can lead to <strong>complete occlusion</strong> (<strong>STEMI</strong>) or <strong>partial occlusion</strong> (<strong>NSTEMI</strong>/<strong>unstable angina</strong>).</li>
+            </ul>
+            
+            <h4>Reperfusion Injury</h4>
+            <p><strong>Mechanism:</strong></p>
+            <ul>
+              <li>Restoration of blood flow after ischemia can cause additional damage due to the release of <strong>free radicals</strong> and <strong>inflammatory mediators</strong>.</li>
+            </ul>
+            <p><strong>Clinical Implications:</strong></p>
+            <ul>
+              <li>Reperfusion strategies (e.g., <strong>PCI</strong>, <strong>thrombolytics</strong>) must balance the benefits of restoring blood flow with the risks of reperfusion injury.</li>
+            </ul>
+        </div>
+      </section>
+
+      <section id='header-4'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-4'>Classification of Ischaemic Heart Disease (IHD)</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <h4>Chronic Coronary Syndromes (CCS)</h4>
+            <p><strong>Chronic Coronary Syndromes</strong> refer to stable forms of IHD, where symptoms are predictable and typically triggered by increased myocardial oxygen demand.</p>
+            <p><strong>Stable Angina:</strong></p>
+            <ul>
+              <li><strong>Definition:</strong> Chest pain or discomfort caused by transient myocardial ischemia due to <strong>fixed coronary artery stenosis</strong>.</li>
+              <li><strong>Characteristics:</strong></li>
+              <ul>
+                <li><strong>Predictable:</strong> Occurs with exertion, emotional stress, or cold weather.</li>
+                <li>Relieved by rest or <strong>nitrates</strong> within minutes.</li>
+                <li>Described as pressure, tightness, or heaviness in the chest.</li>
+              </ul>
+              <li><strong>ECG Findings:</strong></li>
+              <ul>
+                <li>May be normal at rest.</li>
+                <li>During an episode: <strong>ST-segment depression</strong> or <strong>T-wave inversion</strong>.</li>
+              </ul>
+            </ul>
+            <p><strong>Variant (Prinzmetal’s) Angina:</strong></p>
+            <ul>
+              <li><strong>Definition:</strong> Chest pain caused by transient coronary artery spasm, often at rest, and not necessarily related to atherosclerosis.</li>
+              <li><strong>Characteristics:</strong></li>
+              <ul>
+                <li>Occurs at rest, often in the early morning.</li>
+                <li>Associated with <strong>ST-segment elevation</strong> during episodes (transient).</li>
+              </ul>
+              <li><strong>Pathophysiology:</strong></li>
+              <ul>
+                <li>Hyperreactivity of coronary smooth muscle leading to <strong>vasospasm</strong>.</li>
+              </ul>
+            </ul>
+            <p><strong>Refractory Angina:</strong></p>
+            <ul>
+              <li><strong>Definition:</strong> Persistent angina despite optimal medical therapy and revascularization.</li>
+              <li><strong>Characteristics:</strong></li>
+              <ul>
+                <li>Severe, disabling chest pain.</li>
+                <li>Often seen in patients with <strong>advanced CAD</strong> or those unsuitable for revascularization.</li>
+              </ul>
+            </ul>
+            <p><strong>Cardiac Syndrome X:</strong></p>
+            <ul>
+              <li><strong>Definition:</strong> Angina-like chest pain with normal coronary arteries on angiography, likely due to <strong>microvascular dysfunction</strong>.</li>
+              <li><strong>Characteristics:</strong></li>
+              <ul>
+                <li>More common in <strong>women</strong>.</li>
+                <li>Associated with abnormal <strong>coronary flow reserve</strong>.</li>
+              </ul>
+            </ul>
+            
+            <h4>Acute Coronary Syndromes (ACS)</h4>
+            <p><strong>ACS</strong> represents a spectrum of conditions caused by acute myocardial ischemia due to plaque rupture or erosion, leading to thrombosis and partial or complete occlusion of a coronary artery.</p>
+            <p><strong>Unstable Angina (UA):</strong></p>
+            <ul>
+              <li><strong>Definition:</strong> New-onset angina, worsening angina, or angina at rest without myocardial necrosis.</li>
+              <li><strong>Characteristics:</strong></li>
+              <ul>
+                <li>No elevation in <strong>cardiac biomarkers</strong> (troponins).</li>
+                <li>ECG may show <strong>ST depression</strong> or <strong>T-wave inversion</strong>.</li>
+              </ul>
+              <li><strong>Pathophysiology:</strong></li>
+              <ul>
+                <li>Partial occlusion of a coronary artery due to <strong>non-occlusive thrombus</strong>.</li>
+              </ul>
+            </ul>
+            <p><strong>Non-ST Elevation Myocardial Infarction (NSTEMI):</strong></p>
+            <ul>
+              <li><strong>Definition:</strong> Myocardial infarction without ST elevation on ECG but with elevated <strong>cardiac biomarkers</strong> (troponins).</li>
+              <li><strong>Characteristics:</strong></li>
+              <ul>
+                <li>Partial or transient occlusion of a coronary artery.</li>
+                <li>ECG may show <strong>ST depression</strong>, <strong>T-wave inversion</strong>, or be normal.</li>
+              </ul>
+              <li><strong>Pathophysiology:</strong></li>
+              <ul>
+                <li>Non-occlusive thrombus with some degree of myocardial necrosis.</li>
+              </ul>
+            </ul>
+            <p><strong>ST Elevation Myocardial Infarction (STEMI):</strong></p>
+            <ul>
+              <li><strong>Definition:</strong> Myocardial infarction with persistent ST elevation on ECG and elevated <strong>cardiac biomarkers</strong> (troponins).</li>
+              <li><strong>Characteristics:</strong></li>
+              <ul>
+                <li>Complete occlusion of a coronary artery.</li>
+                <li>ECG shows <strong>ST elevation</strong> in two contiguous leads.</li>
+              </ul>
+              <li><strong>Pathophysiology:</strong></li>
+              <ul>
+                <li>Occlusive thrombus leading to <strong>transmural infarction</strong>.</li>
+              </ul>
+            </ul>
+
+            <h4>Special Categories</h4>
+            <p>These are unique or atypical presentations of IHD that require special consideration.</p>
+            <p><strong>Silent Ischemia:</strong></p>
+            <ul>
+              <li><strong>Definition:</strong> Myocardial ischemia without typical angina symptoms.</li>
+              <li><strong>Characteristics:</strong></li>
+              <ul>
+                <li>More common in <strong>diabetics</strong>, <strong>women</strong>, and the <strong>elderly</strong>.</li>
+                <li>Diagnosed incidentally on <strong>stress testing</strong> or <strong>ECG</strong>.</li>
+              </ul>
+            </ul>
+            <p><strong>Microvascular Angina:</strong></p>
+            <ul>
+              <li><strong>Definition:</strong> Ischemia due to dysfunction of small coronary arteries.</li>
+              <li><strong>Characteristics:</strong></li>
+              <ul>
+                <li>Normal coronary arteries on <strong>angiography</strong>.</li>
+                <li>Associated with abnormal <strong>coronary flow reserve</strong>.</li>
+              </ul>
+            </ul>
+            <p><strong>Post-Infarction Angina:</strong></p>
+            <ul>
+              <li><strong>Definition:</strong> Angina occurring after an acute myocardial infarction.</li>
+              <li><strong>Characteristics:</strong></li>
+              <ul>
+                <li>Indicates <strong>residual ischemia</strong> or <strong>reinfarction</strong>.</li>
+              </ul>
+            </ul>
+            <p><strong>Vasospastic Angina:</strong></p>
+            <ul>
+              <li><strong>Definition:</strong> Recurrent episodes of angina due to coronary artery spasm.</li>
+              <li><strong>Characteristics:</strong></li>
+              <ul>
+                <li>Often occurs at rest.</li>
+                <li>Associated with transient <strong>ST elevation</strong> on ECG.</li>
+              </ul>
+            </ul>
+            
+            <h4>Ischaemic Heart Disease in Specific Populations</h4>
+            <p><strong>Women:</strong></p>
+            <ul>
+              <li>Higher prevalence of <strong>non-obstructive CAD</strong> and <strong>microvascular dysfunction</strong>.</li>
+              <li>Atypical symptoms (e.g., <strong>fatigue</strong>, <strong>shortness of breath</strong>) are more common.</li>
+            </ul>
+            <p><strong>Diabetics:</strong></p>
+            <ul>
+              <li>Higher risk of <strong>silent ischemia</strong> and atypical presentations.</li>
+              <li>Accelerated <strong>atherosclerosis</strong> and poorer outcomes.</li>
+            </ul>
+            <p><strong>Elderly:</strong></p>
+            <ul>
+              <li>Higher prevalence of <strong>multi-vessel disease</strong> and <strong>comorbidities</strong>.</li>
+              <li>Atypical symptoms (e.g., <strong>confusion</strong>, <strong>syncope</strong>) are more common.</li>
+            </ul>
+
+
+            <div class="note-card" ">
+                <div class="icon"><img src="../images/icons/notes.png" alt="Icon" class="icon"></div>
+                <div class="title"> 
+                  <p>Note</p>
+                </div>
+                <div class="line">
+                  <p><strong></strong></p>
+                </div>
+                <div class="content">
+                    <p><strong>Stable vs. Unstable Angina:</strong></p>
+                    <ul>
+                      <li><strong>Stable angina</strong> is predictable and relieved by rest or nitrates.</li>
+                      <li><strong>Unstable angina</strong> is unpredictable and may occur at rest.</li>
+                    </ul>
+                    <p><strong>NSTEMI vs. STEMI:</strong></p>
+                    <ul>
+                      <li><strong>NSTEMI</strong> involves partial occlusion and no ST elevation.</li>
+                      <li><strong>STEMI</strong> involves complete occlusion and ST elevation.</li>
+                    </ul>
+                    <p><strong>Silent Ischemia:</strong></p>
+                    <ul>
+                      <li>Often missed due to lack of symptoms, especially in high-risk groups.</li>
+                    </ul>
+                </div>
+              </div>
+            
+
+        </div>
+      </section>
+
+      <section id='header-5'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-5'>Risk Factors for Ischaemic Heart Disease (IHD)</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <p><b>IHD</b> is a multifactorial disease influenced by a combination of <b>non-modifiable</b> and <b>modifiable risk factors</b>. Understanding these risk factors is crucial for prevention, early diagnosis, and management.</p>
+            
+            <h4>Non-Modifiable Risk Factors</h4>
+            <p>These are risk factors that <b>cannot</b> be changed or controlled.</p>
+            <ul>
+              <li>
+                <b>Age:</b>  
+                <ul>
+                  <li>Risk of IHD increases with age.</li>
+                  <li><b>Atherosclerosis</b> is a progressive process that worsens over time.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Gender:</b>  
+                <ul>
+                  <li><b>Men</b> are at higher risk than premenopausal women.</li>
+                  <li>After menopause, women’s risk increases and becomes comparable to men’s.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Family History:</b>  
+                <ul>
+                  <li>A first-degree relative (<b>parent</b> or <b>sibling</b>) with IHD or sudden cardiac death increases risk.</li>
+                  <li>Genetic predisposition plays a role in lipid metabolism, blood pressure regulation, and clotting factors.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Personal History of IHD:</b>  
+                <ul>
+                  <li>Previous episodes of angina, myocardial infarction, or revascularization (e.g., <b>PCI</b>, <b>CABG</b>) increase the risk of future events.</li>
+                </ul>
+              </li>
+            </ul>
+            
+            <h4>Modifiable Risk Factors</h4>
+            <p>These are risk factors that can be controlled or managed through lifestyle changes or medical interventions.</p>
+            <ul>
+              <li>
+                <b>Smoking:</b>  
+                <ul>
+                  <li><b>Mechanism:</b> Damages the endothelium, promotes atherosclerosis, and increases thrombogenicity. Reduces oxygen-carrying capacity of blood (due to carbon monoxide).</li>
+                  <li><b>Impact:</b> Smokers have <b>2–4 times</b> higher risk of IHD compared to non-smokers.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Hypertension:</b>  
+                <ul>
+                  <li><b>Mechanism:</b> Increases afterload, leading to left ventricular hypertrophy and increased myocardial oxygen demand. Accelerates atherosclerosis by damaging the endothelium.</li>
+                  <li><b>Impact:</b> A major risk factor for both IHD and stroke.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Obesity:</b>  
+                <ul>
+                  <li><b>Mechanism:</b> Associated with insulin resistance, dyslipidemia, and hypertension. Increases inflammatory markers and oxidative stress.</li>
+                  <li><b>Impact:</b> Central obesity (abdominal fat) is particularly harmful.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Hyperlipidaemia:</b>  
+                <ul>
+                  <li><b>Mechanism:</b> High LDL cholesterol and low HDL cholesterol promote plaque formation. Triglycerides also contribute to atherosclerosis.</li>
+                  <li><b>Impact:</b> LDL cholesterol is a key driver of atherosclerosis.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Sedentary Lifestyle:</b>  
+                <ul>
+                  <li><b>Mechanism:</b> Lack of physical activity contributes to obesity, hypertension, and dyslipidemia.</li>
+                  <li><b>Impact:</b> Regular exercise improves endothelial function and reduces IHD risk.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Diet:</b>  
+                <ul>
+                  <li><b>Harmful Diets:</b> High in saturated fats, trans fats, and salt. Low in antioxidants, fiber, and omega-3 fatty acids.</li>
+                  <li><b>Impact:</b> Poor diet contributes to obesity, hypertension, and dyslipidemia.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Alcohol:</b>  
+                <ul>
+                  <li><b>Moderate Intake:</b> May have a protective effect due to increased HDL cholesterol and antioxidant properties.</li>
+                  <li><b>Excessive Intake:</b> Increases blood pressure, triglycerides, and risk of cardiomyopathy.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Diabetes Mellitus:</b>  
+                <ul>
+                  <li><b>Mechanism:</b> Chronic hyperglycemia damages blood vessels and accelerates atherosclerosis. Insulin resistance promotes dyslipidemia and hypertension.</li>
+                  <li><b>Impact:</b> Diabetics have <b>2–4 times</b> higher risk of IHD compared to non-diabetics.</li>
+                </ul>
+              </li>
+            </ul>
+            
+
+            <h4>Emerging Risk Factors</h4>
+            <p>These are less traditional but increasingly recognized contributors to <b>IHD</b>.</p>
+            <ul>
+              <li>
+                <b>Chronic Kidney Disease (CKD):</b>  
+                <ul>
+                  <li>Associated with hypertension, dyslipidemia, and inflammation.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Psychosocial Factors:</b>  
+                <ul>
+                  <li>Stress, depression, and social isolation increase IHD risk.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Inflammatory Markers:</b>  
+                <ul>
+                  <li>Elevated <b>CRP</b> (C-reactive protein) and other inflammatory markers indicate higher risk.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Sleep Apnea:</b>  
+                <ul>
+                  <li>Associated with hypertension, obesity, and nocturnal hypoxia.</li>
+                </ul>
+              </li>
+            </ul>
+            
+
+            <div class="note-card" ">
+                <div class="icon"><img src="../images/icons/notes.png" alt="Icon" class="icon"></div>
+                <div class="title"> 
+                  <p>Note</p>
+                </div>
+                <div class="line">
+                  <p><strong></strong></p>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>
+                          <b>Primary Prevention:</b>  
+                          <ul>
+                            <li>Focus on modifiable risk factors (e.g., smoking cessation, weight loss, blood pressure control).</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <b>Secondary Prevention:</b>  
+                          <ul>
+                            <li>Aggressive management of risk factors in patients with established <b>IHD</b> to prevent recurrence.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <b>Global Risk Assessment:</b>  
+                          <ul>
+                            <li>Use tools like the <b>Framingham Risk Score</b> or <b>ASCVD Risk Calculator</b> to estimate <b>10-year</b> risk of IHD.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                </div>
+              </div>
+
+
+
+            
+        </div>
+      </section>
+
+      <section id='header-6'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-6'>Clinical Presentation of IHD</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <p>The clinical presentation of <b>IHD</b> varies depending on the type and severity of the condition. A thorough history and physical examination are essential for accurate diagnosis and management.</p>
+            
+            <h4>History</h4>
+            <ul>
+              <li>
+                <b>Chest Pain (Angina):</b>
+                <ul>
+                  <li><b>Characteristics:</b>
+                    <ul>
+                      <li><b>Location:</b> Typically retrosternal (behind the sternum).</li>
+                      <li><b>Radiation:</b> May radiate to the left shoulder, arm, neck, jaw, or throat.</li>
+                      <li><b>Quality:</b> Described as pressure, tightness, heaviness, or squeezing.</li>
+                    </ul>
+                  </li>
+                  <li><b>Duration:</b>
+                    <ul>
+                      <li><b>Stable angina:</b> 1–5 minutes.</li>
+                      <li><b>Unstable angina or MI:</b> &gt;10 minutes.</li>
+                    </ul>
+                  </li>
+                  <li><b>Triggers:</b> Exertion, emotional stress, cold weather, or heavy meals.</li>
+                  <li><b>Relieving Factors:</b> Rest or nitrates (in stable angina).</li>
+                </ul>
+              </li>
+              <li>
+                <b>Atypical Presentations:</b>
+                <ul>
+                  <li><b>Silent Ischemia:</b> No chest pain (common in diabetics, women, and the elderly).</li>
+                  <li><b>Equivalent Symptoms:</b> Dyspnoea, fatigue, or epigastric discomfort.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Associated Symptoms:</b>
+                <ul>
+                  <li><b>Dyspnoea:</b> Due to left ventricular dysfunction or pulmonary congestion.</li>
+                  <li><b>Palpitations:</b> Arrhythmias (e.g., atrial fibrillation, ventricular tachycardia).</li>
+                  <li><b>Syncope or Altered Sensorium:</b> Due to arrhythmias or reduced cardiac output.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Risk Factor Assessment:</b> Ask about smoking, hypertension, diabetes, hyperlipidemia, family history, and lifestyle factors.
+              </li>
+            </ul>
+            
+            <h4>Physical Examination</h4>
+            <ul>
+              <li>
+                <b>General Examination:</b>
+                <ul>
+                  <li><b>Levine’s Sign:</b> Patient clenches fist over the sternum when describing chest pain (suggestive of angina).</li>
+                  <li><b>Stigmata of Hypercholesterolaemia:</b>
+                    <ul>
+                      <li><b>Xanthelasma:</b> Cholesterol deposits on eyelids.</li>
+                      <li><b>Tendon Xanthomas:</b> (e.g., on Achilles tendon).</li>
+                      <li><b>Corneal Arcus:</b> White ring around the cornea.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Cardiovascular Examination:</b>
+                <ul>
+                  <li><b>Blood Pressure:</b> May be elevated during angina episodes.</li>
+                  <li><b>Heart Sounds:</b>
+                    <ul>
+                      <li><b>S3 or S4 gallop:</b> Indicative of heart failure.</li>
+                      <li><b>Murmurs:</b> (e.g., mitral regurgitation due to papillary muscle dysfunction).</li>
+                    </ul>
+                  </li>
+                  <li><b>Displaced Apex Beat:</b> Suggestive of left ventricular hypertrophy or dilation.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Respiratory Examination:</b>
+                <ul>
+                  <li><b>Bi-basal Crepitations:</b> Indicative of pulmonary oedema (heart failure).</li>
+                </ul>
+              </li>
+              <li>
+                <b>Signs of Cardiogenic Shock:</b>
+                <ul>
+                  <li>Cold, clammy extremities.</li>
+                  <li>Tachycardia, hypotension.</li>
+                </ul>
+              </li>
+            </ul>
+            
+        </div>
+      </section>
+
+      <section id='header-7'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-7'>Investigations for IHD </a>
+          </h2>
+        </header>
+        <div class='body'>
+            <p>A combination of <b>electrocardiography (ECG)</b>, cardiac biomarkers, and imaging studies is used to diagnose and assess the severity of IHD.</p>
+            
+            <h4>Electrocardiogram (ECG)</h4>
+            <ul>
+              <li>
+                <b>Indications:</b>
+                <ul>
+                  <li>First-line investigation for any patient presenting with chest pain.</li>
+                  <li>Should be performed and interpreted within 10 minutes of presentation.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Findings in IHD:</b>
+                <ul>
+                  <li>
+                    <b>Stable Angina:</b>
+                    <ul>
+                      <li>Normal at rest.</li>
+                      <li>During an episode: ST depression or T-wave inversion.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Unstable Angina/NSTEMI:</b>
+                    <ul>
+                      <li>ST depression, T-wave inversion, or transient ST elevation.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>STEMI:</b>
+                    <ul>
+                      <li>Persistent ST elevation in two contiguous leads.</li>
+                      <li>Pathological Q waves (indicative of prior infarction).</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Localization of Infarction:</b>
+                    <ul>
+                      <li><b>Inferior Wall:</b> Leads II, III, aVF.</li>
+                      <li><b>Anteroseptal Wall:</b> Leads V1–V4.</li>
+                      <li><b>Lateral Wall:</b> Leads I, aVL, V5–V6.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <h4>Cardiac Biomarkers</h4>
+            <ul>
+              <li>
+                <b>Troponins (I, T):</b>
+                <ul>
+                  <li><b>Most sensitive and specific markers</b> of myocardial injury.</li>
+                  <li>
+                    <b>Timing:</b>
+                    <ul>
+                      <li>Rise within 4–6 hours, peak at 18–24 hours, remain elevated for up to 14 days.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Interpretation:</b>
+                    <ul>
+                      <li>Elevated in NSTEMI and STEMI.</li>
+                      <li>Normal in unstable angina.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Creatine Kinase-MB (CK-MB):</b>
+                <ul>
+                  <li>
+                    <b>Timing:</b>
+                    <ul>
+                      <li>Rises within 4–6 hours, peaks at 24 hours, returns to normal by 48–72 hours.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Interpretation:</b>
+                    <ul>
+                      <li>Higher levels in STEMI than NSTEMI.</li>
+                      <li>Normal in unstable angina.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Myoglobin:</b>
+                <ul>
+                  <li>Early marker of myocardial injury but less specific.</li>
+                </ul>
+              </li>
+            </ul>
+            
+            <h4>Imaging Studies</h4>
+            <ul>
+              <li>
+                <b>Coronary Angiography:</b>
+                <ul>
+                  <li>Gold standard for diagnosing coronary artery disease.</li>
+                  <li>Visualizes the location and severity of coronary artery stenosis.</li>
+                  <li>Allows for simultaneous intervention (e.g., PCI).</li>
+                </ul>
+              </li>
+              <li>
+                <b>Echocardiography:</b>
+                <ul>
+                  <li>Assesses left ventricular function and wall motion abnormalities.</li>
+                  <li>Detects complications (e.g., mitral regurgitation, ventricular aneurysm).</li>
+                </ul>
+              </li>
+              <li>
+                <b>Stress Testing:</b>
+                <ul>
+                  <li><b>Exercise ECG:</b> Evaluates for exercise-induced ischemia.</li>
+                  <li><b>Nuclear Imaging:</b> (e.g., Thallium Scan): Assesses myocardial perfusion.</li>
+                  <li><b>Stress Echocardiography:</b> Detects wall motion abnormalities during stress.</li>
+                </ul>
+              </li>
+            </ul>
+            
+            <h4>Non-Specific Tests</h4>
+            <ul>
+              <li><b>Lipid Profile:</b> High LDL cholesterol, low HDL cholesterol, and elevated triglycerides.</li>
+              <li><b>Fasting Blood Sugar (FBS):</b> Screens for diabetes mellitus.</li>
+              <li><b>Full Blood Count (FBC):</b> Assesses for anemia or infection.</li>
+              <li><b>Electrolytes, Urea, Creatinine (EUCr):</b> Evaluates renal function.</li>
+              <li><b>Clotting Profile:</b> Important for patients on anticoagulation or undergoing intervention.</li>
+            </ul>
+            
+            <h4>Key Points</h4>
+            <ul>
+              <li><b>ECG Interpretation:</b> ST elevation = STEMI; ST depression/T-wave inversion = NSTEMI/unstable angina.</li>
+              <li><b>Cardiac Biomarkers:</b> Troponins are the most sensitive and specific for myocardial injury.</li>
+              <li><b>Imaging:</b> Coronary angiography is the gold standard for diagnosing CAD.</li>
+            </ul>
+            
+        </div>
+      </section>
+
+      <section id='header-8'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-8'> Management of Ischaemic Heart Disease (IHD)</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <p>The management of IHD depends on the specific clinical syndrome (e.g., stable angina, ACS) and focuses on symptom relief, prevention of disease progression, and reduction of cardiovascular risk.</p>
+            
+            <h4>1. Stable Angina</h4>
+            <p>The management of stable angina follows the <b>ABCDE mnemonic</b>, which provides a systematic approach to treatment.</p>
+            <ul>
+              <li>
+                <b>A – Antiplatelets and Anti-anginal Therapy:</b>
+                <ul>
+                  <li>
+                    <b>Antiplatelets:</b>
+                    <ul>
+                      <li><b>Aspirin</b> (75–325 mg daily): First-line for secondary prevention.</li>
+                      <li><b>Clopidogrel</b> (75 mg daily): Alternative if aspirin is contraindicated.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Anti-anginal Therapy:</b>
+                    <ul>
+                      <li>
+                        <b>Nitrates:</b>
+                        <ul>
+                          <li><b>Short-acting:</b> Glyceryl trinitrate (GTN) spray or sublingual tablets for acute relief.</li>
+                          <li><b>Long-acting:</b> Isosorbide dinitrate or mononitrate for prophylaxis.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <b>Beta-blockers:</b>
+                        <ul>
+                          <li><b>Examples:</b> Atenolol, bisoprolol, metoprolol.</li>
+                          <li><b>Mechanism:</b> Reduce heart rate and myocardial oxygen demand.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <b>Calcium Channel Blockers (CCBs):</b>
+                        <ul>
+                          <li><b>Examples:</b> Amlodipine, diltiazem, verapamil.</li>
+                          <li><b>Mechanism:</b> Dilate coronary arteries and reduce afterload.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>B – Beta-blockers and Blood Pressure Control:</b>
+                <ul>
+                  <li><b>Beta-blockers:</b> First-line for angina and hypertension.</li>
+                  <li>
+                    <b>ACE Inhibitors (ACE-I) or ARBs:</b>
+                    <ul>
+                      <li>Recommended for patients with hypertension, diabetes, or heart failure.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>C – Cigarette Smoking Cessation and Cholesterol Management:</b>
+                <ul>
+                  <li>
+                    <b>Smoking Cessation:</b>
+                    <ul>
+                      <li>Counseling and pharmacotherapy (e.g., nicotine replacement, varenicline).</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Statins:</b>
+                    <ul>
+                      <li><b>High-intensity statins:</b> Atorvastatin 40–80 mg or rosuvastatin 20–40 mg daily.</li>
+                      <li><b>Goal:</b> LDL cholesterol &lt;70 mg/dL for high-risk patients.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>D – Diet and Diabetes Management:</b>
+                <ul>
+                  <li>
+                    <b>Diet:</b>
+                    <ul>
+                      <li>Mediterranean diet rich in fruits, vegetables, whole grains, and lean proteins.</li>
+                      <li>Limit saturated fats, trans fats, and salt.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Diabetes Management:</b>
+                    <ul>
+                      <li>Tight glycemic control (<b>HbA1c &lt;7%</b>).</li>
+                      <li>Consider SGLT2 inhibitors or GLP-1 agonists for cardiovascular benefits.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>E – Exercise and Education:</b>
+                <ul>
+                  <li>
+                    <b>Exercise:</b>
+                    <ul>
+                      <li>Regular aerobic exercise (e.g., 30 minutes of brisk walking, 5 days/week).</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Education:</b>
+                    <ul>
+                      <li>Patient counseling on lifestyle modifications and medication adherence.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <h4>2. Prinzmetal (Variant) Angina</h4>
+            <ul>
+              <li>
+                <b>First-line Therapy:</b>
+                <ul>
+                  <li>
+                    <b>Calcium Channel Blockers (CCBs):</b>
+                    <ul>
+                      <li><b>Examples:</b> Amlodipine, diltiazem, verapamil.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Nitrates:</b>
+                    <ul>
+                      <li>Short-acting nitrates for acute relief.</li>
+                      <li>Long-acting nitrates for prophylaxis.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Avoid Beta-blockers:</b> May exacerbate coronary vasospasm.</li>
+            </ul>
+            
+
+            <h4>3. Acute Coronary Syndromes (ACS)</h4>
+            <p>The management of ACS involves <b>acute phase management</b> and <b>coronary intervention</b>.</p>
+            
+            <h4>a. Acute Phase Management:</h4>
+            <ul>
+              <li>
+                <b>Admission and Monitoring:</b>
+                <ul>
+                  <li>Admit to a coronary care unit (CCU) or ICU with continuous ECG monitoring.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Oxygen:</b>
+                <ul>
+                  <li>Administer if oxygen saturation is &lt;90% or if the patient is in respiratory distress.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Nitrates:</b>
+                <ul>
+                  <li>Glyceryl trinitrate (GTN) spray or IV nitrates: For pain relief (avoid if hypotensive).</li>
+                </ul>
+              </li>
+              <li>
+                <b>Beta-blockers:</b>
+                <ul>
+                  <li><b>Examples:</b> Metoprolol, atenolol.</li>
+                  <li><b>Contraindications:</b> Bradycardia, hypotension, heart failure.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Antiplatelets:</b>
+                <ul>
+                  <li><b>Aspirin:</b> 150–300 mg chewed for rapid absorption.</li>
+                  <li>
+                    <b>P2Y12 Inhibitors:</b> 
+                    <ul>
+                      <li>Clopidogrel: 300 mg loading dose, then 75 mg daily.</li>
+                      <li>Ticagrelor: 180 mg loading dose, then 90 mg twice daily.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Anticoagulants:</b>
+                <ul>
+                  <li><b>Low Molecular Weight Heparin (LMWH):</b> Enoxaparin 1 mg/kg subcutaneously twice daily.</li>
+                  <li><b>Unfractionated Heparin (UFH):</b> IV infusion (target aPTT 1.5–2.5 times control).</li>
+                </ul>
+              </li>
+              <li>
+                <b>Pain Relief:</b>
+                <ul>
+                  <li><b>Morphine:</b> 2.5–5 mg IV for severe pain.</li>
+                  <li><b>Metoclopramide:</b> 10 mg IV to prevent nausea/vomiting.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Statins:</b> 
+                <ul>
+                  <li><b>High-dose statins:</b> Atorvastatin 80 mg daily.</li>
+                </ul>
+              </li>
+              <li>
+                <b>ACE-I/ARBs:</b>
+                <ul>
+                  <li>Start within 24 hours if no contraindications (e.g., hypotension, renal failure).</li>
+                </ul>
+              </li>
+            </ul>
+            
+            <h4>b. Coronary Intervention:</h4>
+            <ul>
+              <li>
+                <b>Percutaneous Coronary Intervention (PCI):</b>
+                <ul>
+                  <li><b>Indications:</b> STEMI, high-risk NSTEMI, or unstable angina refractory to medical therapy.</li>
+                  <li><b>Procedure:</b> Angioplasty + stenting.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Coronary Artery Bypass Grafting (CABG):</b>
+                <ul>
+                  <li><b>Indications:</b> Left main disease, multi-vessel disease, or diabetes.</li>
+                </ul>
+              </li>
+            </ul>
+            
+            <h4>c. Contraindications to Thrombolytics:</h4>
+            <ul>
+              <li>
+                <b>Absolute:</b> Active bleeding, hemorrhagic stroke, aortic dissection.
+              </li>
+              <li>
+                <b>Relative:</b> Recent surgery, trauma, or prolonged CPR.
+              </li>
+            </ul>
+
+
+            <div class="note-card" ">
+                <div class="icon"><img src="../images/icons/notes.png" alt="Icon" class="icon"></div>
+                <div class="title"> 
+                  <p>Note</p>
+                </div>
+                <div class="line">
+                  <p><strong></strong></p>
+                </div>
+                <div class="content">
+                    <ul>
+                      <li><b>Stable Angina:</b> Focus on ABCDE approach for long-term management.</li>
+                      <li><b>ACS:</b> Immediate goals are pain relief, reperfusion, and prevention of complications.</li>
+                      <li><b>PCI:</b> Preferred over thrombolysis in STEMI if available within 90 minutes.</li>
+                    </ul>
+                </div>
+              </div>
+            
+
+            
+        </div>
+      </section>
+
+      <section id='header-9'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-9'> Complications of Ischaemic Heart Disease (IHD)</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <p>IHD can lead to a wide range of complications, both acute (e.g., myocardial infarction, arrhythmias) and chronic (e.g., heart failure, ventricular aneurysm). Early recognition and management are crucial to improving outcomes.</p>
+            
+            <h4>1. Acute Complications</h4>
+            <ul>
+              <li>
+                <b>Myocardial Infarction (MI):</b>
+                <ul>
+                  <li><b>Pathophysiology:</b> Prolonged ischemia leading to irreversible myocardial cell death.</li>
+                  <li>
+                    <b>Clinical Features:</b>
+                    <ul>
+                      <li>Severe, crushing chest pain lasting &gt;20 minutes.</li>
+                      <li>Associated symptoms: Dyspnoea, diaphoresis, nausea, vomiting.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Management:</b> 
+                    <ul>
+                      <li>Reperfusion therapy (PCI or thrombolysis).</li>
+                      <li>Pain relief (morphine), oxygen, nitrates, beta-blockers, antiplatelets, and anticoagulants.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Arrhythmias:</b>
+                <ul>
+                  <li>
+                    <b>Types:</b>
+                    <ul>
+                      <li><b>Ventricular Fibrillation (VF):</b> Most common cause of sudden cardiac death in MI.</li>
+                      <li><b>Atrial Fibrillation (AF):</b> Common in heart failure or large infarcts.</li>
+                      <li><b>Bradyarrhythmias:</b> Sinus bradycardia or AV block (common in inferior MI).</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Management:</b>
+                    <ul>
+                      <li><b>VF:</b> Immediate defibrillation.</li>
+                      <li><b>AF:</b> Rate control (beta-blockers, CCBs) or rhythm control (cardioversion).</li>
+                      <li><b>Bradyarrhythmias:</b> Atropine or temporary pacing.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Cardiogenic Shock:</b>
+                <ul>
+                  <li>
+                    <b>Pathophysiology:</b> Severe left ventricular dysfunction leading to inadequate cardiac output.
+                  </li>
+                  <li>
+                    <b>Clinical Features:</b>
+                    <ul>
+                      <li>Hypotension (systolic BP &lt;90 mmHg).</li>
+                      <li>Cold, clammy extremities, oliguria, altered mental status.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Management:</b>
+                    <ul>
+                      <li>Inotropes (e.g., dobutamine, dopamine).</li>
+                      <li>Mechanical circulatory support (e.g., intra-aortic balloon pump).</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Acute Heart Failure:</b>
+                <ul>
+                  <li>
+                    <b>Pathophysiology:</b> Impaired left ventricular function leading to pulmonary congestion.
+                  </li>
+                  <li>
+                    <b>Clinical Features:</b>
+                    <ul>
+                      <li>Dyspnoea, orthopnoea, bi-basal crepitations, S3 gallop.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Management:</b> 
+                    <ul>
+                      <li>Diuretics (e.g., furosemide), nitrates, and ACE-I/ARBs.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Mechanical Complications:</b>
+                <ul>
+                  <li>
+                    <b>Ventricular Septal Rupture (VSR):</b> Presents with sudden hemodynamic deterioration and a new harsh holosystolic murmur.
+                  </li>
+                  <li>
+                    <b>Papillary Muscle Rupture:</b> Causes acute mitral regurgitation with a pansystolic murmur and pulmonary edema.
+                  </li>
+                  <li>
+                    <b>Free Wall Rupture:</b> Leads to cardiac tamponade (e.g., hypotension, jugular venous distension, muffled heart sounds).
+                  </li>
+                  <li>
+                    <b>Management:</b> Emergency surgical repair.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+
+            <h4>2. Chronic Complications</h4>
+            <ul>
+              <li>
+                <b>Heart Failure:</b>
+                <ul>
+                  <li><b>Pathophysiology:</b> Chronic left ventricular dysfunction due to ischemic damage.</li>
+                  <li>
+                    <b>Clinical Features:</b>
+                    <ul>
+                      <li>Dyspnoea, fatigue, peripheral edema, jugular venous distension.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Management:</b>
+                    <ul>
+                      <li>ACE-I/ARBs, beta-blockers, diuretics, aldosterone antagonists, and SGLT2 inhibitors.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Left Ventricular Aneurysm:</b>
+                <ul>
+                  <li><b>Pathophysiology:</b> Fibrotic thinning of the infarcted ventricular wall, leading to paradoxical bulging during systole.</li>
+                  <li>
+                    <b>Clinical Features:</b>
+                    <ul>
+                      <li>Heart failure, arrhythmias, or systemic embolism.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Management:</b>
+                    <ul>
+                      <li>Surgical resection if symptomatic.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Post-MI Pericarditis (Dressler’s Syndrome):</b>
+                <ul>
+                  <li><b>Pathophysiology:</b> Autoimmune inflammation of the pericardium weeks to months after MI.</li>
+                  <li>
+                    <b>Clinical Features:</b>
+                    <ul>
+                      <li>Pleuritic chest pain, pericardial friction rub, fever.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Management:</b>
+                    <ul>
+                      <li>NSAIDs (e.g., ibuprofen) or colchicine.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Chronic Ischemic Cardiomyopathy:</b>
+                <ul>
+                  <li><b>Pathophysiology:</b> Progressive left ventricular dysfunction due to recurrent ischemia.</li>
+                  <li>
+                    <b>Clinical Features:</b>
+                    <ul>
+                      <li>Symptoms of heart failure (e.g., dyspnoea, fatigue, edema).</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Management:</b>
+                    <ul>
+                      <li>Optimize medical therapy (e.g., ACE-I, beta-blockers, diuretics).</li>
+                      <li>Consider revascularization if viable myocardium is present.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Thromboembolism:</b>
+                <ul>
+                  <li><b>Pathophysiology:</b> Mural thrombus formation in the left ventricle post-MI.</li>
+                  <li>
+                    <b>Clinical Features:</b>
+                    <ul>
+                      <li>Systemic embolism (e.g., stroke, limb ischemia).</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Management:</b>
+                    <ul>
+                      <li>Anticoagulation (e.g., warfarin, DOACs).</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="note-card" ">
+                <div class="icon"><img src="../images/icons/notes.png" alt="Icon" class="icon"></div>
+                <div class="title"> 
+                  <p>Note</p>
+                </div>
+                <div class="line">
+                  <p><strong></strong></p>
+                </div>
+                <div class="content">
+                    <ul>
+                      <li><b>Acute Complications:</b> MI, arrhythmias, cardiogenic shock, and mechanical complications require immediate intervention.</li>
+                      <li><b>Chronic Complications:</b> Heart failure, ventricular aneurysm, and thromboembolism require long-term management.</li>
+                      <li><b>Prevention:</b> Early reperfusion and optimal medical therapy reduce the risk of complications.</li>
+                    </ul>
+                </div>
+              </div>
+            
+
+            
+        </div>
+      </section>
+
+      <section id='header-10'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-10'> Prognosis of Ischaemic Heart Disease (IHD)</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <p>The prognosis of IHD varies widely depending on the severity of disease, timeliness of intervention, and presence of comorbidities. Understanding prognostic factors helps guide treatment and improve patient outcomes.</p>
+            
+            <h4>Factors Influencing Prognosis</h4>
+            <ul>
+              <li>
+                <b>Severity of Coronary Artery Disease (CAD):</b>
+                <ul>
+                  <li>Multi-vessel disease or left main stem stenosis is associated with worse outcomes.</li>
+                  <li>Extent of myocardial damage: Larger infarcts have a poorer prognosis.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Left Ventricular (LV) Function:</b>
+                <ul>
+                  <li><b>LV ejection fraction (LVEF):</b>
+                    <ul>
+                      <li>Normal LVEF: <b>>50%</b>.</li>
+                      <li>Mildly reduced LVEF: <b>40–49%</b>.</li>
+                      <li>Moderately reduced LVEF: <b>30–39%</b>.</li>
+                      <li>Severely reduced LVEF: <b><30%</b>.</li>
+                    </ul>
+                  </li>
+                  <li><b>LV end-diastolic pressure (LVEDP):</b> Elevated LVEDP indicates worse prognosis.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Timeliness of Reperfusion:</b>
+                <ul>
+                  <li>Early reperfusion (e.g., PCI or thrombolysis) improves outcomes in STEMI.</li>
+                  <li>Delayed treatment increases the risk of complications (e.g., heart failure, arrhythmias).</li>
+                </ul>
+              </li>
+              <li>
+                <b>Presence of Comorbidities:</b>
+                <ul>
+                  <li><b>Diabetes mellitus:</b> Accelerates atherosclerosis and increases risk of recurrent events.</li>
+                  <li><b>Chronic kidney disease (CKD):</b> Associated with higher mortality.</li>
+                  <li><b>Hypertension:</b> Increases risk of heart failure and recurrent ischemia.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Lifestyle Factors:</b>
+                <ul>
+                  <li>Smoking, obesity, and sedentary lifestyle worsen prognosis.</li>
+                  <li>Adherence to a heart-healthy diet and regular exercise improves outcomes.</li>
+                </ul>
+              </li>
+            </ul>
+            
+            <h4>Prognostic Indicators</h4>
+            <ul>
+              <li>
+                <b>Clinical Indicators:</b>
+                <ul>
+                  <li>Recurrent angina: Indicates ongoing ischemia and higher risk of future events.</li>
+                  <li>Heart failure symptoms: Dyspnoea, fatigue, and edema suggest poor prognosis.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Electrocardiogram (ECG) Findings:</b>
+                <ul>
+                  <li>ST-segment depression <b>>2 mm:</b> Indicates severe ischemia and worse prognosis.</li>
+                  <li>Persistent ST elevation: Suggests large infarct size and higher risk of complications.</li>
+                  <li>Q waves: Indicate prior infarction and increased risk of heart failure.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Biomarkers:</b>
+                <ul>
+                  <li>Elevated troponins: Higher levels correlate with larger infarct size and worse outcomes.</li>
+                  <li>BNP/NT-proBNP: Elevated levels indicate heart failure and poor prognosis.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Imaging Findings:</b>
+                <ul>
+                  <li><b>Echocardiography:</b>
+                    <ul>
+                      <li>Reduced LVEF (<40%) is a strong predictor of mortality.</li>
+                      <li>Regional wall motion abnormalities indicate ischemic burden.</li>
+                    </ul>
+                  </li>
+                  <li><b>Stress Testing:</b> Inducible ischemia at low workload suggests high-risk CAD.</li>
+                </ul>
+              </li>
+            </ul>
+            
+            <h4>Strategies to Improve Prognosis</h4>
+            <ul>
+              <li>
+                <b>Optimal Medical Therapy:</b>
+                <ul>
+                  <li><b>Antiplatelets:</b> Aspirin and P2Y12 inhibitors (e.g., clopidogrel, ticagrelor).</li>
+                  <li><b>Statins:</b> High-intensity statins (e.g., atorvastatin 80 mg daily).</li>
+                  <li><b>Beta-blockers:</b> Reduce myocardial oxygen demand and prevent arrhythmias.</li>
+                  <li><b>ACE-I/ARBs:</b> Improve LV function and reduce mortality.</li>
+                  <li><b>Aldosterone antagonists:</b> Beneficial in heart failure with reduced LVEF.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Lifestyle Modifications:</b>
+                <ul>
+                  <li><b>Smoking cessation:</b> Reduces risk of recurrent events.</li>
+                  <li><b>Diet:</b> Mediterranean diet rich in fruits, vegetables, whole grains, and lean proteins.</li>
+                  <li><b>Exercise:</b> Regular aerobic exercise improves cardiovascular fitness.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Revascularization:</b>
+                <ul>
+                  <li><b>Percutaneous Coronary Intervention (PCI):</b> For high-risk lesions or refractory angina.</li>
+                  <li><b>Coronary Artery Bypass Grafting (CABG):</b> For multi-vessel disease or left main stenosis.</li>
+                </ul>
+              </li>
+              <li>
+                <b>Management of Comorbidities:</b>
+                <ul>
+                  <li><b>Diabetes:</b> Tight glycemic control (HbA1c <7%).</li>
+                  <li><b>Hypertension:</b> Target BP <130/80 mmHg.</li>
+                  <li><b>Hyperlipidemia:</b> LDL cholesterol <70 mg/dL for high-risk patients.</li>
+                </ul>
+              </li>
+            </ul>
+            
+
+            <div class="note-card" ">
+                <div class="icon"><img src="../images/icons/notes.png" alt="Icon" class="icon"></div>
+                <div class="title"> 
+                  <p>Note</p>
+                </div>
+                <div class="line">
+                  <p><strong></strong></p>
+                </div>
+                <div class="content">
+                    <ul>
+                      <li><b>LV Function:</b> The strongest predictor of long-term prognosis.</li>
+                      <li><b>Early Reperfusion:</b> Critical for improving outcomes in STEMI.</li>
+                      <li><b>Lifestyle Changes:</b> Smoking cessation, diet, and exercise significantly improve prognosis.</li>
+                </div>
+              </div>
+
+            </ul>
+            
+        </div>
+      </section>
+
+      <section id='header-11'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-11'>Clinical Pearls </a>
+          </h2>
+        </header>
+        <div class='body'>
+            <p>This section highlights key clinical insights and practical tips related to IHD. These pearls are essential for medical students to excel in exams, clinical rotations, and patient care.</p>
+            
+            <h4>1. Silent Ischemia</h4>
+            <ul>
+              <li><strong>Definition</strong>: Myocardial ischemia without typical angina symptoms.</li>
+              <li><strong>High-Risk Groups</strong>:
+                <ul>
+                  <li>Diabetics (due to autonomic neuropathy).</li>
+                  <li>Women (more likely to present with atypical symptoms).</li>
+                  <li>Elderly patients (may present with confusion or fatigue).</li>
+                </ul>
+              </li>
+              <li><strong>Clinical Significance</strong>:
+                <ul>
+                  <li>Often missed, leading to delayed diagnosis and treatment.</li>
+                  <li>Diagnosed incidentally on stress testing or ECG.</li>
+                </ul>
+              </li>
+            </ul>
+            
+            <h4>2. Levine’s Sign</h4>
+            <ul>
+              <li><strong>Description</strong>: The patient clenches their fist over the sternum when describing chest pain.</li>
+              <li><strong>Clinical Significance</strong>: Highly suggestive of angina pectoris. A useful bedside clue during history-taking.</li>
+            </ul>
+            
+            <h4>3. Statin Therapy</h4>
+            <ul>
+              <li><strong>Mechanism</strong>: Lowers LDL cholesterol and stabilizes atherosclerotic plaques. Has anti-inflammatory and plaque-stabilizing effects.</li>
+              <li><strong>Clinical Significance</strong>: Reduces the risk of recurrent MI and cardiovascular death. High-intensity statins (e.g., atorvastatin 80 mg) are recommended for ACS patients.</li>
+            </ul>
+            
+            <h4>4. Differential Diagnosis of Chest Pain</h4>
+            <ul>
+              <li><strong>Cardiac Causes</strong>: IHD (angina, MI), pericarditis, aortic dissection.</li>
+              <li><strong>Non-Cardiac Causes</strong>: Gastroesophageal reflux disease (GERD), peptic ulcer disease (PUD), musculoskeletal pain, pulmonary embolism (PE).</li>
+              <li><strong>Clinical Significance</strong>: Always rule out life-threatening causes (e.g., MI, PE, aortic dissection).</li>
+            </ul>
+            
+            <h4>5. ECG Localization of Infarction</h4>
+            <ul>
+              <li><strong>Inferior Wall</strong>: Leads II, III, aVF.</li>
+              <li><strong>Anteroseptal Wall</strong>: Leads V1–V4.</li>
+              <li><strong>Lateral Wall</strong>: Leads I, aVL, V5–V6.</li>
+              <li><strong>Clinical Significance</strong>: Helps identify the affected coronary artery and guide management.</li>
+            </ul>
+            
+            <h4>6. Troponins in ACS</h4>
+            <ul>
+              <li><strong>Timing</strong>: Rise within 4–6 hours, peak at 18–24 hours, remain elevated for up to 14 days.</li>
+              <li><strong>Clinical Significance</strong>: Elevated in NSTEMI and STEMI. Normal in unstable angina.</li>
+            </ul>
+            
+            <h4>7. Reperfusion Strategies in STEMI</h4>
+            <ul>
+              <li><strong>Primary PCI</strong>: Preferred over thrombolysis if available within 90 minutes.</li>
+              <li><strong>Thrombolysis</strong>: Indicated if PCI is not available within 120 minutes. Contraindications: Active bleeding, hemorrhagic stroke, aortic dissection.</li>
+            </ul>
+            
+            <h4>8. Beta-blockers in IHD</h4>
+            <ul>
+              <li><strong>Benefits</strong>: Reduce myocardial oxygen demand by lowering heart rate and contractility. Prevent arrhythmias and improve survival post-MI.</li>
+              <li><strong>Contraindications</strong>: Bradycardia, hypotension, acute heart failure.</li>
+            </ul>
+            
+            <h4>9. Nitrates in Angina</h4>
+            <ul>
+              <li><strong>Mechanism</strong>: Dilate coronary arteries and reduce preload.</li>
+              <li><strong>Clinical Use</strong>: Short-acting nitrates (e.g., GTN spray) for acute relief. Long-acting nitrates (e.g., isosorbide dinitrate) for prophylaxis.</li>
+              <li><strong>Pitfall</strong>: Avoid in hypotension or right ventricular infarction.</li>
+            </ul>
+            
+            <h4>10. Antiplatelet Therapy</h4>
+            <ul>
+              <li><strong>Aspirin</strong>: First-line for all patients with IHD.</li>
+              <li><strong>P2Y12 Inhibitors</strong>: Clopidogrel, ticagrelor, or prasugrel in ACS.</li>
+              <li><strong>Dual Antiplatelet Therapy (DAPT)</strong>: Recommended for 12 months post-ACS or PCI.</li>
+            </ul>
+            
+            <h4>11. Heart Failure in IHD</h4>
+            <ul>
+              <li><strong>Pathophysiology</strong>: Impaired LV function due to ischemic damage.</li>
+              <li><strong>Management</strong>: ACE-I/ARBs, beta-blockers, diuretics, aldosterone antagonists, SGLT2 inhibitors.</li>
+            </ul>
+            
+            <h4>12. Lifestyle Modifications</h4>
+            <ul>
+              <li><strong>Smoking Cessation</strong>: Reduces risk of recurrent events.</li>
+              <li><strong>Diet</strong>: Mediterranean diet rich in fruits, vegetables, whole grains, and lean proteins.</li>
+              <li><strong>Exercise</strong>: Regular aerobic exercise improves cardiovascular fitness.</li>
+            </ul>
+            
+        </div>
+      </section>
+
+      <section id='header-12'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-12'>Case-Based Learning </a>
+          </h2>
+        </header>
+        <div class='body'>
+
+            <h4>Case 1: ST Elevation Myocardial Infarction (STEMI)</h4>
+            <p><strong>Patient Presentation:</strong> A 55-year-old male with a history of smoking, hypertension, and hyperlipidemia presents with crushing substernal chest pain radiating to his left arm and jaw, lasting 45 minutes. Associated symptoms include diaphoresis and nausea.</p>
+            
+            <p><strong>Physical Examination:</strong></p>
+            <ul>
+              <li><strong>Vitals:</strong> BP 160/95 mmHg, HR 110 bpm, RR 22/min, SpO₂ 96% on room air.</li>
+              <li><strong>CVS:</strong> S1/S2 normal, no murmurs.</li>
+              <li><strong>Respiratory:</strong> Clear lung fields.</li>
+            </ul>
+            
+            <p><strong>Initial Workup:</strong></p>
+            <ul>
+              <li><strong>ECG:</strong> ST elevation in leads II, III, aVF.</li>
+              <li><strong>Cardiac Biomarkers:</strong> Troponin I elevated at 8.0 ng/mL (normal &lt;0.04).</li>
+            </ul>
+            
+            <p><strong>Questions:</strong></p>
+            <ul>
+              <li><strong>What is the most likely diagnosis?</strong> Inferior wall STEMI (right coronary artery occlusion).</li>
+              <li><strong>What is the immediate next step?</strong> Reperfusion therapy (primary PCI within 90 minutes or thrombolysis if PCI unavailable).</li>
+              <li><strong>List three medications to administer acutely.</strong> Aspirin 325 mg chewed, clopidogrel 600 mg, IV heparin, morphine for pain.</li>
+            </ul>
+            
+            <p><strong>Management:</strong></p>
+            <ul>
+              <li>PCI performed, revealing 100% occlusion of the RCA. Drug-eluting stent placed.</li>
+              <li><strong>Discharge Plan:</strong> Dual antiplatelet therapy (aspirin + ticagrelor), high-intensity statin, beta-blocker, and ACE inhibitor.</li>
+            </ul>
+            
+            <p><strong>Key Takeaway:</strong> Timely reperfusion is critical in STEMI to limit infarct size.</p>
+            
+            <h4>Case 2: Non-ST Elevation Myocardial Infarction (NSTEMI)</h4>
+            <p><strong>Patient Presentation:</strong> A 68-year-old diabetic woman presents with fatigue and dyspnea on exertion for 3 days. No chest pain.</p>
+            
+            <p><strong>Physical Examination:</strong></p>
+            <ul>
+              <li><strong>Vitals:</strong> BP 130/80 mmHg, HR 98 bpm, SpO₂ 94%.</li>
+              <li><strong>CVS:</strong> Soft S1/S2, no murmurs.</li>
+              <li><strong>Lungs:</strong> Bi-basal crackles.</li>
+            </ul>
+            
+            <p><strong>Initial Workup:</strong></p>
+            <ul>
+              <li><strong>ECG:</strong> ST depression in leads V4–V6.</li>
+              <li><strong>Troponin I:</strong> 2.5 ng/mL (elevated).</li>
+              <li><strong>Echocardiogram:</strong> LVEF 45%, anterior hypokinesis.</li>
+            </ul>
+            
+            <p><strong>Questions:</strong></p>
+            <ul>
+              <li><strong>Why might this patient lack typical chest pain?</strong> Diabetic autonomic neuropathy (silent ischemia).</li>
+              <li><strong>What risk stratification tool is used here?</strong> GRACE Score or TIMI Risk Score to guide invasive vs. conservative management.</li>
+              <li><strong>What is the next step?</strong> Early invasive strategy (coronary angiography within 24–48 hours).</li>
+            </ul>
+            
+            <p><strong>Management:</strong></p>
+            <ul>
+              <li>Coronary Angiography: 80% stenosis in LAD artery. PCI with stent placement.</li>
+              <li><strong>Long-term Therapy:</strong> Statin, beta-blocker, ACE inhibitor, and cardiac rehabilitation.</li>
+            </ul>
+            
+            <p><strong>Key Takeaway:</strong> Atypical presentations (e.g., dyspnea, fatigue) are common in women and diabetics.</p>
+            
+
+
+            <h4>Case 3: Stable Angina with Refractory Symptoms</h4>
+            <p><strong>Patient Presentation:</strong> A 70-year-old male with known CAD (prior PCI) reports worsening exertional chest pain despite adherence to medications.</p>
+            
+            <p><strong>Current Medications:</strong></p>
+            <ul>
+              <li>Aspirin 81 mg</li>
+              <li>Atorvastatin 40 mg</li>
+              <li>Metoprolol 50 mg BID</li>
+              <li>Isosorbide mononitrate 30 mg daily</li>
+            </ul>
+            
+            <p><strong>Stress Test Findings:</strong></p>
+            <ul>
+              <li><strong>Exercise ECG:</strong> 2 mm ST depression at 4 METs.</li>
+              <li><strong>Nuclear Imaging:</strong> Large anterior ischemia.</li>
+            </ul>
+            
+            <p><strong>Questions:</strong></p>
+            <ul>
+              <li><strong>What is the diagnosis?</strong> Refractory angina due to progressive CAD.</li>
+              <li><strong>What advanced therapies could be considered?</strong> Enhanced External Counterpulsation (EECP) or ranolazine.</li>
+              <li><strong>When is CABG indicated?</strong> For multi-vessel disease or left main stenosis.</li>
+            </ul>
+            
+            <p><strong>Management:</strong></p>
+            <ul>
+              <li>Repeat Angiography: Shows diffuse disease unsuitable for PCI.</li>
+              <li>CABG performed with LIMA-to-LAD graft.</li>
+            </ul>
+            
+            <p><strong>Key Takeaway:</strong> Refractory angina requires multidisciplinary management (medical therapy, revascularization, advanced interventions).</p>
+            
+            <h4>Case 4: Atypical Presentation in an Elderly Patient</h4>
+            <p><strong>Patient Presentation:</strong> An 82-year-old woman with hypertension and CKD presents with acute confusion and generalized weakness. No chest pain.</p>
+            
+            <p><strong>Physical Examination:</strong></p>
+            <ul>
+              <li><strong>Vitals:</strong> BP 90/60 mmHg, HR 120 bpm, SpO₂ 88%.</li>
+              <li><strong>CVS:</strong> Tachycardic, S3 gallop.</li>
+              <li><strong>Neuro:</strong> Disoriented to time/place.</li>
+            </ul>
+            
+            <p><strong>Initial Workup:</strong></p>
+            <ul>
+              <li><strong>ECG:</strong> ST elevation in aVR with diffuse ST depression.</li>
+              <li><strong>Troponin I:</strong> 15 ng/mL.</li>
+              <li><strong>Echo:</strong> Severe LV dysfunction (LVEF 30%).</li>
+            </ul>
+            
+            <p><strong>Questions:</strong></p>
+            <ul>
+              <li><strong>What is the likely diagnosis?</strong> STEMI with cardiogenic shock (likely left main occlusion).</li>
+              <li><strong>Why is confusion present?</strong> Reduced cerebral perfusion due to cardiogenic shock.</li>
+              <li><strong>What immediate intervention is needed?</strong> Mechanical circulatory support (e.g., intra-aortic balloon pump) and urgent PCI.</li>
+            </ul>
+            
+            <p><strong>Management:</strong></p>
+            <ul>
+              <li>PCI reveals left main stenosis; CABG deferred due to instability.</li>
+              <li><strong>Outcome:</strong> Palliative care due to poor prognosis.</li>
+            </ul>
+            
+            <p><strong>Key Takeaway:</strong> Elderly patients may present with non-classic symptoms (e.g., confusion, syncope).</p>
+            
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <hr style="margin: 3rem 0;">
+
+      <!-- PRACTICE QUESTIONS CONTAINER -->
+
+      <!-- <div class="custom-card" id="custom-card-2">
+        <div class="icon"><img src="../images/icons/practice-questions.png" alt="Icon" class="icon"></div>
+        <div class="title"> 
+          <h2>Practice Questions</h2>
+        </div>
+        <div class="line">
+          <p>Check how well you grasp the concepts by answering the following questions...</p>
+        </div>
+        <div class="content">
+          <ol>
+            <li><i>This content is not available yet.</i></li>
+          </ol>
+        </div>
+        <div class="read-more" onclick="toggleContent('custom-card-2')">Read More 🍪</div>
+      </div> -->
+
+      <!-- END OF PRACTICE QUESTIONS CONTAINER -->
+
+
+      <!-- CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
+      <div class="contact">
+        <div class="comment-container">
+          <div class="comment-icon">
+            <!-- Add your icon image here -->
+            <img src="../images/icons/comment.png" alt="Comment Icon">
+          </div>
+          <div class="comment-text">
+            <!-- Add your text here -->
+            <p>Send your comments, corrections, explanations/clarifications and requests/suggestions </p>
+          </div>
+          <a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1" class="comment-button">
+            here
+            <img src="../images/icons/whatsapp.png" alt="Image Icon">
+          </a>
+        </div>
+
+        <div class="contributors-container">
+
+          <!-- <h2 class="contributors-header">Contributors</h2>
+  
+        <br>
+            <div class="contributor-box">
+                <img class="contributor-avatar" src="../images/icons/woman.png" alt="Contributor 1 Avatar">
+                <div class="contributor-info">
+                    <h3 class="contributor-name">Jane Smith</h3>
+                    <p class="contributor-description">She is not a real contributor.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-icon">
+                            <img src="../images/icons/whatsapp.png" alt="Social Icon 1">
+                        </a>
+                        <a href="#" target="_blank" class="social-icon">
+                            <img src="../images/icons/twitter.png" alt="Social Icon 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="contributor-box">
+                <img class="contributor-avatar" src="../images/icons/man.png" alt="Contributor 2 Avatar">
+                <div class="contributor-info">
+                    <h3 class="contributor-name">John Doe</h3>
+                    <p class="contributor-description">He is not a real contributor.</p>
+                    <div class="social-links">
+                      <a href="#" target="_blank" class="social-icon">
+                        <img src="../images/icons/whatsapp.png" alt="Social Icon 1">
+                    </a>
+                    <a href="#" target="_blank" class="social-icon">
+                        <img src="../images/icons/linkedin.png" alt="Social Icon 2">
+                    </a>
+                    </div>
+                </div>
+            </div> -->
+        
+        </div>
+      </div>
+
+            <!-- END OF CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
+    </article>
+   </article>
+   <div style="height: 300px;"></div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+        <div>
+          <p id="popup-trigger">disclaimer</p>
+
+          <!-- The pop-up dive content -->
+          <div id="popup" class="popup">
+            <p>The contents on this ‘website’ are for educational purposes only. The creators and operators of this website make no warranties, express or implied, regarding the accuracy, currency, or completeness of the information provided on the website. They shall not be held responsible for any errors or omissions, or for any actions taken based on the information provided on this website.</p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+          </div>    
+          <p><a href="../about-temp2.html">about</a> </p>   
+          <p><a href="../contribute.html">contribute</a> </p>
+        </div>
+
+        <div class="footer-beta">
+          <p>thisisatestversion</p>
+        </div>
+    </div>
+  </footer>
+<!------------  SCROLL UP ----------->
+<a href="#" class="scrollup" id="scroll-up"> 
+  <i class="ri-arrow-up-fill scrollup__icon"></i>
+</a>
+<script src="../main.js"></script>
+<script src="../modal.js"></script>
+<script src="../notes-sidebar.js"></script>
+
+<!-- Floating TOC Button -->
+<div id="toc-button" class="floating-toc-button">
+  Table of Contents
+</div>
+
+<!-- Expandable TOC Panel -->
+<div id="toc-panel" class="toc-panel">
+  <div id="toc-panel-content">
+      <h4>Table of Contents</h4>
+      <ol id="dynamic-toc"></ol>
+  </div>
+</div>
+
+
+
+<script>
+// Dynamically generate TOC from <h2> headings within <section> elements
+  const tocList = document.getElementById('dynamic-toc');
+const sections = document.querySelectorAll('section');
+const tocButton = document.getElementById('toc-button');
+const tocPanel = document.getElementById('toc-panel');
+
+// Generate Table of Contents
+sections.forEach(section => {
+    const headings = section.querySelectorAll('h2');
+    headings.forEach(heading => {
+        const headingAnchor = heading.querySelector('a');
+        if (headingAnchor && headingAnchor.getAttribute('href')) {
+            const tocItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.textContent = headingAnchor.textContent || 'Untitled Section';
+            link.href = headingAnchor.getAttribute('href');
+            tocItem.appendChild(link);
+            tocList.appendChild(tocItem);
+        }
+    });
+});
+
+// Hide TOC button initially
+tocButton.style.display = 'none';
+
+// Show/hide TOC button on scroll
+window.addEventListener('scroll', () => {
+    // Show button after scrolling down 200 pixels
+    if (window.scrollY > 200) {
+        tocButton.style.display = 'block';
+    } else {
+        tocButton.style.display = 'none';
+        tocPanel.classList.remove('expanded');
+    }
+});
+
+// Toggle TOC panel
+tocButton.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent immediate closure
+    tocPanel.classList.toggle('expanded');
+});
+
+// Close TOC panel when clicking outside
+document.addEventListener('click', (event) => {
+    if (tocPanel.classList.contains('expanded') && 
+        !tocPanel.contains(event.target) && 
+        event.target !== tocButton) {
+        tocPanel.classList.remove('expanded');
+    }
+});
+
+
+</script>
+
+</body>
+</html>
+ 

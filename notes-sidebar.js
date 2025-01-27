@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "Management of HIV and AIDS",
       "Rheumatic Heart Disease",
       "Infective Endocarditis",
-      "",
+      "Ischaemic Heart Disease",
       "",
       "",
       // Add more topics as needed
